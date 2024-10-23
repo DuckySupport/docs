@@ -4,11 +4,11 @@ description: Learn how to create, run and delete automations.
 ---
 <Warning>This command is this in Alpha</Warning>
 
-> On this page, you will learn how to create, run and delete automations..
+> On this page, you will learn how to create, run and delete automations.
 
 <Steps>
   <Step title="Creating Automation">
-    You can use the subcommand `/automations create` and you will be greeted with the **Automation Builder**. Here you can configure a trigger and action, and they will be displayed on the top of the **Automation Builder**.
+    You can use the subcommand `/automations create` and you will be greeted with the **Automation Builder**. Here you can configure a trigger and action, and they will be displayed on the top of the **Automation Builder**. You can use the button `Edit Name`, to change the name of the automation. This is useful if you would want to edit (currently not avalible yet) or delete it later. To create the new automation, click the `Create` button. If you would like to cancel the creation process, click the `Cancel` button , and the **Automation Builder** wil closed.
 
     List of triggers:
 | Trigger                    | Description                                                        |
@@ -21,5 +21,15 @@ description: Learn how to create, run and delete automations.
 | Interval                   | Triggers the automation at a set interval.                        |
 | Manual                     | Triggers the automation manually.                                 |
 
+    List of Actions:
+| Actions                    | Description                                                       |
+| -------------------------- | ----------------------------------------------------------------- |
+| Send a Command              | Send a command to your in-game server.                           |
+| Send a Message              | Send a message/embed to a channel.                               |
+| Session Start               | Send the session start-up message.                               |
+| Session Vote                | Start an auto-starting session vote.                             |
+| Session Shutdown            | Send the session shutdown message.                               |
+| Delay                       | Wait the specified amount of seconds before continuing.          |
+| End Shifts                  | End all active shifts.                                           |
   </Step>
 </Steps>
