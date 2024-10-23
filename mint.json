@@ -43,6 +43,12 @@
       "pages": [
         "configuration/initialsetup"
       ]
+    },
+    {
+      "group": "Commands",
+      "pages": [
+        "Commands/automations"
+      ]
     }
   ]
 }
