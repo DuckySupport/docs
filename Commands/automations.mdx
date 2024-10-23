@@ -7,7 +7,7 @@ description: Learn how to create, run and delete automations.
 > On this page, you will learn how to create, run and delete automations.
 
 <Steps>
-  <Step title="Creating Automation">
+  <Step title="Creating Automations">
     You can use the subcommand `/automations create` and you will be greeted with the **Automation Builder**. Here you can configure a trigger and action, and they will be displayed on the top of the **Automation Builder**. You can use the button `Edit Name`, to change the name of the automation. This is useful if you would want to edit (currently not avalible yet) or delete it later. To create the new automation, click the `Create` button. If you would like to cancel the creation process, click the `Cancel` button , and the **Automation Builder** wil closed.
 
     List of triggers:
@@ -31,5 +31,10 @@ description: Learn how to create, run and delete automations.
 | Session Shutdown            | Send the session shutdown message.                               |
 | Delay                       | Wait the specified amount of seconds before continuing.          |
 | End Shifts                  | End all active shifts.                                           |
+  </Step>
+    <Step title="Running Automations">
+    There are 3 ways automations can be run. When the trigger activates, using the `/automation run` command or using `:log automation run <id/name>` in your in-game server. If you don't remember the id/name of your automation, refer to the `/automation list` command at the bottom of this page.
+
+    <Tip>Refer to the ER:LC Integration page (WIP) for information about in-game commands</Tip>
   </Step>
 </Steps>
