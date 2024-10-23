@@ -2,7 +2,7 @@
 title: Automations
 description: Learn how to create, run and delete automations.
 ---
-<Warning>This command is this in Alpha</Warning>
+<Warning>This command is Alpha</Warning>
 
 > On this page, you will learn how to create, run and delete automations.
 
@@ -32,9 +32,18 @@ description: Learn how to create, run and delete automations.
 | Delay                       | Wait the specified amount of seconds before continuing.          |
 | End Shifts                  | End all active shifts.                                           |
   </Step>
-    <Step title="Running Automations">
-    There are 3 ways automations can be run. When the trigger activates, using the `/automation run` command or using `:log automation run <id/name>` in your in-game server. If you don't remember the id/name of your automation, refer to the `/automation list` command at the bottom of this page.
+
+  <Step title="Running Automations">
+    There are 3 ways automations can be run. When the trigger activates, using the `/automation run` subcommand or using `:log automation run <id/name>` in your in-game server. If you don't remember the id/name of your automation, refer to the `/automation list` command at the bottom of this page.
 
     <Tip>Refer to the ER:LC Integration page (WIP) for information about in-game commands</Tip>
+  </Step>
+
+  <Step title="Deleting Automations">
+    You can use the subcommand `/automations delete` and provide the id/name of the automation you want to delete. If you don't remember the id/name of your automation, refer to the `/automation list` command below.
+  </Step>
+
+  <Step title="Listing Automations">
+    You can use the subcommand `/automations list` to get a pagination of every automation you have created. This will include how many automations there are in your server and the maxiumum it can have, the id of the automation and the logic.
   </Step>
 </Steps>
