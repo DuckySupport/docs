@@ -3,9 +3,11 @@
     "theme": "willow",
     "name": "Ducky",
     "colors": {
-        "primary": "#F5FF82"
+        "primary": "#38B6FF",
+        "light": "#38B6FF",
+        "dark": "#F5FF82"
     },
-    "favicon": "/favicon.svg",
+    "favicon": "https://duckybot.xyz/images/icons/Ducky.svg",
     "navigation": {
         "tabs": [
             {
