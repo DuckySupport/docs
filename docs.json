@@ -7,7 +7,7 @@
         "light": "#38B6FF",
         "dark": "#F5FF82"
     },
-    "favicon": "https://duckybot.xyz/images/icons/Ducky.svg",
+    "favicon": "/favicon.svg",
     "navigation": {
         "tabs": [
             {
