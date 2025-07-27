@@ -1,9 +1,9 @@
 {
     "$schema": "https://mintlify.com/docs.json",
-    "theme": "palm",
+    "theme": "willow",
     "name": "Ducky",
     "colors": {
-        "primary": "#F5FF82",
+        "primary": "#38B6FF",
         "light": "#F5FF82",
         "dark": "#F5FF82"
     },
@@ -11,24 +11,12 @@
     "navigation": {
         "tabs": [
             {
-                "tab": "Guides",
+                "tab": "Documentation",
                 "groups": [
                     {
                         "group": "Get Started",
                         "pages": [
-                            "index",
-                            "quickstart"
-                        ]
-                    },
-                    {
-                        "group": "Essentials",
-                        "pages": [
-                            "essentials/markdown",
-                            "essentials/code",
-                            "essentials/images",
-                            "essentials/settings",
-                            "essentials/navigation",
-                            "essentials/reusable-snippets"
+                            "index"
                         ]
                     }
                 ]
