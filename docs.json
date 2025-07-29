@@ -7,7 +7,7 @@
         "light": "#38B6FF",
         "dark": "#F5FF82"
     },
-    "favicon": "/favicon.svg",
+    "favicon": "/favicon.ico",
     "navigation": {
         "tabs": [
             {
@@ -26,7 +26,7 @@
             "anchors": [
                 {
                     "anchor": "Documentation",
-                    "href": "https://mintlify.com/docs",
+                    "href": "https://docs.duckybot.xyz",
                     "icon": "book-open-cover"
                 },
                 {
