@@ -9,7 +9,8 @@
     },
     "favicon": "/favicon.ico",
     "banner": {
-      "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️"
+      "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️",
+      "dismissible": true
     },
     "navigation": {
         "tabs": [
