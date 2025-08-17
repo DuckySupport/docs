@@ -9,26 +9,22 @@
     },
     "favicon": "/favicon.ico",
     "banner": {
-      "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️",
-      "dismissible": true
+        "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️",
+        "dismissible": true
     },
     "navigation": {
-        "tabs": [
-            {
-                "tab": "Documentation",
-                "groups": [
-                    {
-                        "group": "Getting Started",
-                        "pages": [
-                            "index"
-                        ]
-                    }
+        "tabs": [{
+            "tab": "Documentation",
+            "groups": [{
+                "group": "Getting Started",
+                "pages": [
+                    "start/welcome",
+                    "start/setup"
                 ]
-            }
-        ],
+            }]
+        }],
         "global": {
-            "anchors": [
-                {
+            "anchors": [{
                     "anchor": "Documentation",
                     "href": "https://docs.duckybot.xyz",
                     "icon": "book-open-cover"
@@ -46,8 +42,7 @@
         "dark": "/Ducky.svg"
     },
     "navbar": {
-        "links": [
-            {
+        "links": [{
                 "label": "Support",
                 "href": "https://duckybot.xyz/support"
             },
