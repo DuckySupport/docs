@@ -3,9 +3,7 @@
     "theme": "willow",
     "name": "Ducky",
     "colors": {
-        "primary": "#38B6FF",
-        "light": "#38B6FF",
-        "dark": "#F5FF82"
+        "primary": "#38B6FF"
     },
     "favicon": "/favicon.ico",
     "banner": {
