@@ -1,16 +1,15 @@
 {
     "$schema": "https://mintlify.com/docs.json",
-    "theme": "maple",
+    "theme": "aspen",
     "name": "Ducky",
     "colors": {
         "primary": "#38B6FF",
-        "light": "#38B6FF",
+        "light": "#ecdb50",
         "dark": "#38B6FF"
     },
     "favicon": "/favicon.ico",
     "banner": {
-      "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️",
-      "dismissable": true
+      "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️"
     },
     "navigation": {
         "tabs": [
