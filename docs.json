@@ -8,13 +8,17 @@
         "dark": "#F5FF82"
     },
     "favicon": "/favicon.ico",
+    "banner": {
+      "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️",
+      "dismissable": true
+    },
     "navigation": {
         "tabs": [
             {
                 "tab": "Documentation",
                 "groups": [
                     {
-                        "group": "Get Started",
+                        "group": "Getting Started",
                         "pages": [
                             "index"
                         ]
@@ -38,8 +42,8 @@
         }
     },
     "logo": {
-        "light": "/logo/light.svg",
-        "dark": "/logo/dark.svg"
+        "light": "/Ducky.svg",
+        "dark": "/Ducky.svg"
     },
     "navbar": {
         "links": [
