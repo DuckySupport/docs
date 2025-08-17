@@ -12,16 +12,33 @@
         "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️",
         "dismissible": true
     },
+    "appearance": {
+        "default": "dark",
+        "strict": true
+    },
     "navigation": {
         "tabs": [{
             "tab": "Documentation",
             "groups": [{
-                "group": "Getting Started",
-                "pages": [
-                    "start/welcome",
-                    "start/setup"
-                ]
-            }]
+                    "group": "Overview",
+                    "pages": [
+                        "overview/welcome"
+                    ]
+                },
+                {
+                    "group": "Configuration",
+                    "pages": [
+                        "configuration/setup",
+                        "configuration/permissions"
+                    ]
+                },
+                {
+                    "group": "Miscellaneous",
+                    "pages": [
+                        "misc/timestamps"
+                    ]
+                }
+            ]
         }],
         "global": {
             "anchors": [{
