@@ -1,0 +1,27 @@
+---
+title: "Permissions"
+description: "Learn what each role-based permission level can access via Ducky."
+tag: "NEW"
+---
+
+Ducky's role-based permissions can be configured via the first page of the **`/setup`** command. More information on what each of these role-based permissions are authorized to access can be found below.
+
+<Accordion title="Discord Moderator Roles" icon="hammer">
+  - **`/purge`:** Members of the configured **Discord Moderator** permission roles are authorized to purge up to **1,000 messages** from any given channel that they have access to send a message in.
+  - **`/slowmode`:** Members of the configured **Discord Moderator** permission roles are authorized to modify the slowmode of any given channel that they have access to send a message in.
+  - **`/role`:** Members of the configured **Discord Moderator** permission roles are authorized to view any given role's information, add a role (which they can access, automatically determined based on member/role hierarchy) to another member, and remove a role (which they can access, automatically determined based on member/role hierarchy) from a member.
+  - **`/case`:** Members of the configured **Discord Moderator** permission roles are authorized to view a specific case and its information. If they are the moderator of a specific case, they are also authorized to void the case.
+  - **`/modlogs`:** Members of the configured **Discord Moderator** permission roles are authorized to view the modlogs of another member.
+  - **`/nick`:** Members of the configured **Discord Moderator** permission roles are authorized to set another member's nickname.
+  - **`/warn`:** Members of the configured **Discord Moderator** permission roles are authorized to warn another member.
+  - **`/mute`:** Members of the configured **Discord Moderator** permission roles are authorized to mute another member.
+  - **`/unmute`:** Members of the configured **Discord Moderator** permission roles are authorized to unmute another member.
+  - **`/kick`:** Members of the configured **Discord Moderator** permission roles are authorized to kick another member.
+</Accordion>
+
+<Accordion title="Discord Administrator Roles" icon="shield">
+  - **`/lock`:** Members of the configured **Discord Administrator** permission roles are authorized to lock any given channel that they have access to send a message in.
+  - **`/unlock`:** Members of the configured **Discord Administrator** permission roles are authorized to unlock any given channel that they have access to send a message in.
+  - **`/ban`:** Members of the configured **Discord Administrator** permission roles are authorized to ban another member.
+  - **`/unban`:** Members of the configured **Discord Administrator** permission roles are authorized to unban another member.
+</Accordion>
