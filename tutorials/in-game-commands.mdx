@@ -1,0 +1,30 @@
+---
+title: "In-Game Commands"
+description: "This tutorial will explain how to setup in-game commands, and quickly do things such as starting your shift, punishing someone or running an automation."
+---
+
+<Warning>
+  This feature requires your ER:LC server to have the API Pack.
+</Warning>
+
+<Steps>
+  <Step title="Link your ER:LC Server">
+    <Tip>
+      Only the owner of the ER:LC server can do this.
+    </Tip>
+    Join your ER:LC server and click the server icon (top-right). Select **Edit Server Settings**, find **API Key**, click **Edit**, and copy it. In `/setup`, go to the **ERLC Integration** page, select **Edit ERLC API Key**, paste the copied key, and submit.
+  </Step>
+  <Step title="ER:LC Command Logs">
+    Create a channel where all commands used in-game will be logged. In the edit menu of the channel, click **Integrations**. Here, create a webhook, and copy the URL. In your ER:LC server settings (the same place where you got your API Key), search **Commands Log Webhook**. Edit it to the webhook you copied.
+
+    <Tip>
+      Try it out by using a command.
+    </Tip>
+  </Step>
+  <Step title="Configuring with Ducky">
+    On the **ERLC Integration** page in `/setup`, change the **Command Logs Channel** to the channel you created.
+  </Step>
+  <Step title="Done">
+    You can now use Ducky In-game commands. To view a list of all commands, use `/help` → Commands → In-Game Commands.
+  </Step>
+</Steps>

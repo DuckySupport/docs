@@ -33,6 +33,12 @@
                     ]
                 },
                 {
+                    "group": "Tutorials",
+                    "pages": [
+                        "tutorials/in-game-commands",
+                    ]
+                },
+                {
                     "group": "Miscellaneous",
                     "pages": [
                         "misc/timestamps"
