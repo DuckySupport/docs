@@ -7,7 +7,7 @@
         "light": "#ecdb50",
         "dark": "#38B6FF"
     },
-    "favicon": "/favicon.ico",
+    "favicon": "/icons/favicon.ico",
     "banner": {
         "content": "🛠️ This documentation is a work-in-progress, and is actively being written. 🛠️",
         "dismissible": true
@@ -62,8 +62,8 @@
         }
     },
     "logo": {
-        "light": "/Ducky.svg",
-        "dark": "/Ducky.svg"
+        "light": "/icons/Ducky.svg",
+        "dark": "/icons/Ducky.svg"
     },
     "navbar": {
         "links": [{
