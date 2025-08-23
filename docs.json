@@ -33,8 +33,15 @@
                     ]
                 },
                 {
+                    "group": "Tutorials",
+                    "pages": [
+                        "tutorials/ingamecmds"
+                    ]
+                },
+                {
                     "group": "Miscellaneous",
                     "pages": [
+                        "misc/timeinputs",
                         "misc/timestamps"
                     ]
                 }
