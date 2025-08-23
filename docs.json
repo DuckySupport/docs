@@ -33,6 +33,12 @@
                     ]
                 },
                 {
+                    "group": "Modules",
+                    "pages": [
+                        "modules/discord"
+                    ]
+                },
+                {
                     "group": "Tutorials",
                     "pages": [
                         "tutorials/ingamecmds"
