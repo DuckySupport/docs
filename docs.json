@@ -35,12 +35,13 @@
                 {
                     "group": "Tutorials",
                     "pages": [
-                        "tutorials/in-game-commands"
+                        "tutorials/ingamecmds"
                     ]
                 },
                 {
                     "group": "Miscellaneous",
                     "pages": [
+                        "misc/timeinputs",
                         "misc/timestamps"
                     ]
                 }
