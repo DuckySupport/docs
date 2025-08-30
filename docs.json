@@ -33,6 +33,12 @@
                     ]
                 },
                 {
+                    "group": "Modules",
+                    "pages": [
+                        "modules/discordmoderation"
+                    ]
+                },
+                {
                     "group": "Tutorials",
                     "pages": [
                         "tutorials/ingamecmds"
@@ -41,8 +47,8 @@
                 {
                     "group": "Miscellaneous",
                     "pages": [
-                        "misc/timeinputs",
-                        "misc/timestamps"
+                        "miscellaneous/timeinputs",
+                        "miscellaneous/timestamps"
                     ]
                 }
             ]
