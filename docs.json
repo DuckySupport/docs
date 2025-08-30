@@ -35,6 +35,7 @@
                 {
                     "group": "Modules",
                     "pages": [
+                        "modules/welcometoducky",
                         "modules/discordmoderation"
                     ]
                 },
