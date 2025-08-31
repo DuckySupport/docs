@@ -35,7 +35,8 @@
                 {
                     "group": "Modules",
                     "pages": [
-                        "modules/discord"
+                        "modules/discordmod",
+                        "modules/auditlog"
                     ]
                 },
                 {
@@ -48,7 +49,8 @@
                     "group": "Miscellaneous",
                     "pages": [
                         "misc/timeinputs",
-                        "misc/timestamps"
+                        "misc/timestamps",
+                        "misc/devmode"
                     ]
                 }
             ]
