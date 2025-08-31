@@ -49,8 +49,9 @@
                 {
                     "group": "Miscellaneous",
                     "pages": [
-                        "miscellaneous/timeinputs",
-                        "miscellaneous/timestamps"
+                        "misc/timeinputs",
+                        "misc/timestamps",
+                        "misc/devmode"
                     ]
                 }
             ]
