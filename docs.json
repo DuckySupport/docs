@@ -35,9 +35,8 @@
                 {
                     "group": "Modules",
                     "pages": [
-                        "modules/welcometoducky",
-                        "modules/discordmoderation",
-                        "modules/auditlogging"
+                        "modules/discordmod",
+                        "modules/auditlog"
                     ]
                 },
                 {

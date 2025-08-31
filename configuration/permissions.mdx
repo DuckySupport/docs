@@ -7,112 +7,114 @@ tag: "NEW"
 Ducky's role-based permissions can be configured via the first page of the **`/setup`** command. More information on what each of these role-based permissions are authorized to access can be found below.
 
 <Accordion title="Discord Moderator Roles" icon="hammer">
-  - **`/purge:`** Members of the configured **Discord Moderator** permission roles are authorized to purge up to **1,000 messages** from any given channel that they have access to send a message in.
-  - **`/slowmode:`** Members of the configured **Discord Moderator** permission roles are authorized to modify the slowmode of any given channel that they have access to send a message in.
-  - **`/role:`** Members of the configured **Discord Moderator** permission roles are authorized to view any given role's information, add a role (which they can access, automatically determined based on member/role hierarchy) to another member, and remove a role (which they can access, automatically determined based on member/role hierarchy) from a member.
-  - **`/case:`** Members of the configured **Discord Moderator** permission roles are authorized to view a specific case and its information. If they are the moderator of a specific case, they are also authorized to void the case.
-  - **`/modlogs:`** Members of the configured **Discord Moderator** permission roles are authorized to view the modlogs of another member.
-  - **`/nick:`** Members of the configured **Discord Moderator** permission roles are authorized to set another member's nickname.
-  - **`/warn:`** Members of the configured **Discord Moderator** permission roles are authorized to warn another member.
-  - **`/mute:`** Members of the configured **Discord Moderator** permission roles are authorized to mute another member.
-  - **`/unmute:`** Members of the configured **Discord Moderator** permission roles are authorized to unmute another member.
-  - **`/kick:`** Members of the configured **Discord Moderator** permission roles are authorized to kick another member.
+  - **`/purge`:** Members of the configured **Discord Moderator** permission roles are authorized to purge up to **1,000 messages** from any given channel that they have access to send a message in.
+  - **`/slowmode`:** Members of the configured **Discord Moderator** permission roles are authorized to modify the slowmode of any given channel that they have access to send a message in.
+  - **`/role`:** Members of the configured **Discord Moderator** permission roles are authorized to view any given role's information, add a role (which they can access, automatically determined based on member/role hierarchy) to another member, and remove a role (which they can access, automatically determined based on member/role hierarchy) from a member.
+  - **`/case`:** Members of the configured **Discord Moderator** permission roles are authorized to view a specific case and its information. If they are the moderator of a specific case, they are also authorized to void the case.
+  - **`/modlogs`:** Members of the configured **Discord Moderator** permission roles are authorized to view the modlogs of another member.
+  - **`/nick`:** Members of the configured **Discord Moderator** permission roles are authorized to set another member's nickname.
+  - **`/warn`:** Members of the configured **Discord Moderator** permission roles are authorized to warn another member.
+  - **`/mute`:** Members of the configured **Discord Moderator** permission roles are authorized to mute another member.
+  - **`/unmute`:** Members of the configured **Discord Moderator** permission roles are authorized to unmute another member.
+  - **`/kick`:** Members of the configured **Discord Moderator** permission roles are authorized to kick another member.
 </Accordion>
 
 <Accordion title="Discord Administrator Roles" icon="shield">
-  - **`/lock:`** Members of the configured **Discord Administrator** permission roles are authorized to lock any given channel that they have access to send a message in.
-  - **`/unlock:`** Members of the configured **Discord Administrator** permission roles are authorized to unlock any given channel that they have access to send a message in.
-  - **`/ban:`** Members of the configured **Discord Administrator** permission roles are authorized to ban another member.
-  - **`/unban:`** Members of the configured **Discord Administrator** permission roles are authorized to unban another member.
+  - **`/lock`:** Members of the configured **Discord Administrator** permission roles are authorized to lock any given channel that they have access to send a message in.
+  - **`/unlock`:** Members of the configured **Discord Administrator** permission roles are authorized to unlock any given channel that they have access to send a message in.
+  - **`/ban`:** Members of the configured **Discord Administrator** permission roles are authorized to ban another member.
+  - **`/unban`:** Members of the configured **Discord Administrator** permission roles are authorized to unban another member.
 </Accordion>
 
 <Accordion title="ERLC Staff Roles" icon="Hammer">
-  - `/erlc server:` Members of the configured **ERLC Staff** permission roles are authorized to view general information on the linked ER:LC server.
-  - `/erlc players:` Members of the configured **ERLC Staff** permission roles are authorized to view the live playercount on the linked ER:LC server.
-  - `/erlc staff:` Members of the configured **ERLC Staff** permission roles are authorized to view the current staff members that are in-game.
-  - `/erlc check:` Members of the configured **ERLC Staff** permission roles are authorized to check the in-game players that are not in the Discord server.
-  - `/erlc team:` Members of the configured **ERLC Staff** permission roles are authorized to check the in-game players on a specific team.
-  - `/erlc vehicles:` Members of the configured **ERLC Staff** permission roles are authorized to view the vehicles that are spawned in-game.
-  - `/erlc kills:` Members of the configured **ERLC Staff** permission roles are authorized to view the in-game kill logs.
-  - `/erlc logs:` Members of the configured **ERLC Staff** permission roles are authorized to view the in-game command logs.
-  - `/erlc joins:` Members of the configured **ERLC Staff** permission roles are authorized to view the join/leave logs in-game.
-  - `/erlc modcalls:` Members of the configured **ERLC Staff** permission roles are authorized to view the in-game mod call logs.
-  - `/erlc bans:` Members of the configured **ERLC Staff** permission roles are authorized to view the in-game bans and search for a name if specified.
-  - `/erlc permissions:` Members of the configured **ERLC Staff** permission roles are authorized to view all staff members and their permission levels.
-  - `/erlc command:` Members of the configured **ERLC Staff** permission roles are authorized to send a command to the in-game server.
-  - `/erlc panel:` Members of the configured **ERLC Staff** permission roles are authorized to use the player panel to manage an in-game player.
-  - `/erlc tempban:` Members of the configured **ERLC Staff** permission roles are authorized to temporarily ban a player. The maximum ban duration is defined by the **Tempban for Moderators** configuration on the Roblox Punishments `/setup` page.
-  - `/modstats:` Members of the configured **ERLC Staff** permission roles are authorized to view staff information such as shifts, punishments and modcalls.
-  - `/punish:` Members of the configured **ERLC Staff** permission roles are authorized to log a punishment on a Roblox user.
-  - `/bolo create:` Members of the configured **ERLC Staff** permission roles are authorized to create a ban bolo on a member.
-  - `/shift manage:` Members of the configured **ERLC Staff** permission roles are authorized to manage their own shift.
-  - `/shift active:` Members of the configured **ERLC Staff** permission roles are authorized to view the active shifts.
-  - `/shfit time:` Members of the configured **ERLC Staff** permission roles are authorized to view their shift time.
-  - `/shift history:` Members of the configured **ERLC Staff** permission roles are authorized to view their shift history.
-  - `/shift leaderboard:` Members of the configured **ERLC Staff** permission roles are authorized to view the server's shift leaderboard.
-  - `/loa request:` Members of the configured **ERLC Staff** permission roles are authorized to request an Leave of Absence.
-  - `/loa active:` Members of the configured **ERLC Staff** permission roles are authorized to view the server's active LOAs.
-  - `/loa view:` Members of the configured **ERLC Staff** permission roles are authorized to view and manage their own Leave of Absence.
-  - `/search:` Members of the configured **ERLC Staff** permission roles are authorized to search a Roblox user's punishments
+  - **`/erlc server`:** Members of the configured **ERLC Staff** permission roles are authorized to view general information of the linked ERLC server.
+  - **`/erlc players`:** Members of the configured **ERLC Staff** permission roles are authorized to view the live playercount of the linked ERLC server.
+  - **`/erlc staff`:** Members of the configured **ERLC Staff** permission roles are authorized to view the current staff members that are in-game.
+  - **`/erlc check`:** Members of the configured **ERLC Staff** permission roles are authorized to check the in-game players that are not in the Discord server.
+  - **`/erlc team`:** Members of the configured **ERLC Staff** permission roles are authorized to check the in-game players on a specific team.
+  - **`/erlc vehicles`:** Members of the configured **ERLC Staff** permission roles are authorized to view the vehicles that are spawned in-game.
+  - **`/erlc kills`:** Members of the configured **ERLC Staff** permission roles are authorized to view the in-game kill logs.
+  - **`/erlc logs`:** Members of the configured **ERLC Staff** permission roles are authorized to view the in-game command logs.
+  - **`/erlc joins`:** Members of the configured **ERLC Staff** permission roles are authorized to view the join/leave logs in-game.
+  - **`/erlc modcalls`:** Members of the configured **ERLC Staff** permission roles are authorized to view the in-game mod call logs.
+  - **`/erlc bans`:** Members of the configured **ERLC Staff** permission roles are authorized to view the in-game bans and search for a name if specified.
+  - **`/erlc permissions`:** Members of the configured **ERLC Staff** permission roles are authorized to view all staff members and their permission levels.
+  - **`/erlc command`:** Members of the configured **ERLC Staff** permission roles are authorized to send a command to the in-game server.
+  - **`/erlc panel`:** Members of the configured **ERLC Staff** permission roles are authorized to use the player panel to manage an in-game player.
+  - **`/erlc tempban`:** Members of the configured **ERLC Staff** permission roles are authorized to temporarily ban a player. The maximum ban duration is defined by the **Tempban for Moderators** configuration on the Roblox Punishments `/setup` page.
+  - **`/modstats`:** Members of the configured **ERLC Staff** permission roles are authorized to view staff information such as shifts, punishments and modcalls.
+  - **`/punish`:** Members of the configured **ERLC Staff** permission roles are authorized to log a punishment on a Roblox user.
+  - **`/bolo create`:** Members of the configured **ERLC Staff** permission roles are authorized to create a ban bolo on a member.
+  - **`/shift manage`:** Members of the configured **ERLC Staff** permission roles are authorized to manage their own shift.
+  - **`/shift active`:** Members of the configured **ERLC Staff** permission roles are authorized to view the active shifts.
+  - **`/shfit time`:** Members of the configured **ERLC Staff** permission roles are authorized to view their shift time.
+  - **`/shift history`:** Members of the configured **ERLC Staff** permission roles are authorized to view their shift history.
+  - **`/shift leaderboard`:** Members of the configured **ERLC Staff** permission roles are authorized to view the server's shift leaderboard.
+  - **`/loa request`:** Members of the configured **ERLC Staff** permission roles are authorized to request an Leave of Absence.
+  - **`/loa active`:** Members of the configured **ERLC Staff** permission roles are authorized to view the server's active LOAs.
+  - **`/loa view`:** Members of the configured **ERLC Staff** permission roles are authorized to view and manage their own Leave of Absence.
+  - **`/search`:** Members of the configured **ERLC Staff** permission roles are authorized to search a Roblox user's punishments
 
-  - `:log ping:` Members of the configured **ERLC Staff** permission roles are authorized to check the status/functionality of in-game commands.
-  - `:log punish:` Members of the configured **ERLC Staff** permission roles are authorized to punish a player from the in-game server.
-  - `:log bolo: `Members of the configured **ERLC Staff** permission roles are authorized to create a ban bolo from the in-game server.
-  - `:log automations run:` Members of the configured **ERLC Staff** permission roles are authorized to run an automation from the in-game server.
-  - `:log shift start:` Members of the configured **ERLC Staff** permission roles are authorized to start their shift from the in-game server.
-  - `:log shift pause:` Members of the configured **ERLC Staff** permission roles are authorized to pause their shift from the in-game server.
-  - `:log shift end:` Members of the configured **ERLC Staff** permission roles are authorized to end their shift from the in-game server.
-  - `:log shift time:` Members of the configured **ERLC Staff** permission roles are authorized to view their shift time from the in-game server.
-  - `:log tempban:` Members of the configured **ERLC Staff** permission roles are authorized to temporarily ban a player. The maximum ban duration is defined by the **Tempban for Moderators** configuration on the Roblox Punishments `/setup` page.
-  - `:log custom:` Members of the configured **ERLC Staff** permission roles are authorized to run a customlog from the in-game server.
+  - **`:log ping`:** Members of the configured **ERLC Staff** permission roles are authorized to check the status/functionality of in-game commands.
+  - **`:log punish`:** Members of the configured **ERLC Staff** permission roles are authorized to punish a player from the in-game server.
+  - **`:log bolo: `Members of the configured **ERLC Staff** permission roles are authorized to create a ban bolo from the in-game server.
+  - **`:log automations run`:** Members of the configured **ERLC Staff** permission roles are authorized to run an automation from the in-game server.
+  - **`:log shift start`:** Members of the configured **ERLC Staff** permission roles are authorized to start their shift from the in-game server.
+  - **`:log shift pause`:** Members of the configured **ERLC Staff** permission roles are authorized to pause their shift from the in-game server.
+  - **`:log shift end`:** Members of the configured **ERLC Staff** permission roles are authorized to end their shift from the in-game server.
+  - **`:log shift time`:** Members of the configured **ERLC Staff** permission roles are authorized to view their shift time from the in-game server.
+  - **`:log tempban`:** Members of the configured **ERLC Staff** permission roles are authorized to temporarily ban a player. The maximum ban duration is defined by the **Tempban for Moderators** configuration on the Roblox Punishments `/setup` page.
+  - **`:log custom`:** Members of the configured **ERLC Staff** permission roles are authorized to run a customlog from the in-game server.
 </Accordion>
 
 <Accordion title="ERLC Administrator Roles" icon="Shield">
-  - `/bolo pending:` Members of the configured **ERLC Administrator** permission roles are authorized to view and manage pending ban bolos.
-  - `/search:` Members of the configured **ERLC Administrator** permission roles are authorized to edit and delete punishments on a user.
-  - `/erlc tempban:` Members of the configured **ERLC Administrator** permission roles are authorized to temporarily ban a player.
-  - `/erlc untempban:`  Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player.
+  - **`/bolo pending`:** Members of the configured **ERLC Administrator** permission roles are authorized to view and manage pending ban bolos.
+  - **`/search`:** Members of the configured **ERLC Administrator** permission roles are authorized to edit and delete punishments on a user.
+  - **`/erlc tempban`:** Members of the configured **ERLC Administrator** permission roles are authorized to temporarily ban a player.
+  - **`/erlc untempban`:**  Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player.
 
-  - `:log message:` Members of the configured **ERLC Administrator** permission roles are authorized to message a specific group of people.
-  - `:log tempban:` Members of the configured **ERLC Administrator** permission roles are authorized to temporarily ban a player from the in-game server.
-  - `:log untempban:` Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player from the in-game server.
+  - **`:log message`:** Members of the configured **ERLC Administrator** permission roles are authorized to message a specific group of people.
+  - **`:log tempban`:** Members of the configured **ERLC Administrator** permission roles are authorized to temporarily ban a player from the in-game server.
+  - **`:log untempban`:** Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player from the in-game server.
 </Accordion>
 
 <Accordion title="ERLC Manager Roles" icon="gear">
-  - `/shift manage:` Members of the configured **ERLC Manager** permission roles are authorized to manage their own and other staff members shifts.
-  - `/loa view:` Members of the configured **ERLC Manager** permission roles are authorized to view and manage their own and other staff members Leave of Absences.
-  - `/infraction issue:` Members of the configured **ERLC Manager** permission roles are authorized to issue infractions.
-  - `/infraction list:` Members of the configured **ERLC Manager** permission roles are authorized to view all infractions listed on a user.
-  - `/infraction revoke:` Members of the configured **ERLC Manager** permission roles are authorized to revoke an infraction issued towards a user.
-  - `/promote:` Members of the configured **ERLC Manager** permission roles are authorized to promote a user.
-  - `/activity report:` Members of the configured **ERLC Manager** permission roles are authorized to view the generated staff activity report.
-  - `/activity generate:` Members of the configured **ERLC Manager** permission roles are authorized to generate a staff activity report.
-  - `/feedback delete:` Members of the configured **ERLC Manager** permission roles are authorized to delete submitted server feedback.
+  - **`/shift manage`:** Members of the configured **ERLC Manager** permission roles are authorized to manage their own and other staff members shifts.
+  - **`/loa view`:** Members of the configured **ERLC Manager** permission roles are authorized to view and manage their own and other staff members Leave of Absences.
+  - **`/infraction issue`:** Members of the configured **ERLC Manager** permission roles are authorized to issue infractions.
+  - **`/infraction list`:** Members of the configured **ERLC Manager** permission roles are authorized to view all infractions listed on a user.
+  - **`/infraction revoke`:** Members of the configured **ERLC Manager** permission roles are authorized to revoke an infraction issued towards a user.
+  - **`/promote`:** Members of the configured **ERLC Manager** permission roles are authorized to promote a user.
+  - **`/activity report`:** Members of the configured **ERLC Manager** permission roles are authorized to view the generated staff activity report.
+  - **`/activity generate`:** Members of the configured **ERLC Manager** permission roles are authorized to generate a staff activity report.
+  - **`/feedback delete`:** Members of the configured **ERLC Manager** permission roles are authorized to delete submitted server feedback.
 </Accordion>
 
 <Accordion title="Session Starter Roles" icon="gamepad" iconType="regular">
-  - `/session start:` Members of the configured **Session Starter** permission roles are authorized to start sessions.
-  - `/session end:` Members of the configured **Session Starter** permission roles are authorized to end sessions.
-  - `/session vote:` Members of the configured **Session Starter** permission roles are authorized to host session votes.
-  - `/session staffvote:` Members of the configured **Session Starter** permission roles are authorized to host session staff votes.
-  - `/session low:` Members of the configured **Session Starter** permission roles are authorized to issue a session low message indicating that the server is low on players.
-  - `/session full:` Members of the configured **Session Starter** permission roles are authorized to issue a session full message indicating that the server is at max capacity.
+  - **`/session start`:** Members of the configured **Session Starter** permission roles are authorized to start sessions.
+  - **`/session end`:** Members of the configured **Session Starter** permission roles are authorized to end sessions.
+  - **`/session vote`:** Members of the configured **Session Starter** permission roles are authorized to host session votes.
+  - **`/session staffvote`:** Members of the configured **Session Starter** permission roles are authorized to host session staff votes.
+  - **`/session low`:** Members of the configured **Session Starter** permission roles are authorized to issue a session low message indicating that the server is low on players.
+  - **`/session full`:** Members of the configured **Session Starter** permission roles are authorized to issue a session full message indicating that the server is at max capacity.
 </Accordion>
 
 <Accordion title="Manage Server Permissions" icon="gear">
-  > _Manage Server Permission bypasses all other permissions, if you have Manage Server Permission you do not need the other permission roles\!_
+  <Note>
+    Members with the **Manage Server** permission can bypass all other permission role restrictions.
+  </Note>
 
-  - `/updatemembers:` Members of the configured **Manage Server** permission roles are authorized to update all members to your configuration, including verification and join roles.
-  - `/giveaway create:` Members of the configured **Manage Server** permission roles are authorized to create a giveaway.
-  - `/embed:` Members of the configured **Manage Server** permission roles are authorized to open the Embed Editor and create an embed.
-  - `/emoji clone:` Members of the configured **Manage Server** permission roles are authorized to clone an emoji.
-  - `/emoiji view:` Members of the configured **Manage Server** permission roles are authorized to view information about an emoji.
-  - `/setup:` Members of the configured **Manage Server** permission roles are authorized to setup/configure Ducky in the server.
-  - `/prefix:` Members of the configured **Manage Server** permission roles are authorized to view and edit the current server prefix for Ducky.
-  - `/automations create:` Members of the configured **Manage Server** permission roles are authorized to create an automation.
-  - `/automations list:` Members of the configured **Manage Server** permission roles are authorized to view all automations in a server.
-  - `/automations delete:` Members of the configured **Manage Server** permission roles are authorized to delete an automation.
-  - `/automations edit:` Members of the configured **Manage Server** permission roles are authorized to edit an automation.
-  - `/syncbans:` Members of the configured **Manage Server** permission roles are authorized to sync bans between the ERLC server and Discord server.
-  - `/balance:` Members of the configured **Manage Server** permission roles are authorized to edit and reset a user's economy balance.
+  - **`/updatemembers`:** Members with the **Manage Server** permission are authorized to update all members to your configuration, including verification and join roles.
+  - **`/giveaway create`:** Members with the **Manage Server** permission are authorized to create a giveaway.
+  - **`/embed`:** Members with the **Manage Server** permission are authorized to open the Embed Editor and create an embed.
+  - **`/emoji clone`:** Members with the **Manage Server** permission are authorized to clone an emoji.
+  - **`/emoiji view`:** Members with the **Manage Server** permission are authorized to view information about an emoji.
+  - **`/setup`:** Members with the **Manage Server** permission are authorized to setup/configure Ducky in the server.
+  - **`/prefix`:** Members with the **Manage Server** permission are authorized to view and edit the current server prefix for Ducky.
+  - **`/automations create`:** Members with the **Manage Server** permission are authorized to create an automation.
+  - **`/automations list`:** Members with the **Manage Server** permission are authorized to view all automations in a server.
+  - **`/automations delete`:** Members with the **Manage Server** permission are authorized to delete an automation.
+  - **`/automations edit`:** Members with the **Manage Server** permission are authorized to edit an automation.
+  - **`/syncbans`:** Members with the **Manage Server** permission are authorized to sync bans between the ERLC server and Discord server.
+  - **`/balance`:** Members with the **Manage Server** permission are authorized to edit and reset a user's economy balance.
 </Accordion>
