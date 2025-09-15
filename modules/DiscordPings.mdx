@@ -1,19 +1,25 @@
 ---
 title: "Discord Pings"
-description: "Ducky's Discord Pings module spares you from unnecessary pings and ghost pings. "
+description: "Learn about Ducky's Discord Pings module and how to configure it."
 ---
+
+This page provides the essential configuration options for Ducky's **Discord Pings module** , which gives you full control over how and when you receive pings in your server. The module helps prevent unnecessary pings, avoids ghost pings, and ensures that you’re only notified when it truly matters. To enable and configure this module, use the `/setup` command and navigate to the **Discord Pings** page.
 
 <Steps>
   <Step title="Module Enabled" titleSize="h2">
-    Enabling this Module will enable the Discord Pings Module and Anti Ghost Pings.
+    Toggeling this option will enable/disable the **Discord Pings** module.
   </Step>
   <Step title="Protected Roles" titleSize="h2">
-    - If a user pings a **Protected Role **the user who pinged will be notified with the image below:
-      - This embed can also be configured.
+    If a user pings a **Protected Role** the user who pinged will be notified with an embed notifying them that they are not permitted to mention members that has the **Protected Role**.
 
-      ![Screenshot2025 09 09204155 Pn](/images/Screenshot2025-09-09204155.png)
+    <Info>
+      The embed is customizable to better suit your server.
+    </Info>
   </Step>
   <Step title="Whitelisted Roles" titleSize="h2">
-    - Whitelisted roles can ping any user with the **Protected Role **without any issues.
+    Members with the **Whitelisted Roles** can mention members that a **Protected Role** without being affected by the **Discord Pings** module.
+  </Step>
+  <Step title="Hierarchy Enabled" titleSize="h2">
+    Toggeling this option will essentially make all roles above the configured **Protected Role** also act as protected roles.
   </Step>
 </Steps>
