@@ -1,25 +1,25 @@
 ---
 title: "ERLC Server Logs"
 description: "Learn about Ducky's ERLC Server Logs module and how to configure it."
-tag: "UNPOLISHED"
+tag: "NEW"
 ---
 
-This page provides the essential configuration options for Ducky's **ERLC Server Logs** module, which allows you to monitor, track, and log all in-game activity within your ERLC server. The module creates a centralized system for organizing server events, ensuring actions are properly recorded and easily accessible. To enable and configure this module, use the `/setup` command and navigate to the **ERLC Server Logs** page.
+This page provides the essential configuration options for Ducky's **ERLC Server Logs** module, which allows you to monitor, track, and log all in-game activity within your ERLC server. To enable and configure this module, use the `/setup` command and navigate to the **ERLC Server Logs** page.
 
 <Steps>
   <Step title="Player Join Logs" titleSize="h2">
-    The **Player Join Logs** sends a log when a user Joins the server, it includes the Roblox Username and a Timestamp of when the user Joined the server.
+    The **Player Join Logs** channel is where a log will be sent when a player joins the in-game server. The log includes the Roblox username, profile hyperlink, and timestamp.
   </Step>
   <Step title=" Player Leave Logs" titleSize="h2">
-    The **Player Leave Logs** sends a log when a user leaves the server, it includes the Roblox Username and a Timestamp of when the user Joined the server.
+    The **Player Leave Logs** channel is where a log will be sent when a player leaves the in-game server. The log includes the Roblox username, profile hyperlink, and timestamp.
   </Step>
   <Step title="Player Team Logs" titleSize="h2">
-    The **Player Team Logs** sends a log when a user joins a team. This includes the Team, Callsign, Roblox user and a timestamp.
+    The **Player Team Logs** channel is where a log will be sent when a player changes their team. The log includes the Roblox username, profile hyperlink, callsign, team joined, and timestamp.
   </Step>
   <Step title="Player Kill Logs" titleSize="h2">
-    The **Player Kill Logs** sends a log of when someone gets killed, this includes the user who killed the member and the user who got killed.
+    The **Player Kill Logs** channel is where a log will be sent when a player kills another player within the in-game server. The log includes both player's Roblox username, profile hyperink, and timestamp.
   </Step>
   <Step title="Modcall Logs" titleSize="h2">
-    The **Mod Call Logs** sends a log when a user runs **\!mod** or **\!help**, this includes the user who ran the command, it will also send a log when a Mod teleports to a user.
+    The **Modcall Logs** channel is where a log will be sent when a moderator answers a modcall within the in-game server. The log includes both player's Roblox username, profile hyperink, and timestamp.
   </Step>
 </Steps>
