@@ -35,11 +35,21 @@
                 {
                     "group": "Modules",
                     "pages": [
-                        "modules/discord",
+                        "modules/discordmod",
                         "modules/audit",
-                        "modules/erlc",
+                        "modules/erlcintegration",
                         "modules/erlcstatus",
-                        "modules/erlclogs"
+                        "modules/erlclogs",
+                        "modules/welcome",
+                        "modules/sessions",
+                        "modules/staff",
+                        "modules/robloxpunishments",
+                        "modules/robloxverification",
+                        "modules/discordpings",
+                        "modules/feedback",
+                        "modules/shifts",
+                        "modules/activity",
+                        "modules/economy"
                     ]
                 },
                 {
