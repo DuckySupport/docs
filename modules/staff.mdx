@@ -1,19 +1,19 @@
 ---
 title: "Staff Management"
 description: "Learn about Ducky's Staff Management module and how to configure it."
-tag: "UNPOLISHED"
+tag: "NEW"
 ---
 
-This page provides the essential configuration options for Ducky's **Staff Management** module, which allows you to manage your staff team effectively. The module creates a centralized system for issuing infractions, handling promotions, and maintaining staff records, ensuring your team is organized and accountable. To enable and configure this module, use the **`/setup`** command and navigate to the **Staff Management** page.
+This page provides the essential configuration options for Ducky's **Staff Management** module, which provides an easy way to track disciplinary actions taken on your staff members via infractions, as well as issue promotions. To enable and configure this module, use the **`/setup`** command and navigate to the **Staff Management** page.
 
 <Steps>
   <Step title="Infractions Channel" titleSize="h2">
-    The **Infractions Channel** is a designated channel where all issued infractions are sent to. A user receives an infraction when an **ERLC Manager** runs the `/infraction issue` command.
+    The **Infractions Channel** is where all issued infractions are sent. A member receives an infraction when an **ERLC Manager** issues one via the **`/infraction issue`** command. The embeds can be customized to your preference.
   </Step>
-  <Step title="Promotions Channel" stepNumber={2} titleSize="h2">
-    The **Promotions Channel** is a designated channel where all promotion messages are sent. A user can be promoted when an **ERLC Manager** runs the `/promote` command. The promotion embed can also be customized to your preferences.
+  <Step title="Promotions Channel" titleSize="h2">
+    The **Promotions Channel** where all promotions are sent. A member receives a promotion when an **ERLC Manager** issues one via the `/promotion issue` command. The embeds can be customized to your preference.
   </Step>
   <Step title="Infraction Types" titleSize="h2">
-    The **Infraction Types** fucntions allows you to define different types of infractions, such as Warnings, Terminations, and more. It also includes an Embed Builder that can be used to enhance infraction messages and configure automatic actions.
+    The **Infraction Types** are the different types of infractions that can be issued within your server. You can link automated actions, an assigned role, and more via the **Infraction Type Builder**.
   </Step>
 </Steps>
