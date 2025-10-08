@@ -35,27 +35,16 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
       </Step>
       <Step title="Description" icon="newspaper" stepNumber={2} titleSize="h3">
         The description is a short description about your ticket subject. This can be used for what the category is meant for, or reasons to open it, etc.
-
-        <Info>
-          The description is not required.
-        </Info>
       </Step>
       <Step title="Emoji" icon="face-smile" titleSize="h3">
         The emoji is a chosen emoji that is shown on the dropdown menu of your ticket panel. This emoji can be either a Discord Emoji or a Custom Server Emoji.
 
-        <Info>
-          The emoji selection is not required.
-        </Info>
         <Note>
           The emoji's ID can be found by right-clicking the emoji and selecting "Copy ID". This requires Discord Developer Mode.
         </Note>
       </Step>
       <Step title="Category" icon="hashtag" titleSize="h3">
         The category is the channel that the created ticket channel is placed in. You can input a Category Name or a Category ID. This may require Discord Developer Mode.
-
-        <Info>
-          The category is not required, the channel will be placed in no category, and be at the top of the channel list.
-        </Info>
       </Step>
       <Step title="Transcripts Channel" icon="ticket" titleSize="h3">
         The transcripts channel is where closed tickets are logged, and transcripts are kept. A transcript contains all messages exchanged within the ticket. The transcript is accessible using the .txt file provided, or by clicking "Web Transcript."
@@ -70,19 +59,12 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
       <Step title="Form" icon="file-waveform" titleSize="h3">
         The form is a set of questions that are asked to the member when they open a ticket of that subject. The creator will be prompted to complete the form and submit it. Once submitted, the ticket is created normally, and another embed is attached, providing the answers of the form, and the question that was asked.
 
-        <Info>
-          Forms are not required.
-        </Info>
         <Warning>
           Two form questions can be made by default; extra questions require Ducky Plus+
         </Warning>
       </Step>
       <Step title="Support Roles" icon="wrench" titleSize="h3">
         Support roles are roles that can **view, send messages, and interact** with the created ticket channel. When a ticket is claimed, the Support Roles loose access to view the channel, and the claimer keeps them.
-
-        <Info>
-          Members with "Administrator" permissions can view all channels, regardless of Support Roles.
-        </Info>
       </Step>
       <Step title="Mentionables" icon="bell" titleSize="h3">
         Mentionables are roles and members that receive a mention within the channel when a ticket is created.
@@ -93,10 +75,6 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
       </Step>
       <Step title="Blacklisted Roles" icon="x" titleSize="h3">
         Blacklisted roles are roles that are prohibited from interacting with your ticket subject and cannot open new tickets.
-
-        <Info>
-          Blacklisted Roles are not required.
-        </Info>
       </Step>
       <Step title="Embed Editor" icon="message" titleSize="h3">
         You can fully customize each embed that is seen within a ticket channel to your liking.
