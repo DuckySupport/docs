@@ -64,7 +64,8 @@
                         "misc/timeinputs",
                         "misc/timestamps",
                         "misc/devmode",
-                        "misc/messageeditor"
+                        "misc/messageeditor",
+                        "misc/automations"
                     ]
                 }
             ]

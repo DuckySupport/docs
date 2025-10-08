@@ -1,0 +1,35 @@
+---
+title: "Automations"
+description: "Learn all about Automations and how to take advantage of them using Ducky."
+---
+
+Automations are a sequence of actions that happen once your **trigger** is met. This can be selected in the editor. To start creating automations, use the command `/automations create`
+
+<Danger>
+  Ducky has a 10 automation limit for free users, with 5 actions per automation. Upgrading to Ducky Plus+ will give you up to 50 automations and 10 actions per automation.
+</Danger>
+
+<Steps>
+  <Step title="Adding a Name" titleSize="h2">
+    The name is what your automation is called. This can be referenced if you wish to edit/delete your automation, or manually trigger it (If applicable).
+  </Step>
+  <Step title="Logic" titleSize="h2">
+    The logic is what happens within your automation. This includes the trigger, conditions, and actions. We'll break down what each of them does and how to fully use it properly.
+
+    <Steps>
+      <Step title=" Triggers" stepNumber={3} titleSize="h3">
+        Triggers are what activate your automation. Once the trigger is met, it'll run your actions, or check for conditions if that's what you have setup. 
+
+        <Warning>
+          Some triggers, including ones that use your configured ER:LC server, require Linked API, and the player to be Linked with Ducky.
+        </Warning>
+      </Step>
+      <Step title="Conditions" stepNumber={4} titleSize="h3">
+        Conditions tell your automations when and when not to trigger. These conditions include: Role Conditions, Playercount , Team, Session Status, and when the automation was last triggered
+      </Step>
+      <Step title="New Step" stepNumber={5}>
+        
+      </Step>
+    </Steps>
+  </Step>
+</Steps>
