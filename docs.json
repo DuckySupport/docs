@@ -56,15 +56,15 @@
                 {
                     "group": "Tutorials",
                     "pages": [
-                        "tutorials/ingamecmds"
-                    ]
+                        "tutorials/ingamecmds"                    ]
                 },
                 {
                     "group": "Miscellaneous",
                     "pages": [
                         "misc/timeinputs",
                         "misc/timestamps",
-                        "misc/devmode"
+                        "misc/devmode",
+                        "misc/messageeditor"
                     ]
                 }
             ]
