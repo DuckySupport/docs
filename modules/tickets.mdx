@@ -28,10 +28,6 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
       </Step>
       <Step title="Name" icon="hashtag" stepNumber={1} titleSize="h3">
         The name is the name that the ticket subject will be called. This is seen publicly on the ticket embed.
-
-        <Tip>
-          Use the "Variables" selection to view variables that you can place in your ticket name.
-        </Tip>
       </Step>
       <Step title="Description" icon="newspaper" stepNumber={2} titleSize="h3">
         The description is a short description about your ticket subject. This can be used for what the category is meant for, or reasons to open it, etc.
@@ -58,7 +54,24 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
         </Info>
       </Step>
       <Step title="Transcripts Channel" icon="ticket" titleSize="h3">
-        The transcripts channel is where closed tickets are logged, and transcripts are kept. A transcript contains all messages said inside of the ticket. The transcript is accessible using the .txt file provided, or by clicking "Web Transcript"
+        The transcripts channel is where closed tickets are logged, and transcripts are kept. A transcript contains all messages exchanged within the ticket. The transcript is accessible using the .txt file provided, or by clicking "Web Transcript."
+      </Step>
+      <Step title="Unclaimed / Claimed Ticket Names" icon="hashtag" titleSize="h3">
+        The unclaimed ticket name is the name of the created ticket channel while the ticket is **unclaimed**. The claimed ticket name is a separate name for the ticket channel when the ticket is **claimed**. 
+
+        <Tip>
+          Use the "Variables" selection to view variables that you can place in your ticket name.
+        </Tip>
+      </Step>
+      <Step title="Form" icon="file-waveform" titleSize="h3">
+        The form is a set of questions that are asked to the member when they open a ticket of that subject. The creator will be prompted to complete the form and submit it. Once submitted, the ticket is created normally, and another embed is attached, providing the answers of the form, and the question that was asked.
+
+        <Warning>
+          Two form questions can be made by default; extra questions require Ducky Plus+
+        </Warning>
+      </Step>
+      <Step title="Support Roles" icon="wrench" titleSize="h3">
+        Support roles are roles that can **view, send messages, and interact** with the created ticket channel. 
       </Step>
     </Steps>
   </Step>
