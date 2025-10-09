@@ -4,34 +4,39 @@ description: "Learn about Ducky's ERLC Integration module and how to configure i
 tag: "UNPOLISHED"
 ---
 
-This page provides the essential configuration options for Ducky's **ERLC Integration** module, which enables seamless management and monitoring of your ERLC server without needing to join the game. To enable and configure this module, use the **`/setup`** command and navigate to the ERLC Integration page.
+This page provides the essential configuration options for Ducky's **ERLC Integration** module, which enables seamless remote management and monitoring of your ERLC private server. To enable and configure this module, use the **`/setup`** command and navigate to the **ERLC Integration** page.
 
 <Steps>
   <Step title="In-Game Role" titleSize="h2">
-    The **In-Game** **Role** is a configurable role added to the discord member upon joining the linked ERLC Server.
-
-    The role is removed from the member when the player leaves the server.
-
+    The **In-Game Role** is a role that players within the linked ERLC private server will be granted. This role is added from the member when they join the in-game server, and removed when they leave the in-game server.
     <Warning>
-      This requires that the player is linked with Ducky.
+      The member must have their **Roblox** account linked with Ducky in order for this role to be added/removed from them.
     </Warning>
   </Step>
   <Step title="ERLC Server" titleSize="h2">
-    **ERLC Server** displays the name of the connected ERLC server.
+    The **ERLC Server** is the linked ERLC private server. Learn how to Link your ERLC Private Server [here](../tutorials/linkerlc).
   </Step>
   <Step title="Advanced ERLC Command Permissions" titleSize="h2">
-    **Advanced ERLC Command Permissions** Allows your staff team to use the `/erlc command` . If disabled, only management can use it. When enabled, staff can access features according to their permission level (e.g., a moderator cannot ban).
+    The **Advanced ERLC Command Permissions** toggle determines whether or not your staff team have access to **`/erlc command`**. 
+    
+    When **enabled**, members of the configured **ERLC Staff** roles have access to **`/erlc command`** but can only execute commands they would be able to execute in-game (i.e. an in-game moderator cannot use **`/erlc command`** to ban/unban).
+    
+    When **disabled**, only members of the configured **ERLC Manager** roles can access **`/erlc command`** with the Co-Owner permission level.
   </Step>
   <Step title="ERLC Command Logs Channel" titleSize="h2">
-    
+    The **ERLC Command Logs Channel** is the channel that contains the ERLC Command Logs webhook. For more information, click [here](../tutorials/ingamecmds).
   </Step>
   <Step title="ERLC Kick/Ban Logs Channel" titleSize="h2">
-    
+    The **ERLC Kick/Ban Logs Channel** is the channel that contains the ERLC Kick/Ban Logs webhook. For more information, click [here](../tutorials/ingamecmds).
   </Step>
   <Step title="Auto Log Kicks/BOLOs" titleSize="h2">
-    
+    The **Auto Log Kicks/BOLOs** toggle determines whether or not Ducky automatically reads logs from the configured **ERLC Kick/Ban Logs Channel** in order to automatically log punishments and/or complete active BOLOs.
   </Step>
   <Step title="Ban Syncing Mode" titleSize="h2">
-    
+    The **Ban Syncing Mode** is the mode that Ducky uses to synchronize bans between the ERLC private server and the Discord server. The available options can be found below:
+    - **Discord to ERLC:** Members banned within the Discord server will automatically be banned from the ERLC private server.
+    - **ERLC to Discord:** Players banned within the ERLC private server will automatically be banned from the Discord server.
+    - **Both:** Members banned within the Discord server will automatically be banned from the ERLC private server, and players banned within the ERLC private server will automatically be banned from the Discord server.
+    - **None:** Ban synchronization will not occur.
   </Step>
 </Steps>

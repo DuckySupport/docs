@@ -56,7 +56,9 @@
                 {
                     "group": "Tutorials",
                     "pages": [
-                        "tutorials/ingamecmds"                    ]
+                        "tutorials/linkerlc",
+                        "tutorials/ingamecmds"
+                    ]
                 },
                 {
                     "group": "Miscellaneous",
