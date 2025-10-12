@@ -1,0 +1,31 @@
+---
+title: "Activity Management"
+description: "Learn about Ducky's Activity Management module and how to configure it."
+tag: "NEW"
+---
+
+This page provides the essential configuration options for Ducky's **Activity Management** module, which provides an easy way to manage and track your staff's activity with LOAs and activity waves. To enable and configure this module, use the **`/setup`** command and navigate to the **Activity Management** page.
+
+<Steps>
+  <Step title="LOAs Enabled" titleSize="h2">
+    Enabling this option will allow your staff members to request a **Leave of Absence** via the **`/loa request`** command.
+  </Step>
+  <Step title="LOA Logs Channel" titleSize="h2">
+    The **LOA Logs Channel** is where all LOA requests and logs will be sent. Any user with access to this channel can accept or deny LOA requests.
+  </Step>
+  <Step title="LOA Role" titleSize="h2">
+    The **LOA Role** is assigned to staff members with an active LOA.
+  </Step>
+  <Step title="LOA Nickname" titleSize="h2">
+    The **LOA Nickname** is assigned to staff members with an active LOA.
+
+    You may use these variables within the **LOA Nickname**:
+    - **`{member.name}:`** The name of the member on LOA.
+    - **`{member.username}:`** The username of the member on LOA.
+  </Step>
+  <Step title="Activity Report Interval" titleSize="h2">
+    The **Activity Report Interval** is the interval where **Activity Reports** are generated, which is the point where Ducky creates a snapshot of all staff member's total shift time and statistics.
+
+    You can view Activity Reports via the **`/activity report`** command.
+  </Step>
+</Steps>

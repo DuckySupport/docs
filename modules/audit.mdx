@@ -1,0 +1,44 @@
+---
+title: "Audit Logging"
+description: "Learn about Ducky's Audit Logging module and how to configure it."
+tag: "NEW"
+---
+
+This page provides the essential configuration options for Ducky's **Audit Logging** module, which allows you to monitor and record important server activity, giving staff a clear view of changes and actions taken within your server. To enable and configure this module, use the **`/setup`** command and navigate to the **Audit Logging** page.
+
+<Steps>
+  <Step title="Audit Logs Channel" titleSize="h2">
+    The **Audit Logs Channel** is where all configured audit log types will be sent.
+  </Step>
+  <Step title="Audit Log Types" titleSize="h2">
+    You can select which audit log types you would like Ducky to log.
+
+    Each audit log type corresponds to a specific action or event in your server.
+
+    Available audit log types include:
+
+    - **Message Edit:** Sends a log when a message is edited.
+    - **Message Delete:** Sends a log when a message is deleted.
+    - **Member Join:** Sends a log when a member joins the server.
+    - **Member Update:** Sends a log when a member is changed.
+    - **Member Leave:** Sends a log when a member leaves the server.
+    - **Channel Create:** Sends a log when a channel is created.
+    - **Channel Update:** Sends a log when a channel is changed.
+    - **Channel Delete:** Sends a log when a channel is deleted.
+    - **Role Create:** Sends a log when a role is created.
+    - **Role Update:** Sends a log when a role is changed.
+    - **Role Delete:** Sends a log when a role is deleted.
+    - **Reaction Add:** Sends a log when a reaction is added to a message.
+    - **Reaction Remove:** Sends a log when a reaction is removed from a message.
+    - **Guild Update:** Sends a log when the server is changed.
+    - **Message Pin/Unpin:** Sends a log when a message is pinned or unpinned.
+    - **Emoji Update:** Sends a log when a emoji is created/updated/deleted.
+
+    <Note>
+      Consider selecting only the audit log types you need to prevent cluttering.
+    </Note>
+    <Warning>
+      To prevent harsh ratelimits, Ducky utilizes **Webhooks** to send audit logs. Be sure to whitelist your audit log channel for embed spam from security bots such as **Wick**.
+    </Warning>
+  </Step>
+</Steps>

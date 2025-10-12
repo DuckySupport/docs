@@ -1,0 +1,29 @@
+---
+title: "Shift Management"
+description: "Learn about Ducky's Shift Management module and how to configure it."
+tag: "UNPOLISHED"
+---
+
+This page provides the essential configuration options for Ducky's **Shift Management** module, which allows staff to manage their shifts efficiently. The module creates a centralized system for organizing and tracking shifts, ensuring accurate records and streamlined administration. Features include shift statistics, administrative controls, and **GameLock**, which ensures staff are in-game before starting their shift. To enable and configure this module, use the **`/setup`** command and navigate to the **Shift Management** page.
+
+<Steps>
+  <Step title="Shift Logs Channel" titleSize="h2">
+    The **Shift Logs Channel** is where all shift related actions are logged. When you start, pause and end your shift it will be logged in the designated channel that you've selected.
+  </Step>
+  <Step title="GameLock Enabled" titleSize="h2">
+    **What is GameLock?**
+
+    The Gamelock feature requires a user to be in the ERLC server so that they can start their shift. If a user in not in the ERLC Server they won't be able to start their shift.
+
+    If GameLock is disabled a user can start their shift without being in the ERLC Server.
+  </Step>
+  <Step title="Shift Types" titleSize="h2">
+    You are able to create different **Shift Types**, they are different shifts staff members can use when running `/shift manage`. In the **Shift Type Builder**, you are able to configure the following:
+
+    - **Name:** The shift name.
+    - **On-Shift Role:** The role assisgned when they start the shift.
+    - **On-Pause Role:** The role assigned when they pause their shift.
+    - **Quota:** The target amount of time a user must reach, displayed on the activity report to indicate whether the requirement has been met.
+    - **Required Role:** A configurable role that a user must have in order to start or use that shift type.
+  </Step>
+</Steps>

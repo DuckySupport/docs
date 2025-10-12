@@ -36,12 +36,18 @@
                     "group": "Modules",
                     "pages": [
                         "modules/discordmod",
-                        "modules/auditlog"
+                        "modules/audit",
+                        "modules/erlcintegration",
+                        "modules/erlclogs",
+                        "modules/welcome",
+                        "modules/staff",
+                        "modules/activity"
                     ]
                 },
                 {
                     "group": "Tutorials",
                     "pages": [
+                        "tutorials/linkerlc",
                         "tutorials/ingamecmds"
                     ]
                 },
@@ -50,7 +56,8 @@
                     "pages": [
                         "misc/timeinputs",
                         "misc/timestamps",
-                        "misc/devmode"
+                        "misc/devmode",
+                        "misc/embededitor"
                     ]
                 }
             ]

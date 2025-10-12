@@ -9,19 +9,8 @@ tag: "NEW"
 </Warning>
 
 <Steps>
-  <Step title="Link your ERLC Server">
-    1. Join your ERLC server.
-    2. Press the server stack icon on the top right corner of the screen.
-    3. Select **Edit Server Settings**.
-    4. Search for **API Key**.
-    5. Press **Edit**, and copy the API key.
-    6. Run the **`/setup`** command and navigate to the **ERLC Integration** page.
-    7. Select **Edit API Key**, and paste the key you copied.
-    8. Press **Submit**, and your server should be linked.
-
-    <Note>
-      This is so Ducky can reply in-game via PM, but it's not required. If you do not configure this, Ducky will reply via DMs.
-    </Note>
+  <Step title="Link your ERLC Private Server">
+    If you'd like for Ducky to be able to reply to your in-game commands via in-game Private Messages, you should [Link your ERLC Private Server](./linkerlc).
   </Step>
   <Step title="ERLC Command Logs">
     1. Create a channel where all commands used in-game will be logged.
@@ -39,6 +28,7 @@ tag: "NEW"
 
       - A security bot, such as Wick, has deleted the webhook due to embed spam. Be sure to whitelist the channel or webhook you created using the appropriate command for the security service you use.
       - The PRC API is experiencing issues. Nobody but the PRC development team can resolve the issue, so simply be patient and wait for the issue to be resolved.
+      - The PRC team has reset data for security purposes - requiring you to re-insert your webhook.
     </Note>
   </Step>
   <Step title="Configuring with Ducky">
