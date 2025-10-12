@@ -38,19 +38,10 @@
                         "modules/discordmod",
                         "modules/audit",
                         "modules/erlcintegration",
-                        "modules/erlcstatus",
                         "modules/erlclogs",
                         "modules/welcome",
-                        "modules/sessions",
                         "modules/staff",
-                        "modules/robloxpunishments",
-                        "modules/robloxverification",
-                        "modules/discordpings",
-                        "modules/feedback",
-                        "modules/shifts",
-                        "modules/activity",
-                        "modules/economy",
-                        "modules/tickets"
+                        "modules/activity"
                     ]
                 },
                 {
@@ -66,9 +57,7 @@
                         "misc/timeinputs",
                         "misc/timestamps",
                         "misc/devmode",
-                        "misc/embededitor",
-                        "misc/messageeditor",
-                        "misc/automations"
+                        "misc/embededitor"
                     ]
                 }
             ]
