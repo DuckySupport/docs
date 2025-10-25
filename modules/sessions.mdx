@@ -30,4 +30,37 @@ This page provides the essential configuration options for Ducky's **Sessions** 
   <Step title="Server Info" titleSize="h2">
     The **Server Info** includes the Server Name, Max Players and the servers Join Code.
   </Step>
+  <Step title="Variables" titleSize="h2">
+    You can use the following variables in session embeds.
+
+    <Accordion title="Session Startup, Session Low, and Session Full" icon="gamepad-modern">
+      `{initiator.mention}`: The initiator's mention. \
+      `{initiator.name}`: The initiator's name/nickname. \
+      `{initiator.username}`: The initiator's username. \
+      `{initiator.id}`: The initiator's user ID. \
+      `{initiator.avatar}`: The initiator's avatar URL. \
+      `{server.name}`: The name of the ERLC server. \
+      `{server.players}`: The amount of players currently in-game. \
+      `{server.maxplayers}`: The maximum amount of in-game players. \
+      `{server.code}`: The join code of the ERLC server. \
+      `{timestamp}`: The current Unix Epoch timestamp.
+    </Accordion>
+    <Accordion title="Session Vote and Staff Vote" icon="box">
+      `{initiator.mention}`: The initiator's mention.\
+      `{initiator.name}`: The initiator's name/nickname.\
+      `{initiator.username}`: The initiator's username.\
+      `{initiator.id}`: The initiator's user ID.\
+      `{initiator.avatar}`: The initiator's avatar URL.\
+      `{timestamp}`: The current Unix Epoch timestamp.\
+      `{votes.required}:` The amount of votes needed to start the session.
+    </Accordion>
+    <Accordion title="Session Shutdown" icon="house-person-leave">
+      `{initiator.mention}`: The initiator's mention. \
+      `{initiator.name}`: The initiator's name/nickname. \
+      `{initiator.username}`: The initiator's username. \
+      `{initiator.id}`: The initiator's user ID. \
+      `{initiator.avatar}`: The initiator's avatar URL.  \
+      `{timestamp}`: The current Unix Epoch timestamp
+    </Accordion>
+  </Step>
 </Steps>
