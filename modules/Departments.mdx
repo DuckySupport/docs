@@ -1,0 +1,38 @@
+---
+title: "Departments"
+description: "Learn how Ducky's department module works and it's practical uses!"
+---
+
+<Steps>
+  <Step title="Introduction to Departments" titleSize="h2">
+    With the departments module, you can:
+
+    - Cross-ban members (Bans from the host server carry over to linked servers)
+    - Sync Discord display names
+    - Use linked roles
+  </Step>
+  <Step title="Linking Servers" titleSize="h2">
+    <Note>
+      To link department servers, you will need to first enable [developer mode](https://docs.duckybot.xyz/misc/devmode) on Discord
+    </Note>
+    1. First, you will need to decide which server will be your host, and run the command  `/setup` in your host server, then navigate down to the departments module
+    1. Once on the department panel, navigate to the drop-down menu and select **Link Department**
+    1. Obtain the server ID of the department you want to link and paste it into the box provided
+    1. A message will be sent to the server owner of the department server, if they allow you to link the server, congratulations you are done!
+  </Step>
+  <Step title="Syncing Users & Crossbans" titleSize="h2">
+    <AccordionGroup>
+      <Accordion title="Syncing Users" icon="tag">
+        To enable username syncing, you need to navigate to the same drop-down where you linked your department and select **Toggle Sync Names**. Choose the department you want to sync usernames with. 
+      </Accordion>
+      <Accordion title="Cross Bans" icon="ban">
+        <Warning>
+          You cannot cross-unban somebody from all linked servers using Ducky; you must unban from each server they were banned in
+        </Warning>
+        To cross-ban somebody from the main server and all linked servers you do it within the `/ban` command in itself. 
+
+        There is an optional field labelled "**Departmental**". This boolean is automatically set to false, in order to cross-ban select "**True"** in the departmental field and execute the command.
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
