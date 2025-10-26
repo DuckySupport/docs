@@ -41,7 +41,8 @@
                         "modules/erlclogs",
                         "modules/welcome",
                         "modules/staff",
-                        "modules/activity"
+                        "modules/activity",
+                        "modules/automations"
                     ]
                 },
                 {
