@@ -20,9 +20,9 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
   <Step title="Embed" titleSize="h2">
     The embed selection is the embed that will be displayed in the set channel. You can customize this as you wish.
 
-    <Tip>
+    <Info>
       Check out the Message Editor documentation for more information.
-    </Tip>
+    </Info>
   </Step>
   <Step title="Ticket Subjects" titleSize="h2">
     The ticket subjects are what the members interact with. These can be fully customized with different Support Roles, Mentionables, Categories, and more.
@@ -54,14 +54,14 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
         The unclaimed ticket name is the name of the created ticket channel while the ticket is **unclaimed**. The claimed ticket name is a separate name for the ticket channel when the ticket is **claimed**.
 
         <Tip>
-          Use the "Variables" selection to view variables that you can place in your ticket name.
+          Tip: Use the `variables` section for variables you can use in ticket names!
         </Tip>
       </Step>
       <Step title="Form" icon="file-waveform" titleSize="h3">
         The form is a set of questions that are asked to the member when they open a ticket of that subject. The creator will be prompted to complete the form and submit it. Once submitted, the ticket is created normally, and another embed is attached, providing the answers of the form, and the question that was asked.
 
         <Warning>
-          Two form questions can be made by default; extra questions require Ducky Plus+
+          Two form questions can be made by default; extra questions require Ducky Plus+.
         </Warning>
       </Step>
       <Step title="Support Roles" icon="wrench" titleSize="h3">
@@ -70,6 +70,9 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
       <Step title="Mentionables" icon="bell" titleSize="h3">
         Mentionables are roles and members that receive a mention within the channel when a ticket is created.
 
+        <Warning>
+          Make sure users with a Mentionable have a Support Role, otherwise they can't interact with the ticket!
+        </Warning>
         <Note>
           We recommend adding your Support Roles as Mentionables.
         </Note>
@@ -80,9 +83,9 @@ This page provides the essential configuration options for Ducky's **Ticket Modu
       <Step title="Embed Editor" icon="message" titleSize="h3">
         You can fully customize each embed that is seen within a ticket channel to your liking.
 
-        <Tip>
+        <Info>
           Check out the Message Editor documentation for more information.
-        </Tip>
+        </Info>
       </Step>
     </Steps>
   </Step>

@@ -4,7 +4,7 @@ description: "Learn how to configure in-game commands properly, allowing you to 
 ---
 
 <Warning>
-  You must be the owner of the ERLC private server in order to access the private server settings necessary for this configuration.
+  You must be the owner of the ER:LC private server in order to access the private server settings necessary for this configuration.
 </Warning>
 
 <Steps>
@@ -20,14 +20,14 @@ description: "Learn how to configure in-game commands properly, allowing you to 
     6. Press **Edit**, and paste the webhook URL you copied.
 
     <Tip>
-      Confirm that you pasted the webhook URL correctly by running any private server command. It should appear in the channel you created.
+      Tip: You can confirm that you pasted the webhook URL correctly by running any private server command! If it doesn't show up, then there is an error with the URL entered.
     </Tip>
-    <Note>
-      Command logs are managed by ERLC, not Ducky. If they randomly stop working, it's likely due to one of the following:
+    <Warning>
+      Command logs are managed by ER:LC, not Ducky. If they randomly stop working, it's likely due to one of the following reasons:
 
       - A security bot, such as Wick, has deleted the webhook due to embed spam. Be sure to whitelist the channel or webhook you created using the appropriate command for the security service you use.
       - The PRC API is experiencing issues. Nobody but the PRC development team can resolve the issue, so simply be patient and wait for the issue to be resolved.
-    </Note>
+    </Warning>
   </Step>
   <Step title="Configuring with Ducky">
     1. Run the **`/setup`** command and navigate to the **ERLC Integration** page.
@@ -41,7 +41,7 @@ description: "Learn how to configure in-game commands properly, allowing you to 
     You are now able to use Ducky's in-game commands. To view a full list of all available in-game commands, run the **`/help`** command and navigate to **Commands** -\> **In-Game Commands**.
 
     <Tip>
-      You can run a quick test to ensure everything is working correctly by running the **`:log ping`** command in-game.
+      Tip: You can run a quick test to ensure everything is working correctly by running the `:log ping` command in-game.
     </Tip>
   </Step>
 </Steps>
