@@ -1,0 +1,29 @@
+---
+title: "Reaction Boards"
+description: "Learn about Ducky's Reaction Board module and how to configure it."
+---
+
+This page provides the essential configuration options for Ducky’s **Reaction Boards** module, which allows you to let members pin messages to a board channel using a set amount of reactions. Use the `/setup` command and navigate to the **Reaction Boards** page.
+
+<Steps>
+  <Step title="Reaction Type" titleSize="h2">
+    This is the reaction which users can react to a message with to send it to the board channel. You set this by **reacting** to the message Ducky sends when you select this setting.
+
+    <Tip>
+      You must **react** to the message, not reply to it with your emoji of choice
+    </Tip>
+  </Step>
+  <Step title="Reaction Board Channel" titleSize="h2">
+    This is the channel where all messages are sent once they reach the set reaction target. You set this by searching for the channel name
+  </Step>
+  <Step title="Reactions Needed" titleSize="h2">
+    This is the threshold of reactions a message will need before being sent to a board channel. This number can go from 1-100. Once a message reaches this number of reactions, it is sent to your boards channel.
+  </Step>
+  <Step title="Whitelisted Channels" titleSize="h2">
+    A whitelisted channel is a channel where this reaction board applies. If a message reaches the reaction threshold and it isn't a whitelisted channel, the message will not be sent to your board channel.
+
+    <Note>
+      By default, all channels are set as whitelisted by Ducky
+    </Note>
+  </Step>
+</Steps>
