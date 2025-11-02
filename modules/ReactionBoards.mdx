@@ -7,23 +7,23 @@ This page provides the essential configuration options for Ducky’s **Reaction 
 
 <Steps>
   <Step title="Reaction Type" titleSize="h2">
-    This is the reaction which users can react to a message with to send it to the board channel. You set this by **reacting** to the message Ducky sends when you select this setting.
+    This is the reaction which users can react to a message with to send it to the board channel. You must set this by reacting to the message Ducky sends when you select this setting.
 
-    <Tip>
-      You must **react** to the message, not reply to it with your emoji of choice
-    </Tip>
+    <Warning>
+      You must **react** to the message, you cannot reply to it with your emoji of choice.
+    </Warning>
   </Step>
   <Step title="Reaction Board Channel" titleSize="h2">
-    This is the channel where all messages are sent once they reach the set reaction target. You set this by searching for the channel name
+    This is the channel where all messages are sent once they reach the set reaction target. This can be configured to any **text channel**.
   </Step>
-  <Step title="Reactions Needed" titleSize="h2">
-    This is the threshold of reactions a message will need before being sent to a board channel. This number can go from 1-100. Once a message reaches this number of reactions, it is sent to your boards channel.
+  <Step title="Amount of Reactions Needed" titleSize="h2">
+    To prevent every message with the configured reaction from going to the reaction board, you must configure how many reactions a message must get to get sent to the reaction board. The number of reactions to be sent can only go from 1 to 100. Once a message reaches the configured number of reactions, it will be automaticaly sent to the reaction board channel.
   </Step>
   <Step title="Whitelisted Channels" titleSize="h2">
     A whitelisted channel is a channel where this reaction board applies. If a message reaches the reaction threshold and it isn't a whitelisted channel, the message will not be sent to your board channel.
 
     <Note>
-      By default, all channels are set as whitelisted by Ducky
+      By default, all channels are whitelisted.
     </Note>
   </Step>
 </Steps>
