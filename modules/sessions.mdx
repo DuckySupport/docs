@@ -1,4 +1,4 @@
----
+**---
 title: "Sessions"
 description: "Learn about Ducky's Session module and how to configure it."
 tag: "UNPOLISHED"
@@ -10,13 +10,15 @@ This page provides the essential configuration options for Ducky's **Sessions** 
   <Step title="Sessions Channel" titleSize="h2">
     The **Sessions channel** is where all session messages are sent, they can be send using the commands below.
 
-    - `/session start`
-    - `/session end`
-    - `/session vote`
-    - `/session low`
-    - `/session full`
+    - **`/session start`**
+    - **`/session end`**
+    - **`/session vote`**
+    - **`/session low`**
+    - **`/session full`**
 
-    All of the session embeds are customizable to better suit your server.
+    <Note>
+      All of the session embeds are customizable to better suit your server.
+    </Note>
   </Step>
   <Step title="Session Mentionables" titleSize="h2">
     The **Session Mentionables** function allows you to select up to **5 roles** that will be mentioned when the session embeds are sent.
@@ -34,33 +36,33 @@ This page provides the essential configuration options for Ducky's **Sessions** 
     You can use the following variables in session embeds.
 
     <Accordion title="Session Startup, Session Low, and Session Full" icon="gamepad-modern">
-      `{initiator.mention}`: The initiator's mention. \
-      `{initiator.name}`: The initiator's name/nickname. \
-      `{initiator.username}`: The initiator's username. \
-      `{initiator.id}`: The initiator's user ID. \
-      `{initiator.avatar}`: The initiator's avatar URL. \
-      `{server.name}`: The name of the ERLC server. \
-      `{server.players}`: The amount of players currently in-game. \
-      `{server.maxplayers}`: The maximum amount of in-game players. \
-      `{server.code}`: The join code of the ERLC server. \
-      `{timestamp}`: The current Unix Epoch timestamp.
+      **`{initiator.mention}`**: The initiator's mention. \
+      **`{initiator.name}`**: The initiator's name/nickname. \
+      **`{initiator.username}`**: The initiator's username. \
+      **`{initiator.id}`**: The initiator's user ID. \
+      **`{initiator.avatar}`**: The initiator's avatar URL. \
+      **`{server.name}`**: The name of the ERLC server. \
+      **`{server.players}`**: The amount of players currently in-game. \
+      **`{server.maxplayers}`**: The maximum amount of in-game players. \
+      **`{server.code}`**: The join code of the ERLC server. \
+      **`{timestamp}`**: The current Unix Epoch timestamp.
     </Accordion>
     <Accordion title="Session Vote and Staff Vote" icon="box">
-      `{initiator.mention}`: The initiator's mention.\
-      `{initiator.name}`: The initiator's name/nickname.\
-      `{initiator.username}`: The initiator's username.\
-      `{initiator.id}`: The initiator's user ID.\
-      `{initiator.avatar}`: The initiator's avatar URL.\
-      `{timestamp}`: The current Unix Epoch timestamp.\
-      `{votes.required}:` The amount of votes needed to start the session.
+      **`{initiator.mention}`**: The initiator's mention.\
+      **`{initiator.name}`**: The initiator's name/nickname.\
+      **`{initiator.username}`**: The initiator's username.\
+      **`{initiator.id}`**: The initiator's user ID.\
+      **`{initiator.avatar}`**: The initiator's avatar URL.\
+      **`{timestamp}`**: The current Unix Epoch timestamp.\
+      **`{votes.required}`:** The amount of votes needed to start the session.
     </Accordion>
     <Accordion title="Session Shutdown" icon="house-person-leave">
-      `{initiator.mention}`: The initiator's mention. \
-      `{initiator.name}`: The initiator's name/nickname. \
-      `{initiator.username}`: The initiator's username. \
-      `{initiator.id}`: The initiator's user ID. \
-      `{initiator.avatar}`: The initiator's avatar URL.  \
-      `{timestamp}`: The current Unix Epoch timestamp
+      **`{initiator.mention}`**: The initiator's mention. \
+      **`{initiator.name}`**: The initiator's name/nickname. \
+      **`{initiator.username}`**: The initiator's username. \
+      **`{initiator.id}`**: The initiator's user ID. \
+      **`{initiator.avatar}`**: The initiator's avatar URL.  \
+      **`{timestamp}`**: The current Unix Epoch timestamp.
     </Accordion>
   </Step>
 </Steps>
