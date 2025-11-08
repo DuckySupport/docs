@@ -17,18 +17,19 @@ This page provides the essential configuration options for Ducky's **Discord Mod
     This should direct the user to your **appeal system**, such as an [**appeal.gg**](https://appeal.gg/) link, a [**Google Form**](https://forms.google.com/), or a [**Discord Server**](https://discord.com).
   </Step>
   <Step title="Commands" titleSize="h2">
-    **`/warn <user> <reason>`**: _Warn a discord user._\
-    **`/mute <user> <time> <reason>`**: _Mute a discord user for a certain amount of time._\
-    **`/unmute <user> <?reason>`**: _Unmute a discord user._\
-    **`/kick <user> <reason> <?departmental>`**: _Kick a user from your discord server. Allows you to kick them from all departments as well._\
-    **`/ban <user> <reason> <?departmental>`**: _Ban a user from your discord server. Allows you to ban them from all departments as well._\
-    **`/unban <user> <?reason>`**: _Unban a user from your discord server._\
-    **`/lock <?reason>`**: _Locks the channel the command is run in._\
-    **`/unlock <?reason>`**: _Unlocks the channel the command is run in._ \
-    **`/purge <amount>`**: _Delete messages from the current channel, as long as they have been sent in the last 2 weeks due to discord ratelimits._\
-    **`/modlogs <?user>`**: _View a user's modlogs._\
-    **`/nick <user> <?nickname>`**: _Set's a user's nickname to their original discord username, or a custom one._\
-    **`/slowmode <time> <?channel>`**: _Set a channel's slowmode._
+    **`/warn <user> <reason>`**: Warn a discord user.\
+    **`/mute <user> <time> <reason>`** (**`d!timeout`**): Mute a discord user for a certain amount of time.\
+    **`/unmute <user> <?reason>`** (**`d!untimeout`**): Unmute a discord user.\
+    **`/kick <user> <reason> <?departmental>`**: Kick a user from your discord server. Allows you to kick them from all departments as well.\
+    **`/ban <user> <reason> <?departmental>`**: Ban a user from your discord server. Allows you to ban them from all departments as well.\
+    **`/unban <user> <?reason>`**: Unban a user from your discord server.\
+    **`/lock <?reason>`**: Locks the channel the command is run in.\
+    **`/unlock <?reason>`**: Unlocks the channel the command is run in. \
+    **`/purge <amount>`** (**`d!bd`**, **`d!bulkdelete`**): Delete messages from the current channel, as long as they have been sent in the last 2 weeks due to discord ratelimits.\
+    **`/modlogs <?user>`** (**`d!cases`**, **`d!ml`**): View a user's modlogs.\
+    **`/nick <user> <?nickname>`** (**`d!nickname`**): Set's a user's nickname to their original discord username, or a custom one.\
+    **`/slowmode <time> <?channel>`** (**`d!ratelimit`**, **`d!rn`**, **`d!sm`**, **`d!slow`**): Set a channel's slowmode.\
+    **`/case <id>`** (**`d!caseinfo`**): View the given case's info.
 
     <Info>
       Certain Permissions are needed for these commands. For more information, checkout [Permissions](/configuration/permissions).
