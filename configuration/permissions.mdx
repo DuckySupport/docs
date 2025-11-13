@@ -42,7 +42,6 @@ Ducky's role-based permissions can be configured via the first page of the **`/s
     - **`/syncbans`**: Members with the **Manage Server** permission are authorized to sync bans between the ERLC private server and Discord server.
     - **`/balance`**: Members with the **Manage Server** permission are authorized to edit and reset a user's economy balance.
   </Accordion>
-
   <Accordion title="ERLC Staff Roles" icon="Hammer">
     - **`/erlc server`**: Members of the configured **ERLC Staff** permission roles are authorized to view general information of the linked ERLC server.
     - **`/erlc players`**: Members of the configured **ERLC Staff** permission roles are authorized to view the live playercount of the linked ERLC server.
@@ -60,13 +59,15 @@ Ducky's role-based permissions can be configured via the first page of the **`/s
     - **`/erlc panel`**: Members of the configured **ERLC Staff** permission roles are authorized to use the player panel to manage an in-game player.
     - **`/erlc tempban`**: Members of the configured **ERLC Staff** permission roles are authorized to temporarily ban a player. The maximum ban duration is defined by the **Tempban for Moderators** configuration on the Roblox Punishments `/setup` page.
     - **`/modstats`**: Members of the configured **ERLC Staff** permission roles are authorized to view staff information such as shifts, punishments and modcalls.
-    - **`/punish`**: Members of the configured **ERLC Staff** permission roles are authorized to log a punishment on a Roblox user.
+    - **`/punishments create`**: Members of the configured **ERLC Staff** permission roles are authorized to log a punishment on a Roblox user.
+    - `/punishments view`: Members of the configured **ERLC Staff** permission roles are authorized to view punishments on a Roblox user.
+    - `/punishments manage`: Members of the configured **ERLC Staff** permission roles are authorized to manage or delete an old punishment from a Roblox user.
     - **`/bolo create`**: Members of the configured **ERLC Staff** permission roles are authorized to create a ban bolo on a member.
     - **`/shift manage`**: Members of the configured **ERLC Staff** permission roles are authorized to manage their own shift.
     - **`/shift active`**: Members of the configured **ERLC Staff** permission roles are authorized to view the active shifts.
     - **`/shift time`**: Members of the configured **ERLC Staff** permission roles are authorized to view their shift time.
     - **`/shift history`**: Members of the configured **ERLC Staff** permission roles are authorized to view their shift history.
-    - **`/shift leaderboard`**: Members of the configured **ERLC Staff** permission roles are authorized to view the server's shift leaderboard.
+    - **`/shift wave view`**: Members of the configured **ERLC Staff** permission roles are authorized to view the server's shift waves, current or old.
     - **`/loa request`**: Members of the configured **ERLC Staff** permission roles are authorized to request an Leave of Absence.
     - **`/loa active`**: Members of the configured **ERLC Staff** permission roles are authorized to view the server's active LOAs.
     - `/loa view`\*\*: Members of the configured **ERLC Staff** permission roles are authorized to view and manage their own Leave of Absence.
@@ -83,7 +84,6 @@ Ducky's role-based permissions can be configured via the first page of the **`/s
   </Accordion>
   <Accordion title="ERLC Administrator Roles" icon="Shield">
     - **`/bolo pending`**: Members of the configured **ERLC Administrator** permission roles are authorized to view and manage pending ban bolos.
-    - \*\*`/search`: Members of the configured **ERLC Administrator** permission roles are authorized to edit and delete punishments on a user.
     - **`/erlc tempban`**: Members of the configured **ERLC Administrator** permission roles are authorized to temporarily ban a player.
     - **`/erlc untempban`**:  Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player.
     - **`:log message`**: Members of the configured **ERLC Administrator** permission roles are authorized to message a specific group of people.
@@ -91,14 +91,15 @@ Ducky's role-based permissions can be configured via the first page of the **`/s
     - **`:log untempban`**: Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player from the in-game server.
   </Accordion>
   <Accordion title="ERLC Manager Roles" icon="gear">
-    - **`/shift manage`**: Members of the configured **ERLC Manager** permission roles are authorized to manage their own and other staff members shifts.
+    - **`/shift admin`**: Members of the configured **ERLC Manager** permission roles are authorized to manage their own and other staff members shifts.
     - **`/loa view`**: Members of the configured **ERLC Manager** permission roles are authorized to view and manage their own and other staff members Leave of Absences.
     - **`/infraction issue`**: Members of the configured **ERLC Manager** permission roles are authorized to issue infractions.
     - **`/infraction list`**: Members of the configured **ERLC Manager** permission roles are authorized to view all infractions listed on a user.
     - **`/infraction revoke`**: Members of the configured **ERLC Manager** permission roles are authorized to revoke an infraction issued towards a user.
+    - `/infraction manage`: Members of the configured **ERLC Manager** permission roles are authorized to manage an existing infraction.
     - **`/promote`**: Members of the configured **ERLC Manager** permission roles are authorized to promote a user.
-    - **`/activity report`**: Members of the configured **ERLC Manager** permission roles are authorized to view the generated staff activity report.
-    - **`/activity generate`**: Members of the configured **ERLC Manager** permission roles are authorized to generate a staff activity report.
+    - **`/shift wave end`**: Members of the configured **ERLC Manager** permission roles are authorized to end the active shift wave.
+    - **`/shift wave merge`**: Members of the configured **ERLC Manager** permission roles are authorized to merge one shift wave into another.
     - **`/feedback delete`**: Members of the configured **ERLC Manager** permission roles are authorized to delete submitted server feedback.
   </Accordion>
   <Accordion title="Session Starter Roles" icon="gamepad" iconType="regular">
