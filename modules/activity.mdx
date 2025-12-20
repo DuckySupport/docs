@@ -16,16 +16,38 @@ This page provides the essential configuration options for Ducky's **Activity Ma
     The **LOA Role** is assigned to staff members with an active LOA.
   </Step>
   <Step title="LOA Nickname" titleSize="h2">
-    The **LOA Nickname** is assigned to staff members with an active LOA.
+    The **LOA Nickname **toggles whether or not staff members get a nickname once their LOA request has been accepted.
 
     You may use these variables within the **LOA Nickname**:
 
     - **`{member.name}`**: The name of the member on LOA.
     - **`{member.username}`**: The username of the member on LOA.
   </Step>
-  <Step title="Activity Report Interval" titleSize="h2">
-    The **Activity Report Interval** is the interval where **Activity Reports** are generated, which is the point where Ducky creates a snapshot of all staff member's total shift time and statistics.
+  <Step title="Edit Max LOA Length" titleSize="h2">
+    The **Edit Max LOA Length** is a setting to edit the maximum time a staff member may be on an active LOA.\
+    \
+    The formatting for this is:
 
-    You can view Activity Reports via the **`/activity report`** command.
+    - **1m - 1 minute**
+    - **1h - 1 hour**
+    - **1d - 1 day**
+    - **30d - 30 days**
+
+    <Warning>
+      Using any different format will result in the max LOA Length **not working**.
+    </Warning>
+  </Step>
+  <Step title="Edit LOA Nickname" stepNumber={6} titleSize="h2">
+    The **Edit LOA Nickname **allows your to edit what the staff members username will be **after** their LOA gets accepted.
+
+    Examples:
+
+    - **LOA | {member.name} - LOA | [Discord display name]**
+    - **LOA | {member.username} - LOA | [Discord username]**
+  </Step>
+  <Step title="Toggle Tracking Modcalls" titleSize="h2">
+    The **Toggle Tracking Modcalls **is a toggle where you can enable/disable tracking modcalls the staff member has responded to.
+
+    This could be used to monitor staff members answering modcalls on-duty.
   </Step>
 </Steps>
