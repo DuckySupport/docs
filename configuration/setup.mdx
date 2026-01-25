@@ -3,35 +3,40 @@ title: "Configuring Ducky"
 description: "Learn how to configure Ducky."
 ---
 
-This page provides the essential configuration options to help you get started quickly, including setting your command prefix, managing disabled commands, changing permission roles (see [Permissions](https://docs.duckybot.xyz/configuration/permissions)), configuring a configuration log channel, and resetting your configuration. Once you have invited Ducky to your server, use the **`/setup`** command to get started.
+This page provides the essential configuration options to help you get started quickly, including setting your command prefix, managing disabled commands, changing permission roles (see [Permissions](/configuration/permissions)), configuring a configuration log channel, and resetting your configuration. Once you have invited Ducky to your server, use the **`/setup`** command to get started.
 
 <Warning>
-  All members with the **Manage Server** permission are authorized to access the **`/setup`** command.
+  All members with the **Manage Server** permission are automatically given permission to use the `/setup` command.
 </Warning>
 
-<Steps>
-  <Step title="Prefix" titleSize="h2">
-    The **Prefix** determines how prefix-based commands are triggered in your server. You can change it on this page to fit your server's style, or to prevent conflicts with other bot prefixes.
-  </Step>
-  <Step title="Disabled Commands" titleSize="h2">
-    This option allows you to disable specific Ducky commands you do not want to be available in your server. Disabled commands will have a response of "This command has been disabled by server management." when triggered/used.
-  </Step>
-  <Step title="Command Blacklists" titleSize="h2">
-    This option allows you to blacklist specific channels or roles from interacting with Ducky.
-  </Step>
-  <Step title="Permissions" titleSize="h2">
-    Configure permission roles to manage what each member can access.
-    <Note>
-      For more detailed information on permissions, see [Permissions](https://docs.duckybot.xyz/configuration/permissions).
-    </Note>
-  </Step>
-  <Step title="Configuration Log Channel" titleSize="h2">
-    This is where all changes to Ducky's configuration within your server will be logged.
-  </Step>
-  <Step title="Wipe Configuration" titleSize="h2">
-    This option allows you to completely **wipe your server's configuration**. You will need to reconfigure everything from scratch.
-    <Danger>
-      Wiping your server's configuration is **permanent** and cannot be reverted— therefore only the **server owner** can use this option.
-    </Danger>
-  </Step>
-</Steps>
+## Prefix
+
+The **Prefix** determines how prefix-based commands are triggered in your server. You can change it on this page to fit your server's style, or to prevent conflicts with other bot prefixes.
+
+## Disabled Commands
+
+This option allows you to disable specific Ducky commands you do not want to be available in your server. Disabled commands will have a response of "This command has been disabled by server management." when triggered/used.
+
+## Command Blacklists
+
+This option allows you to blacklist specific channels or roles from interacting with Ducky.
+
+## Permissions
+
+Configure permission roles to manage what each member can access.
+
+<Note>
+  For more detailed information on permissions, see [Permissions](/configuration/permissions).
+</Note>
+
+## Configuration Log Channel
+
+This is where all changes to Ducky's configuration within your server will be logged.
+
+## Wipe Configuration
+
+This option allows you to completely **wipe your server's configuration**. You will need to reconfigure everything from scratch.
+
+<Danger>
+  Wiping your server's configuration is **permanent** and cannot be reverted— therefore only the **server owner** can use this option.
+</Danger>

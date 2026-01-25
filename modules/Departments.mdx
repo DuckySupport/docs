@@ -1,44 +1,43 @@
 ---
 title: "Departments"
-description: "Learn how Ducky's department module works and it's practical uses! "
+description: "Learn how Ducky's department module works."
 ---
 
 This page provides the essential configuration options for Ducky’s **Departments** module, which allows you to cross-ban members in your departments, sync Discord display names and utilise linked roles. Use the **`/setup`** command and navigate to the **Departments** page.
 
-<Steps>
-  <Step title="Linking Departments" titleSize="h2">
-    <Note>
-      To link department servers, it will greatly help you to first enable [developer mode](https://docs.duckybot.xyz/misc/devmode) on Discord.
-    </Note>
-    1. First, you will need to decide which server will be your host, and run the command  **`/setup`** in your host server, then navigate down to the departments module.
-    1. Once on the department panel, navigate to the drop-down menu and select **Link Department.**
-    1. Obtain the server ID of the department you want to link and paste it into the box provided.
-    1. A message will be sent to the server owner of the department server. They must accept it within 10 minutes.
-  </Step>
-  <Step title="Features of The Departments Module" titleSize="h2">
-    <AccordionGroup>
-      <Accordion title="Username Syncing" icon="tag">
-        To enable username syncing, you need to navigate to the same drop-down where you linked your department and select **Toggle Sync Names**. Then, choose the department you want to sync usernames with. 
-      </Accordion>
-      <Accordion title="Cross-Banning" icon="ban">
-        <Warning>
-          You cannot cross-unban somebody from all linked servers using Ducky; you must unban them from each server they were banned in manually.
-        </Warning>
-        To cross-ban somebody from the main server and all linked servers, you do it within the `/ban` command in itself. 
+## Linking Departments
 
-        There is an optional field labelled "**Departmental**". This boolean is automatically set to false, in order to cross-ban select "**True"** in the departmental field and execute the command.
-      </Accordion>
-      <Accordion title="Linked Roles" icon="link">
-        <Note>
-          To link roles, it will greatly help you to first enable [developer mode](https://docs.duckybot.xyz/misc/devmode) on Discord.
-        </Note>
-        In essence, if a member has a role in the Host server, Ducky will give the linked role in the Department Server and vice versa
+1. In your main server (the **host server**), run the command  `/setup`, then navigate to the departments module.
+1. Once on the department panel, navigate to the drop-down menu and select **Link Department.**
+1. Obtain the server/guild ID of the department you want to link and paste it into the popup.
+1. A message will be sent to the server owner of the department server. They must accept it within 10 minutes.
 
-        1. Navigate to the drop-down menu and select "**Create Linked Role**".
-        2. Select the department you would like to create a linked role for.
-        3. Copy the role ID of the role you wish people to have in the **host** server and paste it in the box.
-        4. Copy the role ID of the role you wish people to have in the **department** server and paste it in the box.
-      </Accordion>
-    </AccordionGroup>
-  </Step>
-</Steps>
+<Note>
+  To link department servers, you will need the guild (server) ID. It will greatly help you to first enable [developer mode](https://docs.duckybot.xyz/misc/devmode) on Discord.
+</Note>
+
+## Features of The Departments Module
+
+  ### Username Syncing
+    To enable username syncing, you need to navigate to the same drop-down where you linked your department and select **Toggle Sync Names**. Then, choose the department you want to sync usernames with. 
+  
+  ### Cross-Banning
+    When cross-ban is enabled, running the `/ban` command will automatically ban the user from the server they are in and all departments. 
+
+    The **Departmental** field is required to be set to **True** in order for this command to work. If it is set to off, it will not work.
+
+    <Warning>
+      You cannot cross-unban somebody from all linked servers using Ducky; you must unban them from each server they were banned in manually.
+    </Warning>
+  
+  ### Linked Roles
+    In essence, if a member has a role in the Host server, Ducky will give the linked role in the Department Server and vice versa
+
+    1. Navigate to the drop-down menu and select "**Create Linked Role**".
+    2. Select the department you would like to create a linked role for.
+    3. Copy the role ID of the role you wish people to have in the **host** server and paste it in the box.
+    4. Copy the role ID of the role you wish people to have in the **department** server and paste it in the box.
+
+       <Note>
+         To link department roles, you will need the role ID. It will greatly help you to first enable [developer mode](https://docs.duckybot.xyz/misc/devmode) on Discord.
+       </Note>

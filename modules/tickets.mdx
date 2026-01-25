@@ -4,89 +4,83 @@ description: "Learn more about Ducky's Ticket System, and how to configure it."
 tag: "UNPOLISHED"
 ---
 
-This page provides the essential configuration options for Ducky's **Ticket Module**, which gives you full control over tickets within Ducky. Allowing members to contact support staff for any issues or concerns you may have. To configure and setup the tickets module, use the **`/setup`** command and navigate to the **Tickets** page.
+This page provides the essential configuration options for Ducky's **Ticket Module**, which gives you full control over tickets within Ducky. Allowing members to contact support staff for any issues or concerns you may have. To configure and setup the tickets module, use the `/setup` command and navigate to the **Tickets** page.
 
-<Steps>
-  <Step title="Create Ticket Panel" iconType="regular" stepNumber={1} titleSize="h2">
-    To begin creating your ticket panel, click the dropdown menu and select **Create Panel**. This will open the panel creator.
+## Create Ticket Panel
 
-    <Warning>
-      You can only create 1 ticket panel, unless you buy Ducky Plus+, which lets you create up to 5!
-    </Warning>
-  </Step>
-  <Step title="Channel" titleSize="h2">
-    The channel selector is the set channel where the ticket panel will be sent. This is were members will interact with your tickets and create new tickets.
-  </Step>
-  <Step title="Embed" titleSize="h2">
-    The embed selection is the embed that will be displayed in the set channel. You can customize this as you wish.
+To begin creating your ticket panel, click the dropdown menu and select **Create Panel**. This will open the panel creator
 
-    <Info>
-      Check out the Message Editor documentation for more information.
-    </Info>
-  </Step>
-  <Step title="Ticket Subjects" titleSize="h2">
-    The ticket subjects are what the members interact with. These can be fully customized with different Support Roles, Mentionables, Categories, and more.
+<Warning>
+  Without **Ducky Plus+**, only one ticket panel can be created; upgrade to **Ducky Plus+** to create up to five panels.
+</Warning>
 
-    <Steps>
-      <Step title="Ticket Subject Builder" icon="tickets-simple" stepNumber={1} titleSize="h2">
-        
-      </Step>
-      <Step title="Name" icon="hashtag" stepNumber={1} titleSize="h3">
-        The name is the name that the ticket subject will be called. This is seen publicly on the ticket embed.
-      </Step>
-      <Step title="Description" icon="newspaper" stepNumber={2} titleSize="h3">
-        The description is a short description about your ticket subject. This can be used for what the category is meant for, or reasons to open it, etc.
-      </Step>
-      <Step title="Emoji" icon="face-smile" titleSize="h3">
-        The emoji is a chosen emoji that is shown on the dropdown menu of your ticket panel. This emoji can be either a Discord Emoji or a Custom Server Emoji.
+## Channel
 
-        <Note>
-          The emoji's ID can be found by right-clicking the emoji and selecting "Copy ID". This requires Discord Developer Mode.
-        </Note>
-      </Step>
-      <Step title="Category" icon="hashtag" titleSize="h3">
-        The category is the channel that the created ticket channel is placed in. You can input a Category Name or a Category ID. This may require Discord Developer Mode.
-      </Step>
-      <Step title="Transcripts Channel" icon="ticket" titleSize="h3">
-        The transcripts channel is where closed tickets are logged, and transcripts are kept. A transcript contains all messages exchanged within the ticket. The transcript is accessible using the .txt file provided, or by clicking "Web Transcript."
-      </Step>
-      <Step title="Unclaimed / Claimed Ticket Names" icon="hashtag" titleSize="h3">
-        The unclaimed ticket name is the name of the created ticket channel while the ticket is **unclaimed**. The claimed ticket name is a separate name for the ticket channel when the ticket is **claimed**.
+The channel selector is the set channel where the ticket panel will be sent. This is where members will interact with you're tickets and create new tickets.
 
-        <Tip>
-          Tip: Use the `variables` selection in the dropdown for the variables you can use in ticket names.
-        </Tip>
-      </Step>
-      <Step title="Form" icon="file-waveform" titleSize="h3">
-        The form is a set of questions that are asked to the member when they open a ticket of that subject. The creator will be prompted to complete the form and submit it. Once submitted, the ticket is created normally, and another embed is attached, providing the answers of the form, and the question that was asked.
+## Embed
 
-        <Warning>
-          Two form questions can be made by default; extra questions require Ducky Plus+.
-        </Warning>
-      </Step>
-      <Step title="Support Roles" icon="wrench" titleSize="h3">
-        Support roles are roles that can **view, send messages, and interact** with the created ticket channel. When a ticket is claimed, the Support Roles loose access to view the channel, and the claimer keeps them.
-      </Step>
-      <Step title="Mentionables" icon="bell" titleSize="h3">
-        Mentionables are roles and members that receive a mention within the channel when a ticket is created.
+The embed selection is the embed that will be displayed in the set channel. You can customize this as you wish.
 
-        <Warning>
-          Make sure users with a Mentionable have a Support Role, otherwise they can't interact with the ticket!
-        </Warning>
-        <Tip>
-          Tip: Add your Support Roles as Mentionables so you know everyone is pinged.
-        </Tip>
-      </Step>
-      <Step title="Blacklisted Roles" icon="x" titleSize="h3">
-        Blacklisted roles are roles that are prohibited from interacting with your ticket subject and cannot open new tickets.
-      </Step>
-      <Step title="Embed Editor" icon="message" titleSize="h3">
-        You can fully customize each embed that is seen within a ticket channel to your liking.
+<Tip>
+  Check out the [Message Editor](/misc/messageeditor) documentation for more information.
+</Tip>
 
-        <Info>
-          Check out the Message Editor documentation for more information.
-        </Info>
-      </Step>
-    </Steps>
-  </Step>
-</Steps>
+## Ticket Subjects
+
+The ticket subjects are what the members interact with. These can be fully customized with different Support Roles, Mentionables, Categories, and more.
+
+### Ticket Subject Builder
+
+**Name**\
+The name is the name that the ticket subject will be called. This is seen publicly on the ticket embed.
+
+**Description**\
+The description is a short description about your ticket subject. This can be used for what the category is meant for, or reasons to open it, etc.
+
+**Emoji**\
+The emoji is a chosen emoji that is shown on the dropdown menu of your ticket panel. This emoji can be either a Discord Emoji or a Custom Server Emoji.
+
+<Note>
+  The emoji's ID can be found by right-clicking the emoji and selecting "Copy ID". This requires Discord Developer Mode.
+</Note>
+
+**Category**\
+The category is the channel that the created ticket channel is placed in. You can input a Category Name or a Category ID. This may require Discord Developer Mode.
+
+**Transcripts Channel**\
+The transcripts channel is where closed tickets are logged, and transcripts are kept. A transcript contains all messages exchanged within the ticket. The transcript is accessible using the .txt file provided, or by clicking "Web Transcript."
+
+**Unclaimed/Claimed Ticket Names**\
+The unclaimed ticket name is the name of the created ticket channel while the ticket is **unclaimed**. The claimed ticket name is a separate name for the ticket channel when the ticket is **claimed**.
+
+<Tip>
+  Use the **Variables** selection to view variables that you can place in your ticket name.
+</Tip>
+
+**Form**\
+The form is a set of questions that are asked to the member when they open a ticket of that subject. The creator will be prompted to complete the form and submit it. Once submitted, the ticket is created normally, and another embed is attached, providing the answers of the form, and the question that was asked.
+
+<Warning>
+  Without **Ducky Plus+**, only two form questions can be made by default; upgrade to **Ducky Plus+** to create additional form questions.
+</Warning>
+
+**Support Roles**\
+Support roles are roles that can **view, send messages, and interact** with the created ticket channel. When a ticket is claimed, the Support Roles loose access to view the channel, and the claimer keeps them.
+
+**Mentionables**\
+Mentionables are roles and members that receive a mention within the channel when a ticket is created.
+
+<Note>
+  We recommend adding your Support Roles as Mentionables.
+</Note>
+
+**Blacklisted Roles**\
+Blacklisted roles are roles that are prohibited from interacting with your ticket subject and cannot open new tickets.
+
+**Embed Editor**\
+You can fully customize each embed that is seen within a ticket channel to your liking.
+
+<Tip>
+  Check out the [Message Editor](/misc/messageeditor) documentation for more information
+</Tip>
