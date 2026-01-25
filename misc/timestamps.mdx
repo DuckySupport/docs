@@ -13,15 +13,15 @@ The **`{timestamp}`** variable is one of the most confusing variables in Ducky f
 - **9:00:00 AM:** `<t:1756645200:T>`
 - **5 seconds ago:** `<t:1756645200:R>`
 
-<Warning>
+<Note>
   Be sure to replace the numbers with the **`{timestamp}`** variable. Example: **`<t:{timestamp}:R>`**.
-</Warning>
+</Note>
 
 ## Non-specific Timestamps
 
 If you don't want to have a timestamp that states a specific time, and want to make it state the current time in any of the formats, pay attention.
 
-- **[Day of week,] [Month X,] [Year X:XX AM/PM:] **`<t:timestamp:F>`
+- \*\*[Day of week,] [Month X,] [Year X:XX AM/PM:] \*\*`<t:timestamp:F>`
 - **[Month X,] [Year X:XX AM/PM:]** `<t:timestamp:f` or `<t:timestamp>`
 - **[Month X,] [Year:]** `<t:timestamp:D>`
 - **X/XX/XXXX:** `<t:timestamp:d>`
@@ -29,6 +29,6 @@ If you don't want to have a timestamp that states a specific time, and want to m
 - **[X:XX:XX:]** `<t:timestamp:T>`
 - **[X] seconds ago:** `<t:timestamp:R>`
 
-<Danger>
-  All of the timestamps are **case sensitive** which means if one letter is accidentally uppercase, it will not be the way you want it to/not work at all.
-</Danger>
+<Warning>
+  All of the timestamps are **case sensitive**. If one letter is accidentally uppercase, it will not display properly or not work completely.
+</Warning>

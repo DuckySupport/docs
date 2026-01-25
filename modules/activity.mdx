@@ -6,20 +6,29 @@ tag: "NEW"
 
 This page provides the essential configuration options for Ducky's **Activity Management** module, which provides an easy way to manage and track your staff's activity with LOAs and activity waves. To enable and configure this module, use the **`/setup`** command and navigate to the **Activity Management** page.
 
-  ## LOAs Enabled
-    Enabling this option will allow your staff members to request a **Leave of Absence** via the **`/loa request`** command.
-  ## LOA Logs Channel
-    The **LOA Logs Channel** is where all LOA requests and logs will be sent. Any user with access to this channel can accept or deny LOA requests.
-  ## LOA Role
-    The **LOA Role** is assigned to staff members with an active LOA.
-  ## LOA Nickname
-    The **LOA Nickname** is assigned to staff members with an active LOA.
+## LOAs Enabled
 
-    You may use these variables within the **LOA Nickname**:
+Enabling this option will allow your staff members to request a **Leave of Absence** via the `/loa request` command.
 
-    - **`{member.name}:`** The name of the member on LOA.
-    - **`{member.username}:`** The username of the member on LOA.
-  ## Activity Report Interval
-    The **Activity Report Interval** is the interval where **Activity Reports** are generated, which is the point where Ducky creates a snapshot of all staff member's total shift time and statistics.
+## LOA Logs Channel
 
-    You can view Activity Reports via the **`/activity report`** command.
+The **LOA Logs Channel** is where all LOA requests and logs will be sent. Any user with access to this channel can accept or deny LOA requests.
+
+## LOA Role
+
+The **LOA Role** is assigned to staff members with an active LOA.
+
+## LOA Nickname
+
+The **LOA Nickname** is assigned to staff members with an active LOA.
+
+You may use these variables within the **LOA Nickname**:
+
+- **`{member.name}:`** The name of the member on LOA.
+- **`{member.username}:`** The username of the member on LOA.
+
+## Activity Report Interval
+
+The **Activity Report Interval** is the interval where **Activity Reports** are generated, which is the point where Ducky creates a snapshot of all staff member's total shift time and statistics.
+
+You can view Activity Reports via the **`/activity report`** command.
