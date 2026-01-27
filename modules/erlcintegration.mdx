@@ -1,39 +1,48 @@
 ---
-title: "ER:LC Integration"
-description: "Learn about Ducky's ER:LC Integration module and how to configure it."
+title: "ERLC Integration"
+description: "Learn about Ducky's ERLC Integration module and how to configure it."
 tag: "NEW"
 ---
 
-This page provides the essential configuration options for Ducky's **ER:LC Integration** module, which enables seamless remote management and monitoring of your ER:LC private server. To enable and configure this module, use the **`/setup`** command and navigate to the **ER:LC Integration** page.
+This page provides the essential configuration options for Ducky's **ERLC Integration** module, which enables seamless remote management and monitoring of your ERLC private server. To enable and configure this module, use the **`/setup`** command and navigate to the **ERLC Integration** page.
 
 ## In-Game Role
-    The **In-Game Role** is a role that players within the linked ER:LC private server will be granted. This role is added from the member when they join the in-game server, and removed when they leave the in-game server.
-    <Warning>
-      The member must have their **Roblox** account linked with Ducky in order for this role to be added/removed from them.
-    </Warning>
-  
-## ER:LC Server
-    The **ER:LC Server** is the linked ER:LC private server. Learn how to Link your ER:LC Private Server [here](/tutorials/linkER:LC).
-  
-## Advanced ER:LC Command Permissions
-    The **Advanced ER:LC Command Permissions** toggle determines whether or not your staff team have access to **`/ER:LC command`**. 
-    
-    When **enabled**, members of the configured **ER:LC Staff** roles have access to **`/ER:LC command`** but can only execute commands they would be able to execute in-game (i.e. an in-game moderator cannot use **`/ER:LC command`** to ban/unban).
-    
-    When **disabled**, only members of the configured **ER:LC Manager** roles can access **`/ER:LC command`** with the Co-Owner permission level.
-  
-## ER:LC Command Logs Channel
-    The **ER:LC Command Logs Channel** is the channel that contains the ER:LC Command Logs webhook. For more information, click [here](/tutorials/ingamecmds).
-  
-## ER:LC Kick/Ban Logs Channel
-    The **ER:LC Kick/Ban Logs Channel** is the channel that contains the ER:LC Kick/Ban Logs webhook. For more information, click [here](/tutorials/ingamecmds).
-  
+
+The **In-Game Role** is a role that players within the linked ERLC private server will be granted. This role is added from the member when they join the in-game server, and removed when they leave the in-game server.
+
+<Warning>
+  The member must have their **Roblox** account linked with Ducky in order for this role to be added/removed from them.
+</Warning>
+
+## ERLC Server
+
+The **ERLC Server** is the linked ERLC private server. Learn how to Link your ERLC Private Server [here](/tutorials/linkerlc).
+
+## Advanced ERLC Command Permissions
+
+The **Advanced ERLC Command Permissions** toggle determines whether or not your staff team have access to **`/ERLC command`**.
+
+When **enabled**, members of the configured **ERLC Staff** roles have access to **`/ERLC command`** but can only execute commands they would be able to execute in-game (i.e. an in-game moderator cannot use **`/ERLC command`** to ban/unban).
+
+When **disabled**, only members of the configured **ERLC Manager** roles can access **`/ERLC command`** with the Co-Owner permission level.
+
+## ERLC Command Logs Channel
+
+The **ERLC Command Logs Channel** is the channel that contains the ERLC Command Logs webhook. For more information, click [here](/tutorials/ingamecmds).
+
+## ERLC Kick/Ban Logs Channel
+
+The **ERLC Kick/Ban Logs Channel** is the channel that contains the ERLC Kick/Ban Logs webhook. For more information, click [here](/tutorials/ingamecmds).
+
 ## Auto Log Kicks/BOLOs
-    The **Auto Log Kicks/BOLOs** toggle determines whether or not Ducky automatically reads logs from the configured **ER:LC Kick/Ban Logs Channel** in order to automatically log punishments and/or complete active BOLOs.
-  
+
+The **Auto Log Kicks/BOLOs** toggle determines whether or not Ducky automatically reads logs from the configured **ERLC Kick/Ban Logs Channel** in order to automatically log punishments and/or complete active BOLOs.
+
 ## Ban Syncing Mode
-    The **Ban Syncing Mode** is the mode that Ducky uses to synchronize bans between the ER:LC private server and the Discord server. The available options can be found below:
-    - **Discord to ER:LC:** Members banned within the Discord server will automatically be banned from the ER:LC private server.
-    - **ER:LC to Discord:** Players banned within the ER:LC private server will automatically be banned from the Discord server.
-    - **Both:** Members banned within the Discord server will automatically be banned from the ER:LC private server, and players banned within the ER:LC private server will automatically be banned from the Discord server.
-    - **None:** Ban synchronization will not occur.
+
+The **Ban Syncing Mode** is the mode that Ducky uses to synchronize bans between the ERLC private server and the Discord server. The available options can be found below:
+
+- **Discord to ERLC:** Members banned within the Discord server will automatically be banned from the ERLC private server.
+- **ERLC to Discord:** Players banned within the ERLC private server will automatically be banned from the Discord server.
+- **Both:** Members banned within the Discord server will automatically be banned from the ERLC private server, and players banned within the ERLC private server will automatically be banned from the Discord server.
+- **None:** Ban synchronization will not occur.
