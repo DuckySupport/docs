@@ -59,7 +59,8 @@
                         "misc/timeinputs",
                         "misc/timestamps",
                         "misc/devmode",
-                        "misc/embededitor"
+                        "misc/embededitor",
+                        "misc/api"
                     ]
                 }
             ]
