@@ -7,6 +7,30 @@ description: "Documentation for the Ducky API (api.duckybot.xyz)"
 
 `api.duckybot.xyz`
 
+## Ratelimits
+
+The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Use the following headers found in every response:
+
+<ResponseField name="header" type="x-ratelimit-limit">
+  The amount of requests that can be made before receiving a 429.
+</ResponseField>
+
+<ResponseField name="header" type="x-ratelimit-remaining">
+  The number of remaining requests that can be made.
+</ResponseField>
+
+<ResponseField name="header" type="x-ratelimit-reset">
+  Epoch timestamp when the rate limit resets.
+</ResponseField>
+
+#### 429 response:
+```json
+{
+  "code": 429,
+  "message": "Too many requests, please try again later."
+}
+```
+
 ## `GET /`
 
 <Callout icon="pencil">
