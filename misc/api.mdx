@@ -1,0 +1,621 @@
+---
+title: "API"
+description: "Documentation for the Ducky API (api.duckybot.xyz)"
+---
+
+## Base URL
+
+`api.duckybot.xyz`
+
+## `GET /`
+
+<Callout icon="pencil">
+  Returns status information about Ducky and the API.
+</Callout>
+
+```json
+{
+  "message": "The Ducky API is online.",
+  "code": 200,
+  "data": {
+    "version": "v1.5.2 Stable",
+    "health": {
+      "api": {
+        "latency": {
+          "response": "Latency was not calculated because header 'Sent-Epoch' was not provided.",
+          "process": 0.031948089599609
+        }
+      },
+      "bot": {
+        "shards": {
+          "0": {
+            "latency": 106.02957,
+            "heartbeatAcknowledged": 1769621772,
+            "heartbeatSent": 1769621772
+          },
+          "1": {
+            "latency": 108.40594,
+            "heartbeatAcknowledged": 1769621764,
+            "heartbeatSent": 1769621764,
+            "failures": [1769618545]
+          },
+          "2": {
+            "latency": 118.678367,
+            "heartbeatAcknowledged": 1769621739,
+            "heartbeatSent": 1769621738
+          },
+		// ...
+        },
+        "uptime": {
+          "readable": "3 hours, 40 minutes, 27 seconds",
+          "epoch": 1769608551
+        }
+      }
+    },
+    "resources": {
+      "memory": 1652.95
+    }
+  }
+}
+```
+
+## `GET /statistics`
+
+<Callout icon="pencil">
+  Returns statistical information about Ducky.
+</Callout>
+
+```json
+{
+  "message": "Bot statistics were fetched successfully.",
+  "code": 200,
+  "data": {
+    "links": 37751,
+    "version": "v1.5.2 Stable",
+    "guilds": 10347,
+    "users": 777511
+  }
+}
+```
+
+## `GET /team`
+
+<Callout icon="pencil">
+  Returns a list of all Ducky team members.
+</Callout>
+
+```json
+{
+  "message": "All Ducky Team members have been successfully fetched.",
+  "code": 200,
+  "data": [
+    {
+      "discord_id": "782235114858872854",
+      "position": 4,
+      "username": "bobbibones",
+      "category": "dev",
+      "color": "#38B6FF",
+      "role": "Senior Developer",
+      "name": "bobbi",
+      "avatar": "https://cdn.discordapp.com/avatars/782235114858872854/fff448ad33f613c223ee3771fd659fab.png"
+    }
+  ]
+}
+```
+
+## `GET /users/:id`
+
+<Callout icon="pencil">
+  Returns information about a Discord or Roblox user.
+</Callout>
+
+<ResponseField name="param" type="id" required>
+  A Discord user ID, Roblox user ID, or @me. If you use @me, the token header is required.
+</ResponseField>
+
+<ResponseField name="header" type="Token">
+  A Ducky session token.
+</ResponseField>
+
+#### Discord user
+
+```json
+{
+    "code": 200,
+    "data": {
+        "id": "782235114858872854",
+        "username": "bobbibones",
+        "name": "bobbibones",
+        "avatar": "https://cdn.discordapp.com/avatars/782235114858872854/fff448ad33f613c223ee3771fd659fab.png"
+    },
+    "message": "A Discord user was found with that ID."
+}
+```
+
+#### Roblox user
+
+```json
+{
+  "code": 200,
+  "data": {
+    "id": 3943721740,
+    "displayName": "bobbibones",
+    "avatar": "https://t2.rbxcdn.com/30DAY-AvatarHeadshot-0A4CE91211CF710F345A1F5517B3EF9B-Png",
+    "banned": false,
+    "verified": false,
+    "created": 1664810886.067,
+    "name": "bobbibonesreal",
+    "description": "Rubber Duck Duck Waddle Bathtub Water Geese",
+    "hyperlink": "[bobbibonesreal](\u003Chttps://roblox.com/users/3943721740/profile\u003E)",
+    "profile": "https://roblox.com/users/3943721740/profile"
+  },
+  "message": "A Roblox user was found with that ID."
+}
+```
+
+## `GET /feedback`
+
+<Callout icon="pencil">
+  Returns 5 random 4/5 star reviews on Ducky.
+</Callout>
+
+```json
+{
+  "message": "Feedback fetched successfully.",
+  "code": 200,
+  "data": [
+    {
+      "feedback": "My favourite bot",
+      "submitter": {
+        "username": "thomas074259",
+        "id": "1215002944638812182",
+        "name": "Mr fishy",
+        "avatar": "https://cdn.discordapp.com/avatars/1215002944638812182/f649e06119e62aa67aa609681b8d36bc.png"
+      },
+      "rating": 5,
+      "timestamp": 1747935842
+    },
+    // ...
+  ]
+}
+```
+
+## `GET /links/:id`
+
+<Callout icon="pencil">
+  Returns link information about a user.
+</Callout>
+
+<ResponseField name="param" type="id" required>
+  A Discord user ID or a Roblox user ID.
+</ResponseField>
+
+```json
+{
+  "message": "Link fetched successfully.",
+  "code": 200,
+  "data": {
+    "discord": {
+      "username": "bobbibones",
+      "id": "782235114858872854",
+      "name": "bobbibones",
+      "avatar": "https://cdn.discordapp.com/avatars/782235114858872854/fff448ad33f613c223ee3771fd659fab.png"
+    },
+    "roblox": {
+      "banned": false,
+      "created": 1664810886.067,
+      "hyperlink": "[bobbibonesreal](\u003Chttps://roblox.com/users/3943721740/profile\u003E)",
+      "verified": false,
+      "profile": "https://roblox.com/users/3943721740/profile",
+      "id": 3943721740,
+      "description": "Rubber Duck Duck Waddle Bathtub Water Geese",
+      "displayName": "bobbibones",
+      "name": "bobbibonesreal",
+      "avatar": "https://t2.rbxcdn.com/30DAY-AvatarHeadshot-0A4CE91211CF710F345A1F5517B3EF9B-Png"
+    }
+  }
+}
+```
+
+## `POST /links`
+
+<Callout icon="pencil">
+  Create a link.
+</Callout>
+
+<ResponseField name="header" type="token" required>
+  The session token of the user.
+</ResponseField>
+
+<ResponseField name="header" type="roblox-code" required>
+  The Roblox OAuth2 access code of the user.
+</ResponseField>
+
+```json
+{
+    "message": "Discord user '@bobbibones' successfully linked with Roblox user '@bobbibonesreal'.",
+    "code": 200,
+    "data": {
+        "discord": {
+            "username": "bobbibones",
+            "id": "782235114858872854",
+            "name": "bobbibones",
+            "avatar": "https://cdn.discordapp.com/avatars/782235114858872854/fff448ad33f613c223ee3771fd659fab.png"
+        },
+        "roblox": {
+            "banned": false,
+            "created": 1664810886.067,
+            "hyperlink": "[bobbibonesreal](<https://roblox.com/users/3943721740/profile>)",
+            "verified": false,
+            "profile": "https://roblox.com/users/3943721740/profile",
+            "id": 3943721740,
+            "description": "Rubber Duck Duck Waddle Bathtub Water Geese",
+            "displayName": "bobbibones",
+            "name": "bobbibonesreal",
+            "avatar": "https://t2.rbxcdn.com/30DAY-AvatarHeadshot-0A4CE91211CF710F345A1F5517B3EF9B-Png"
+        }
+    }
+}
+```
+
+## `DELETE /links`
+
+<Callout icon="pencil">
+  Delete a link. You must provide either a session token or a roblox-code.
+</Callout>
+
+<ResponseField name="header" type="token">
+  The session token of the user.
+</ResponseField>
+
+<ResponseField name="header" type="roblox-code">
+  The Roblox OAuth2 access code of the user.
+</ResponseField>
+
+```json
+{
+  "code": 200,
+  "message": "Roblox user has been successfully unlinked."
+}
+```
+
+## `POST /auth`
+
+<Callout icon="pencil">
+  Generate a Ducky session token.
+</Callout>
+
+<ResponseField name="header" type="discord-code" required>
+  The Discord OAuth2 code of the user.
+</ResponseField>
+
+```json
+{
+    "code": 200,
+    "data": {
+        "user": {
+            "id": "782235114858872854",
+            "username": "bobbibones",
+            "name": "bobbibones",
+            "avatar": "https://cdn.discordapp.com/avatars/782235114858872854/fff448ad33f613c223ee3771fd659fab.png"
+        },
+        "token": "c8d8fe6a-90c3-41f9-a464-e1ebf37b8b67"
+    },
+    "message": "Session has been successfully authorized."
+}
+```
+
+## `DELETE /auth`
+
+<Callout icon="pencil">
+  Delete all session information.
+</Callout>
+
+<ResponseField name="header" type="token" required>
+  The session token of the user.
+</ResponseField>
+
+```json
+{
+  "code": 200,
+  "message": "Successfully deleted auth information for token 'c8d8fe6a-90c3-41f9-a464-e1ebf37b8b67'."
+}
+```
+
+## `ANY /guilds/:id/:action/:subaction`
+
+<Callout icon="pencil">
+  The format of all `/guilds` requests.
+</Callout>
+
+<ResponseField name="param" type="id">
+  The ID of the target guild.
+</ResponseField>
+
+<ResponseField name="param" type="action">
+  The base feature you want to interact with.
+</ResponseField>
+
+<ResponseField name="param" type="subaction">
+  Specifies what to do regarding that feature.
+</ResponseField>
+
+<ResponseField name="header" type="token" required>
+  The session token of the user.
+</ResponseField>
+
+## `GET /guilds`
+
+<Callout icon="pencil">
+  Returns all guilds the user is in.
+</Callout>
+
+<ResponseField name="header" type="token" required>
+  The session token of the user.
+</ResponseField>
+
+```json
+{
+    "code": 200,
+    "data": [
+        {
+            "id": "1228508072289370172",
+            "plus": [],
+            "ducky": true,
+            "name": "💛 Ducky's Pond",
+            "members": 1728,
+            "owner": "598958193032560642",
+            "role": "Manager",
+            "icon": "https://cdn.discordapp.com/icons/1228508072289370172/78c23e643bd80241aa013b88cd0225cb.png",
+            "permissions": {
+                "SESSION_STARTER": true,
+                "DUCKY_PLUS_MEMBER": false,
+                "ERLC_STAFF": true,
+                "DUCKY_PLUS_GUILD": false,
+                "QUALITY_ASSURANCE": true,
+                "ERLC_ADMIN": true,
+                "DOCWRITER": true,
+                "MANAGE_SERVER": true,
+                "BOT_DEVELOPER": true,
+                "WEB_DEVELOPER": true,
+                "MOD": true,
+                "SUPPORT": true,
+                "FOUNDER": false,
+                "MANAGEMENT": true,
+                "SETUP": true,
+                "DUCKY_STAFF": true,
+                "ADMIN": true,
+                "ERLC_MANAGER": true,
+                "EXECUTIVE": true,
+                "ERLC_LINKED": false
+            }
+        },
+        // ...
+    ],
+    "message": "Guilds for '782235114858872854' fetched successfully."
+}
+```
+
+## `GET /guilds/:id/panel`
+
+<Callout icon="pencil">
+  Returns all information required for a modpanel.
+</Callout>
+
+<ResponseField name="param" type="id">
+  The ID of the target guild.
+</ResponseField>
+
+<ResponseField name="header" type="token" required>
+  The session token of the user.
+</ResponseField>
+
+```json expandable lines wrap
+{
+	"data": {
+		"shifts": {
+			"me": {
+				"active": {
+					"pausetime": 0,
+					"type": "Shift",
+					"paused": false,
+					"started": 1761313859,
+					"id": "1431278805598736384",
+					"commands": 0,
+					"member": "782235114858872854",
+					"elapsed": 48,
+					"punishments": 0,
+					"pauses": []
+				},
+				"history": [
+					{
+						"ended": 1760987212,
+						"id": "1429751753997422592",
+						"type": "Shift",
+						"member": "782235114858872854",
+						"started": 1760949781,
+						"commands": 0,
+						"punishments": 0,
+						"pauses": []
+					},
+					{
+						"pausetime": 0,
+						"type": "Shift",
+						"paused": false,
+						"started": 1761139526,
+						"id": "1430547602495115264",
+						"ended": 1761139697,
+						"commands": 0,
+						"member": "782235114858872854",
+						"elapsed": 161,
+						"punishments": 0,
+						"pauses": [
+							{
+								"started": 1761139691,
+								"ended": 1761139697
+							}
+						]
+					},
+					{
+						"pausetime": 59,
+						"type": "Shift",
+						"paused": {
+							"started": 1761139735,
+							"ended": 1761139799
+						},
+						"started": 1761139732,
+						"id": "1430548465032761344",
+						"ended": 1761139804,
+						"commands": 0,
+						"member": "782235114858872854",
+						"elapsed": 3,
+						"punishments": 0,
+						"pauses": [
+							{
+								"started": 1761139735,
+								"ended": 1761139799
+							}
+						]
+					},
+					{
+						"ended": 1761116147,
+						"id": "1430449515558735872",
+						"type": "Shift",
+						"member": "782235114858872854",
+						"started": 1761116141,
+						"commands": 0,
+						"punishments": 0,
+						"pauses": []
+					},
+					{
+						"ended": 1760947141,
+						"id": "1429740658817634304",
+						"type": "Shift",
+						"member": "782235114858872854",
+						"started": 1760947136,
+						"commands": 0,
+						"punishments": 0,
+						"pauses": [
+							{
+								"started": 1760947139,
+								"ended": 1760947141
+							}
+						]
+					},
+					{
+						"ended": 1761140079,
+						"id": "1430549910624800768",
+						"type": "Shift",
+						"member": "782235114858872854",
+						"started": 1761140077,
+						"commands": 0,
+						"punishments": 0,
+						"pauses": []
+					},
+					{
+						"ended": 1761144417,
+						"id": "1430568103766528000",
+						"type": "Shift",
+						"member": "782235114858872854",
+						"started": 1761144415,
+						"commands": 0,
+						"punishments": 0,
+						"pauses": []
+					},
+					{
+						"ended": 1761151618,
+						"id": "1430598307582971904",
+						"type": "Shift",
+						"member": "782235114858872854",
+						"started": 1761151616,
+						"commands": 0,
+						"punishments": 0,
+						"pauses": []
+					},
+					{
+						"pausetime": 0,
+						"type": "Shift",
+						"paused": false,
+						"started": 1761313859,
+						"id": "1431278805598736384",
+						"commands": 0,
+						"member": "782235114858872854",
+						"elapsed": 48,
+						"punishments": 0,
+						"pauses": []
+					}
+				]
+			},
+			"types": [
+				{
+					"name": "Shift",
+					"requiredrole": "1429446569723302032",
+					"onshiftrole": "1352934605996560415",
+					"quota": 3600,
+					"onpauserole": "1391670510823276604"
+				}
+			]
+		},
+		"erlc": {
+			"bans": {
+				"1471114199": "moopertong",
+				"7972615389": "therizzfromtown"
+			},
+			"modcalls": [],
+			"players": [],
+			"lastJoinLogTimestamp": 1761143599,
+			"kills": [],
+			"lastCacheReset": 1761298953.5911,
+			"lastTeamPlayerCounts": {
+				"Fire": 0,
+				"Sheriff": 0,
+				"Jail": 0,
+				"Police": 0,
+				"Civilian": 0,
+				"DOT": 0
+			},
+			"lastLeaveLogTimestamp": 0,
+			"previousPlayers": [],
+			"joins": [
+				{
+					"Timestamp": 1761143599,
+					"Join": true,
+					"Player": "bobbibonesreal:3943721740"
+				},
+				{
+					"Timestamp": 1761145669,
+					"Join": false,
+					"Player": "bobbibonesreal:3943721740"
+				}
+			],
+			"server": {
+				"Name": "Duckys Pond",
+				"OwnerId": 3943721740,
+				"CoOwnerIds": [
+					1038671897
+				],
+				"MaxPlayers": 40,
+				"AccVerifiedReq": "Disabled",
+				"JoinKey": "ducky",
+				"CurrentPlayers": 0,
+				"TeamBalance": false
+			},
+			"commands": [
+				{
+					"Timestamp": 1759860690,
+					"Command": ":to bobbibonesreal",
+					"Player": "bobbibonesreal:3943721740"
+				}
+			],
+			"logHistory": {
+				"playerkill": 1759650991,
+				"modcall": 1759860595,
+				"playerleave": 1761145669,
+				"playerjoin": 1761143599
+			}
+		}
+	},
+	"message": "Panel data for '🛁 Ducky's Tub' fetched successfully.",
+	"code": 200
+}
+```
