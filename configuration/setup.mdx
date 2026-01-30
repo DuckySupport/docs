@@ -6,7 +6,7 @@ description: "Learn how to configure Ducky."
 This page provides the essential configuration options to help you get started quickly, including setting your command prefix, managing disabled commands, changing permission roles (see [Permissions](/configuration/permissions)), configuring a configuration log channel, and resetting your configuration. Once you have invited Ducky to your server, use the **`/setup`** command to get started.
 
 <Warning>
-  All members with the **Manage Server** permission are authorized to use the `/setup` command.
+  All members with the **Manage Server** permission are authorized to use the **`/setup`** command.
 </Warning>
 
 ## Prefix
@@ -15,7 +15,9 @@ The **Prefix** determines how prefix-based commands are triggered in your server
 
 ## Disabled Commands
 
-This option allows you to disable specific Ducky commands you do not want to be available in your server. Disabled commands will have a response of "This command has been disabled by server management." when triggered/used.
+This option allows you to disable specific Ducky commands you do not want to be available in your server.
+
+To input commands, use the command names without any prefix or slash. For example, to disable the **`/ping`** command, simply input **`ping`**. To disable both the **`/ping`** and **`/say`** commands, input **`ping, say`**.
 
 ## Command Blacklists
 
@@ -31,12 +33,12 @@ Configure permission roles to manage what each member can access.
 
 ## Configuration Log Channel
 
-This is where all changes to Ducky's configuration within your server will be logged.
+The **Configuration Log Channel** is the channel where Ducky will send a message to when any changes are made to the server's configuration using the **`/setup`** command.
 
 ## Wipe Configuration
 
-This option allows you to completely **wipe your server's configuration**. You will need to reconfigure everything from scratch.
+This option allows you to completely **wipe your server's configuration**. This includes all data stored within your server such as punishments, shifts, etc.
 
 <Danger>
-  Wiping your server's configuration is **permanent** and cannot be reverted— therefore only the **server owner** can use this option.
+  Wiping your server's configuration is **permanent** and cannot be reverted— therefore, only the **server owner** can use this option.
 </Danger>

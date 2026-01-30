@@ -1,16 +1,42 @@
 ---
 title: "Staff Management"
 description: "Learn about Ducky's Staff Management module and how to configure it."
-tag: "NEW"
 ---
 
 This page provides the essential configuration options for Ducky's **Staff Management** module, which provides an easy way to track disciplinary actions taken on your staff members via infractions, as well as issue promotions. To enable and configure this module, use the **`/setup`** command and navigate to the **Staff Management** page.
 
 ## Infractions Channel
-    The **Infractions Channel** is where all issued infractions are sent. A member receives an infraction when an **ERLC Manager** issues one via the **`/infraction issue`** command. The embeds can be customized to your preference.
 
-## Promotions Channel
-    The **Promotions Channel** where all promotions are sent. A member receives a promotion when an **ERLC Manager** issues one via the `/promotion issue` command. The embeds can be customized to your preference.
+The **Infractions Channel** is where all issued infractions are sent. You can issue an infraction via the **`/infraction issue`** command.
+
+<Note>
+    The embeds that are sent to the **Infractions Channel** and the member's DMs can be customized by pressing **Edit configuration...** -> **Edit Infraction Issue Embeds**.
+</Note>
+
+## Infraction Thread
+
+The **Infraction Thread** is the name of the thread that is created on an infraction message. This thread can be used to discuss any information regarding the infraction, add proof, etc.
 
 ## Infraction Types
-    The **Infraction Types** are the different types of infractions that can be issued within your server. You can link automated actions, an assigned role, and more via the **Infraction Type Builder**.
+
+The **Infraction Types** are the different types of infractions that can be issued to your staff members. You can add a role that is automatically given to the staff member when they receive the infraction, automate actions to occur when the staff member receives the infraction, and more.
+
+## Promotions Channel
+
+The **Promotions Channel** is where all promotions are sent. You can issue a promotion via the **`/promotion issue`** command.
+
+<Note>
+    The embeds that are sent to the **Promotions Channel** can be customized by pressing **Edit configuration...** -> **Edit Promotion Embeds**.
+</Note>
+
+## Promotion Thread
+
+The **Promotion Thread** is the name of the thread that is created on a promotion message. This thread can be used to discuss any information regarding the promotion, etc.
+
+## Feedback Channel
+
+The **Feedback Channel** is where all staff feedback is sent. You can submit feedback on a staff member via the **`/feedback submit`** command.
+
+<Note>
+    The embeds that are sent to the **Feedback Channel** can be customized by pressing **Edit configuration...** -> **Edit Feedback Embeds**.
+</Note>

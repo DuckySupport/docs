@@ -1,14 +1,13 @@
 ---
 title: "Audit Logging"
 description: "Learn about Ducky's Audit Logging module and how to configure it."
-tag: "UPDATED"
 ---
 
 This page provides the essential configuration options for Ducky's **Audit Logging** module, which allows you to monitor and record important server activity, giving staff a clear view of changes and actions taken within your server. To enable and configure this module, use the **`/setup`** command and navigate to the **Audit Logging** page.
 
 ## Primary Audit Logs Channel
 
-The **Primary** **Audit Logs Channel** is where all enabled audit log types will be sent which do not have a designated channel.
+The **Primary Audit Logs Channel** is where all enabled audit log types will be sent which do not have a designated channel.
 
 ## Audit Log Channels
 
@@ -38,5 +37,5 @@ Available audit log types include:
 - **Emoji Update:** Sends a log when a emoji is created/updated/deleted.
 
 <Warning>
-  To prevent harsh ratelimits, Ducky utilizes **Webhooks** to send audit logs. Be sure to whitelist your audit log channel for embed spam from security bots such as **Wick**.
+  To prevent harsh ratelimits, Ducky utilizes **webhooks** to send audit logs. Be sure to whitelist the channel from **Embed Spam** using the appropriate command for the security service you use.
 </Warning>

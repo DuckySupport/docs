@@ -1,7 +1,6 @@
 ---
 title: "ERLC Integration"
 description: "Learn about Ducky's ERLC Integration module and how to configure it."
-tag: "NEW"
 ---
 
 This page provides the essential configuration options for Ducky's **ERLC Integration** module, which enables seamless remote management and monitoring of your ERLC private server. To enable and configure this module, use the **`/setup`** command and navigate to the **ERLC Integration** page.
@@ -16,23 +15,23 @@ The **In-Game Role** is a role that players within the linked ERLC private serve
 
 ## ERLC Server
 
-The **ERLC Server** is the linked ERLC private server. Learn how to Link your ERLC Private Server [here](/tutorials/linkerlc).
+The **ERLC Server** is the linked ERLC private server. You can link your ERLC private server by following the steps outlined [here](/tutorials/linkerlc).
 
-## Advanced ERLC Command Permissions
+## Advanced Remote Execution Permissions
 
-The **Advanced ERLC Command Permissions** toggle determines whether or not your staff team have access to **`/ERLC command`**.
+The **Advanced Remote Execution Permissions** toggle determines whether or not your staff team have access to **`/erlc command`**.
 
-When **enabled**, members of the configured **ERLC Staff** roles have access to **`/ERLC command`** but can only execute commands they would be able to execute in-game (i.e. an in-game moderator cannot use **`/ERLC command`** to ban/unban).
+When **enabled**, members of the configured **ERLC Staff** roles have access to **`/erlc command`**, however they are only able to execute commands they would be able to execute in-game (i.e. an in-game moderator cannot use **`/erlc command`** to ban/unban).
 
-When **disabled**, only members of the configured **ERLC Manager** roles can access **`/ERLC command`** with the Co-Owner permission level.
+When **disabled**, only members of the configured **ERLC Manager** roles can access **`/erlc command`** with the Co-Owner permission level.
 
 ## ERLC Command Logs Channel
 
-The **ERLC Command Logs Channel** is the channel that contains the ERLC Command Logs webhook. For more information, click [here](/tutorials/ingamecmds).
+The **ERLC Command Logs Channel** is the channel that contains the ERLC Command Logs webhook. This is essential for in-game commands, which can be configured by following the steps outlined [here](/tutorials/ingamecmds).
 
 ## ERLC Kick/Ban Logs Channel
 
-The **ERLC Kick/Ban Logs Channel** is the channel that contains the ERLC Kick/Ban Logs webhook. For more information, click [here](/tutorials/ingamecmds).
+The **ERLC Kick/Ban Logs Channel** is the channel that contains the ERLC Kick/Ban Logs webhook.
 
 ## Auto Log Kicks/BOLOs
 
@@ -46,3 +45,21 @@ The **Ban Syncing Mode** is the mode that Ducky uses to synchronize bans between
 - **ERLC to Discord:** Players banned within the ERLC private server will automatically be banned from the Discord server.
 - **Both:** Members banned within the Discord server will automatically be banned from the ERLC private server, and players banned within the ERLC private server will automatically be banned from the Discord server.
 - **None:** Ban synchronization will not occur.
+
+## Playtime Rewards
+
+The **Playtime Rewards** are roles that are automatically granted to members based on their total playtime within the linked ERLC private server.
+
+<Warning>
+  The member must have **Track Playtime** enabled in their **`/usersettings`** in order for playtime to be tracked. This setting is enabled by default.
+  
+  The member must have their **Roblox** account linked with Ducky in order for reward roles to be granted.
+</Warning>
+
+## Playtime Reward Announcements Channel
+
+The **Playtime Reward Announcements Channel** is the channel that is used to announce when a member has been granted a playtime reward role.
+
+<Note>
+  The message that is sent to this channel can be customized by pressing **Edit configuration...** -> **Edit Reward Announcement Message**.
+</Note>

@@ -17,54 +17,72 @@
         "strict": true
     },
     "navigation": {
-        "tabs": [{
-            "tab": "Documentation",
-            "groups": [{
-                    "group": "Overview",
-                    "pages": [
-                        "overview/welcome"
-                    ]
-                },
-                {
-                    "group": "Configuration",
-                    "pages": [
-                        "configuration/setup",
-                        "configuration/permissions"
-                    ]
-                },
-                {
-                    "group": "Modules",
-                    "pages": [
-                        "modules/discordmod",
-                        "modules/audit",
-                        "modules/erlcintegration",
-                        "modules/erlclogs",
-                        "modules/welcome",
-                        "modules/staff",
-                        "modules/activity",
-                        "modules/discordserverstatus",
-                        "modules/automations"
-                    ]
-                },
-                {
-                    "group": "Tutorials",
-                    "pages": [
-                        "tutorials/linkerlc",
-                        "tutorials/ingamecmds"
-                    ]
-                },
-                {
-                    "group": "Miscellaneous",
-                    "pages": [
-                        "misc/timeinputs",
-                        "misc/timestamps",
-                        "misc/devmode",
-                        "misc/embededitor",
-                        "misc/api"
-                    ]
-                }
-            ]
-        }],
+        "tabs": [
+            {
+                "tab": "Documentation",
+                "groups": [
+                    {
+                        "group": "Overview",
+                        "pages": [
+                            "overview/welcome"
+                        ]
+                    },
+                    {
+                        "group": "Configuration",
+                        "pages": [
+                            "configuration/setup",
+                            "configuration/permissions"
+                        ]
+                    },
+                    {
+                        "group": "Modules",
+                        "pages": [
+                            "modules/discordmod",
+                            "modules/audit",
+                            "modules/erlcintegration",
+                            "modules/erlclogs",
+                            "modules/welcome",
+                            "modules/staff",
+                            "modules/activity"
+                        ]
+                    },
+                    {
+                        "group": "Tutorials",
+                        "pages": [
+                            "tutorials/linkerlc",
+                            "tutorials/ingamecmds"
+                        ]
+                    },
+                    {
+                        "group": "Miscellaneous",
+                        "pages": [
+                            "misc/timeinputs",
+                            "misc/timestamps",
+                            "misc/devmode",
+                            "misc/embededitor",
+                            "misc/api"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "API Reference",
+                "groups": [
+                    {
+                        "group": "Information",
+                        "pages": [
+                            "api/ratelimits"
+                        ]
+                    },
+                    {
+                        "group": "Endpoints",
+                        "pages": [
+                            "api/links"
+                        ]
+                    }
+                ]
+            }
+        ],
         "global": {
             "anchors": [{
                     "anchor": "Documentation",
@@ -107,6 +125,11 @@
         "socials": {
             "discord": "https://discord.gg/w2dNr7vuKP",
             "github": "https://github.com/orgs/DuckySupport"
+        }
+    },
+    "api": {
+        "mdx": {
+            "server": "https://api.duckybot.xyz"
         }
     }
 }
