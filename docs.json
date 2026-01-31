@@ -71,13 +71,15 @@
                     {
                         "group": "Information",
                         "pages": [
-                            "api/ratelimits"
+                            "api/information/responses",
+                            "api/information/ratelimits"
                         ]
                     },
                     {
                         "group": "Endpoints",
                         "pages": [
-                            "api/links"
+                            "api/endpoints/base",
+                            "api/endpoints/links"
                         ]
                     }
                 ]
@@ -130,6 +132,13 @@
     "api": {
         "mdx": {
             "server": "https://api.duckybot.xyz"
+        }
+    },
+    "errors": {
+        "404": {
+            "redirect": false,
+            "title": " ",
+            "description": "The requested resource was not found in this pond."
         }
     }
 }

@@ -1,0 +1,92 @@
+---
+title: 'Responses'
+description: 'Learn how all of our API responses are structured.'
+---
+
+All of our API responses are structured in the same way, providing consistency across endpoints. The following fields are included:
+
+<ResponseField name="code" type="number">
+  An HTTP status code indicating the result of the request.
+</ResponseField>
+
+<ResponseField name="message" type="string">
+  A brief, human-readable message indicating the result of the request.
+</ResponseField>
+
+<ResponseField name="data" type="object?">
+  The requested information. This field is not always provided depending on the endpoint and request.
+</ResponseField>
+
+```json Example Response
+{
+  "code": 200,
+  "message": "Bot statistics were fetched successfully.",
+  "data": {
+    "links": 37975,
+    "users": 777906,
+    "guilds": 10403,
+    "version": "v1.6.0 Stable"
+  }
+}
+```
+
+Some more error responses can be found below as a reference.
+
+<Tabs>
+  <Tab title="400">
+    ```json 400 Bad Request
+    {
+      "code": 400,
+      "message": "An invalid ID was provided."
+    }
+    ```
+  </Tab>
+  <Tab title="401">
+    ```json 401 Unauthorized
+    {
+      "code": 401,
+      "message": "Header 'Token' was not provided."
+    }
+    ```
+  </Tab>
+
+  <Tab title="403">
+    ```json 403 Forbidden
+    {
+      "code": 403,
+      "message": "You are blacklisted from Ducky."
+    }
+    ```
+  </Tab>
+
+  <Tab title="405">
+    ```json 405 Method Not Allowed
+    {
+      "code": 405,
+      "message": "Method POST is not supported on endpoint /statistics."
+    }
+    ```
+  </Tab>
+
+  <Tab title="429">
+    ```json 429 Too Many Requests
+    {
+      "code": 429,
+      "message": "Too many requests, please try again later."
+    }
+    ```
+
+    <Note>
+      For more information regarding ratelimiting, please refer to the [Ratelimits](/information/ratelimiting) page.
+    </Note>
+  </Tab>
+
+  <Tab title="500">
+    ```json 500 Internal Server Error
+    {
+      "code": 500,
+      "message": "An internal error occurred while processing this request. Please try again later."
+    }
+    ```
+  </Tab>
+</Tabs>

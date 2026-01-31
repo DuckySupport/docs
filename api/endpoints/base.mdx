@@ -1,0 +1,158 @@
+---
+title: "Fetch status information"
+description: "Fetch status information about Ducky and the API."
+api: "GET /"
+---
+
+import Errors from "@/components/Errors.mdx";
+
+<ResponseExample>
+
+```json 200
+{
+  "code": 200,
+  "message": "The Ducky API is online.",
+  "data": {
+    "version": "v1.6.0 Stable",
+    "resources": {
+      "memory": 1570.56
+    },
+    "health": {
+      "api": {
+        "latency": {
+          "response": "Latency was not calculated because header 'Sent-Epoch' was not provided.",
+          "process": 0.13089179992676
+        }
+      },
+      "bot": {
+        "shards": {
+          "0": {
+            "heartbeatAcknowledged": 1769870069,
+            "heartbeatSent": 1769870069,
+            "latency": 110.219125
+          },
+          "1": {
+            "heartbeatAcknowledged": 1769870076,
+            "heartbeatSent": 1769870076,
+            "latency": 109.362183
+          },
+          // ...
+        },
+        "uptime": {
+          "readable": "3 minutes, 57 seconds",
+          "epoch": 1769869862
+        }
+      }
+    }
+  }
+}
+```
+
+```json 200 (with Sent-Epoch)
+{
+  "code": 200,
+  "message": "The Ducky API is online.",
+  "data": {
+    "version": "v1.6.0 Stable",
+    "resources": {
+      "memory": 1570.56
+    },
+    "health": {
+      "api": {
+        "latency": {
+          "response": 62.794923782349,
+          "process": 0.13089179992676
+        }
+      },
+      "bot": {
+        "shards": {
+          "0": {
+            "heartbeatAcknowledged": 1769870069,
+            "heartbeatSent": 1769870069,
+            "latency": 110.219125
+          },
+          "1": {
+            "heartbeatAcknowledged": 1769870076,
+            "heartbeatSent": 1769870076,
+            "latency": 109.362183
+          },
+          // ...
+        },
+        "uptime": {
+          "readable": "3 minutes, 57 seconds",
+          "epoch": 1769869862
+        }
+      }
+    }
+  }
+}
+```
+
+</ResponseExample>
+
+## Response Data
+
+<ResponseField name="version" type="string">
+  The current running version of Ducky.
+</ResponseField>
+
+<ResponseField name="resources" type="object">
+  The amount of resources Ducky is currently using.
+ <Expandable title="properties">
+    <ResponseField name="memory" type="number">
+      The amount of memory currently being used by Ducky in megabytes.
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseField name="health" type="object">
+  Health information including latency, uptime, and shard statuses.
+ <Expandable title="properties">
+    <ResponseField name="api" type="object">
+      API health information
+      <Expandable title="properties">
+        <ResponseField name="latency" type="object">
+          API latency information
+          <Expandable title="properties">
+            <ResponseField name="response" type="number">
+              The time taken for the API to respond in milliseconds. Only calculated if header `Sent-Epoch` is provided in the request.
+            </ResponseField>
+            <ResponseField name="process" type="number">
+              The time taken to process the request in milliseconds.
+            </ResponseField>
+          </Expandable>
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+    <ResponseField name="bot" type="object">
+      Bot health information
+      <Expandable title="properties">
+        <ResponseField name="shards" type="object">
+          A map of shard health information where the key is the shard ID.
+          <Expandable title="example shard">
+            <ResponseField name="heartbeatSent" type="number">
+              The epoch timestamp (in seconds) of when the last heartbeat was sent to Discord.
+            </ResponseField>
+            <ResponseField name="heartbeatAcknowledged" type="number">
+              The epoch timestamp (in seconds) of when the most recent heartbeat was acknowledged by Discord.
+            </ResponseField>
+            <ResponseField name="latency" type="number">
+              The latency of the shard in milliseconds.
+            </ResponseField>
+          </Expandable>
+        </ResponseField>
+        <ResponseField name="uptime" type="object">
+          Bot uptime information
+          <Expandable title="properties">
+            <ResponseField name="readable" type="string">
+              A human-readable string representing the uptime of the bot.
+            </ResponseField>
+            <ResponseField name="epoch" type="number">
+              The epoch timestamp (in seconds) of when the bot was started.
+            </ResponseField>
+          </Expandable>
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+  </Expandable>
+</ResponseField>

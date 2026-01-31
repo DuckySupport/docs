@@ -1,0 +1,25 @@
+---
+title: 'Ratelimits'
+description: 'Learn how to handle ratelimits while using our API.'
+---
+
+The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values— instead, use the following headers which are found in every response:
+
+<ResponseField name="X-RateLimit-Limit" type="number">
+  The amount of requests allowed before hitting the ratelimit.
+</ResponseField>
+
+<ResponseField name="X-RateLimit-Remaining" type="number">
+  The number of remaining requests that can be made before hitting the ratelimit.
+</ResponseField>
+
+<ResponseField name="X-RateLimit-Reset" type="number">
+  The epoch timestamp (in seconds) of when the ratelimit will reset.
+</ResponseField>
+
+The following body is also provided when the ratelimit is hit:
+```json 429 Response
+{
+  "code": 429,
+  "message": "Too many requests, please try again later."
+}
