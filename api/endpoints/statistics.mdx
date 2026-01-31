@@ -1,0 +1,38 @@
+---
+title: "Fetch bot statistics"
+description: "Fetch Ducky's statistics including guild count, user count, and more."
+api: "GET /statistics"
+---
+
+<ResponseExample>
+
+```json 200
+{
+  "code": 200,
+  "message": "Bot statistics were fetched successfully.",
+  "data": {
+    "guilds": 10418,
+    "users": 779795,
+    "links": 38074,
+    "version": "v1.6.0 Stable"
+  }
+}
+```
+
+</ResponseExample>
+
+### Response Data
+
+<ResponseField name="guilds" type="number">
+  The amount of guilds Ducky is in.
+</ResponseField>
+<ResponseField name="users" type="number">
+  The amount of users Ducky is in.
+</ResponseField>
+<ResponseField name="links" type="number">
+  The amount of links Ducky is in.
+</ResponseField>
+<ResponseField name="version" type="string">
+  The current running version of Ducky.
+</ResponseField>
+

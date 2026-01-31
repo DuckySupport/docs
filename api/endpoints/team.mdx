@@ -1,0 +1,72 @@
+---
+title: "Fetch team members"
+description: "Fetch the team members who maintain Ducky."
+api: "GET /team"
+---
+
+<ResponseExample>
+
+```json 200
+{
+  "code": 200,
+  "message": "All Ducky Team members have been successfully fetched.",
+  "data": [
+    {
+      "discord_id": "598958193032560642",
+      "color": "#38B6FF",
+      "avatar": "https://cdn.discordapp.com/avatars/598958193032560642/b4a9105d349cc3e9c3d5c0d3b24adbb8.png",
+      "username": "troptopreal",
+      "role": "Lead Developer",
+      "name": "trop",
+      "category": "dev",
+      "position": 5
+    },
+    {
+      "discord_id": "782235114858872854",
+      "color": "#38B6FF",
+      "avatar": "https://cdn.discordapp.com/avatars/782235114858872854/fff448ad33f613c223ee3771fd659fab.png",
+      "username": "bobbibones",
+      "role": "Senior Developer",
+      "name": "bobbi",
+      "category": "dev",
+      "position": 4
+    },
+    // ...
+  ]
+}
+```
+
+</ResponseExample>
+
+### Response Data
+
+<ResponseField name="data" type="object[]">
+  In this endpoint, the response data is an array of objects.
+
+  <Expandable title="properties">
+    <ResponseField name="username" type="string">
+      The team member's username.
+    </ResponseField>
+    <ResponseField name="name" type="string">
+      The team member's display name.
+    </ResponseField>
+    <ResponseField name="avatar" type="string">
+      The team member's avatar URL.
+    </ResponseField>
+    <ResponseField name="discord_id" type="string">
+      The team member's Discord ID.
+    </ResponseField>
+    <ResponseField name="role" type="string">
+      The team member's role.
+    </ResponseField>
+    <ResponseField name="color" type="string">
+      A hex code representing the team member's role color.
+    </ResponseField>
+    <ResponseField name="category" type="string">
+      The team member's position category.
+    </ResponseField>
+    <ResponseField name="position" type="number">
+      The team member's position within their category.
+    </ResponseField>
+  </Expandable>
+</ResponseField>

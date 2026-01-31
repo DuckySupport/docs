@@ -59,7 +59,8 @@
                         "pages": [
                             "misc/timestamps",
                             "misc/devmode",
-                            "misc/embededitor"
+                            "misc/embededitor",
+                            "misc/api"
                         ]
                     }
                 ]
@@ -78,6 +79,8 @@
                         "group": "Endpoints",
                         "pages": [
                             "api/endpoints/base",
+                            "api/endpoints/statistics",
+                            "api/endpoints/team",
                             "api/endpoints/links"
                         ]
                     }
