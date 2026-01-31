@@ -4,7 +4,7 @@
     "name": "Ducky",
     "colors": {
         "primary": "#38B6FF",
-        "light": "#ecdb50",
+        "light": "#ECDB50",
         "dark": "#38B6FF"
     },
     "favicon": "/icons/favicon.ico",
@@ -48,38 +48,18 @@
                         ]
                     },
                     {
-                        "group": "Tutorials",
+                        "group": "Guides",
                         "pages": [
-                            "tutorials/linkerlc",
-                            "tutorials/ingamecmds"
+                            "guides/linkerlc",
+                            "guides/ingamecmds"
                         ]
                     },
                     {
                         "group": "Miscellaneous",
                         "pages": [
-                            "misc/timeinputs",
                             "misc/timestamps",
                             "misc/devmode",
                             "misc/embededitor"
-                        ]
-                    }
-                ]
-            },
-            {
-                "tab": "API Reference",
-                "groups": [
-                    {
-                        "group": "Information",
-                        "pages": [
-                            "api/information/responses",
-                            "api/information/ratelimits"
-                        ]
-                    },
-                    {
-                        "group": "Endpoints",
-                        "pages": [
-                            "api/endpoints/base",
-                            "api/endpoints/links"
                         ]
                     }
                 ]
