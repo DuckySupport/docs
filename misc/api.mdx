@@ -4,11 +4,11 @@ description: "Documentation for the Ducky API (api.duckybot.xyz)"
 tag: "WIP"
 ---
 
-## Base URL
+### Base URL
 
 `api.duckybot.xyz`
 
-## Ratelimits
+### Ratelimits
 
 The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Use the following headers found in every response:
 
@@ -24,7 +24,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
   Epoch timestamp when the rate limit resets.
 </ResponseField>
 
-#### 429 response:
+##### 429 response:
 ```json
 {
   "code": 429,
@@ -32,7 +32,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `GET /`
+### `GET /`
 
 <Callout icon="pencil">
   Returns status information about Ducky and the API.
@@ -84,7 +84,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `GET /statistics`
+### `GET /statistics`
 
 <Callout icon="pencil">
   Returns statistical information about Ducky.
@@ -103,7 +103,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `GET /team`
+### `GET /team`
 
 <Callout icon="pencil">
   Returns a list of all Ducky team members.
@@ -128,7 +128,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `GET /users/:id`
+### `GET /users/:id`
 
 <Callout icon="pencil">
   Returns information about a Discord or Roblox user.
@@ -142,7 +142,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
   A Ducky session token.
 </ResponseField>
 
-#### Discord user
+##### Discord user
 
 ```json expandable lines wrap
 {
@@ -157,7 +157,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-#### Roblox user
+##### Roblox user
 
 ```json expandable lines wrap
 {
@@ -178,7 +178,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `GET /feedback`
+### `GET /feedback`
 
 <Callout icon="pencil">
   Returns 5 random 4/5 star reviews on Ducky.
@@ -205,7 +205,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `GET /links/:id`
+### `GET /links/:id`
 
 <Callout icon="pencil">
   Returns link information about a user.
@@ -242,7 +242,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `POST /links`
+### `POST /links`
 
 <Callout icon="pencil">
   Create a link.
@@ -283,7 +283,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `DELETE /links`
+### `DELETE /links`
 
 <Callout icon="pencil">
   Delete a link. You must provide either a session token or a roblox-code.
@@ -304,7 +304,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `POST /auth`
+### `POST /auth`
 
 <Callout icon="pencil">
   Generate a Ducky session token.
@@ -330,7 +330,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `DELETE /auth`
+### `DELETE /auth`
 
 <Callout icon="pencil">
   Delete all session information.
@@ -347,7 +347,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `ANY /guilds/:id/:action/:subaction`
+### `ANY /guilds/:id/:action/:subaction`
 
 <Callout icon="pencil">
   The format of all `/guilds` requests.
@@ -369,7 +369,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
   The session token of the user.
 </ResponseField>
 
-## `GET /guilds`
+### `GET /guilds`
 
 <Callout icon="pencil">
   Returns all guilds the user is in.
@@ -421,7 +421,7 @@ The base ratelimit is 20 requests per 10 seconds. Do not hardcode any values. Us
 }
 ```
 
-## `GET /guilds/:id/panel`
+### `GET /guilds/:id/panel`
 
 <Callout icon="pencil">
   Returns all information required for a modpanel.
