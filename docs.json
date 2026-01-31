@@ -63,6 +63,25 @@
                         ]
                     }
                 ]
+            },
+            {
+                "tab": "API Reference",
+                "groups": [
+                    {
+                        "group": "Information",
+                        "pages": [
+                            "api/information/responses",
+                            "api/information/ratelimits"
+                        ]
+                    },
+                    {
+                        "group": "Endpoints",
+                        "pages": [
+                            "api/endpoints/base",
+                            "api/endpoints/links"
+                        ]
+                    }
+                ]
             }
         ],
         "global": {
