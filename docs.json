@@ -4,7 +4,7 @@
     "name": "Ducky",
     "colors": {
         "primary": "#38B6FF",
-        "light": "#ECDB50",
+        "light": "#ecdb50",
         "dark": "#38B6FF"
     },
     "favicon": "/icons/favicon.ico",
@@ -48,15 +48,16 @@
                         ]
                     },
                     {
-                        "group": "Guides",
+                        "group": "Tutorials",
                         "pages": [
-                            "guides/linkerlc",
-                            "guides/ingamecmds"
+                            "tutorials/linkerlc",
+                            "tutorials/ingamecmds"
                         ]
                     },
                     {
                         "group": "Miscellaneous",
                         "pages": [
+                            "misc/timeinputs",
                             "misc/timestamps",
                             "misc/devmode",
                             "misc/embededitor"

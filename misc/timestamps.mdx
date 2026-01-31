@@ -1,8 +1,6 @@
 ---
 title: "Timestamps"
 description: "Learn how to utilize Discord's timestamps."
-icon: "clock"
-iconType: "solid"
 ---
 
 The **`{timestamp}`** variable is one of the most confusing variables in Ducky for those who aren't familiar with Discord's formatting style. When using the variable without formatting, you'll receive a number such as **`1756645200`**. This isn't very useful, nor readable. To make it readable, you must add formatting as shown below.
@@ -18,3 +16,19 @@ The **`{timestamp}`** variable is one of the most confusing variables in Ducky f
 <Note>
   Be sure to replace the numbers with the **`{timestamp}`** variable. Example: **`<t:{timestamp}:R>`**.
 </Note>
+
+## Non-specific Timestamps
+
+If you don't want to have a timestamp that states a specific time, and want to make it state the current time in any of the formats, pay attention.
+
+- \*\*[Day of week,] [Month X,] [Year X:XX AM/PM:] \*\*`<t:timestamp:F>`
+- **[Month X,] [Year X:XX AM/PM:]** `<t:timestamp:f` or `<t:timestamp>`
+- **[Month X,] [Year:]** `<t:timestamp:D>`
+- **X/XX/XXXX:** `<t:timestamp:d>`
+- **[X:XX AM/PM:]** `<t:timestamp:t>`
+- **[X:XX:XX:]** `<t:timestamp:T>`
+- **[X] seconds ago:** `<t:timestamp:R>`
+
+<Warning>
+  All of the timestamps are **case sensitive**. If one letter is accidentally uppercase, it will not display properly or not work completely.
+</Warning>
