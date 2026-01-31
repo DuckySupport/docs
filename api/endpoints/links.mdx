@@ -8,8 +8,91 @@ api: "GET /links/{id}"
 
 ```json 200
 {
-    "status": "success"
+  "code": 200,
+  "message": "Link fetched successfully.",
+  "data": {
+    "discord": {
+      "username": "troptopreal",
+      "avatar": "https://cdn.discordapp.com/avatars/598958193032560642/b4a9105d349cc3e9c3d5c0d3b24adbb8.png",
+      "name": "Troptop",
+      "id": "598958193032560642"
+    },
+    "roblox": {
+      "profile": "https://roblox.com/users/1038671897/profile",
+      "name": "troptopreal",
+      "id": 1038671897,
+      "displayName": "Troptop",
+      "description": "colombiano ☕💖",
+      "banned": false,
+      "created": 1555162890.283,
+      "hyperlink": "[troptopreal](<https://roblox.com/users/1038671897/profile>)",
+      "verified": false,
+      "avatar": "https://t4.rbxcdn.com/30DAY-AvatarHeadshot-7E3036777BDD02D485E0A0CCC240BDCC-Png"
+    }
+  }
 }
 ```
 
 </ResponseExample>
+
+### Parameter Fields
+
+<ParamField path="id" type="number" required>
+    The Roblox or Discord ID of the user whose link you want to fetch.
+</ParamField>
+
+### Response Data
+
+<ResponseField name="discord" type="object">
+  The Discord user associated with this link.
+ <Expandable title="properties">
+    <ResponseField name="username" type="string">
+      The user's username.
+    </ResponseField>
+    <ResponseField name="name" type="string">
+      The user's display name.
+    </ResponseField>
+    <ResponseField name="avatar" type="string">
+      The user's avatar URL.
+    </ResponseField>
+    <ResponseField name="id" type="string">
+      The user's ID.
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseField name="roblox" type="object">
+  The Roblox player associated with this link.
+ <Expandable title="properties">
+    <ResponseField name="name" type="string">
+      The player's username.
+    </ResponseField>
+    <ResponseField name="displayName" type="string">
+      The player's display name.
+    </ResponseField>
+    <ResponseField name="id" type="number">
+      The player's ID.
+    </ResponseField>
+    <ResponseField name="avatar" type="string">
+      The player's avatar URL.
+    </ResponseField>
+    <ResponseField name="description" type="string">
+      The player's description/bio.
+    </ResponseField>
+    <ResponseField name="profile" type="string">
+      A link to the player's profile.
+    </ResponseField>
+    <ResponseField name="hyperlink" type="string">
+      A hyperlink to the player's profile, where the label is the player's username.
+    </ResponseField>
+    <ResponseField name="verified" type="boolean">
+      Whether or not the player is verified on Roblox.
+    </ResponseField>
+    <ResponseField name="banned" type="boolean">
+      Whether or not the player is banned from Roblox.
+    </ResponseField>
+    <ResponseField name="created" type="number">
+      An epoch timestamp (in seconds) representing when the player's account was created.
+    </ResponseField>
+  </Expandable>
+</ResponseField>
