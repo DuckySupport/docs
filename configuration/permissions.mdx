@@ -5,8 +5,16 @@ description: "Learn what each role-based permission level can access via Ducky."
 
 Ducky's role-based permissions can be configured via the first page of the **`/setup`** command. More information on what each of these role-based permissions are authorized to access can be found below.
 
+<Warning>
+  Members with the Discord **Manage Server** permission are automatically granted access to every permission listed below.
+</Warning>
+
 <Accordion title="Discord Moderator Roles" icon="hammer">
   - **`/purge`:** Members of the configured **Discord Moderator** permission roles are authorized to purge up to **1,000 messages** from any given channel that they have access to send a message in.
+
+  <Warning>
+    Due to Discord limitations, messages older than 14 days cannot be purged.
+  </Warning>
   - **`/slowmode`:** Members of the configured **Discord Moderator** permission roles are authorized to modify the slowmode of any given channel that they have access to send a message in.
   - **`/role`:** Members of the configured **Discord Moderator** permission roles are authorized to view any given role's information, add a role (which they can access, automatically determined based on member/role hierarchy) to another member, and remove a role (which they can access, automatically determined based on member/role hierarchy) from a member.
   - **`/case`:** Members of the configured **Discord Moderator** permission roles are authorized to view a specific case and its information. If they are the moderator of a specific case, they are also authorized to void the case.
@@ -53,10 +61,9 @@ Ducky's role-based permissions can be configured via the first page of the **`/s
   - **`/loa active`:** Members of the configured **ERLC Staff** permission roles are authorized to view the server's active LOAs.
   - **`/loa view`:** Members of the configured **ERLC Staff** permission roles are authorized to view and manage their own Leave of Absence.
   - **`/search`:** Members of the configured **ERLC Staff** permission roles are authorized to search a Roblox user's punishments
-
   - **`:log ping`:** Members of the configured **ERLC Staff** permission roles are authorized to check the status/functionality of in-game commands.
   - **`:log punish`:** Members of the configured **ERLC Staff** permission roles are authorized to punish a player from the in-game server.
-  - **`:log bolo: `Members of the configured **ERLC Staff** permission roles are authorized to create a ban bolo from the in-game server.
+  - `:log bolo: `Members of the configured **ERLC Staff** permission roles are authorized to create a ban bolo from the in-game server.
   - **`:log automations run`:** Members of the configured **ERLC Staff** permission roles are authorized to run an automation from the in-game server.
   - **`:log shift start`:** Members of the configured **ERLC Staff** permission roles are authorized to start their shift from the in-game server.
   - **`:log shift pause`:** Members of the configured **ERLC Staff** permission roles are authorized to pause their shift from the in-game server.
@@ -71,7 +78,6 @@ Ducky's role-based permissions can be configured via the first page of the **`/s
   - **`/punishments view`:** Members of the configured **ERLC Administrator** permission roles are authorized to edit and delete punishments on a user.
   - **`/erlc tempban`:** Members of the configured **ERLC Administrator** permission roles are authorized to temporarily ban a player.
   - **`/erlc untempban`:**  Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player.
-
   - **`:log message`:** Members of the configured **ERLC Administrator** permission roles are authorized to message a specific group of people.
   - **`:log tempban`:** Members of the configured **ERLC Administrator** permission roles are authorized to temporarily ban a player from the in-game server.
   - **`:log untempban`:** Members of the configured **ERLC Administrator** permission roles are authorized to remove a temporary ban on a player from the in-game server.
@@ -103,7 +109,6 @@ Ducky's role-based permissions can be configured via the first page of the **`/s
   <Note>
     Members with the **Manage Server** permission can bypass all other permission role restrictions.
   </Note>
-
   - **`/updatemembers`:** Members with the **Manage Server** permission are authorized to update all members to your configuration, including verification and join roles.
   - **`/giveaway create`:** Members with the **Manage Server** permission are authorized to create a giveaway.
   - **`/message`:** Members with the **Manage Server** permission are authorized to open the Message Editor and create/send a custom message including content & embeds.

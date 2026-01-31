@@ -1,0 +1,68 @@
+---
+title: "Automations"
+description: "Learn how to automate your ERLC private server with Ducky."
+---
+
+**Automations** are a powerful way to automate your ERLC private server. With over 30+ triggers, conditions, and actions, you can create custom events and commands such as staff requests, automatic session management, mass RDM detection, welcome messages, Discord checks, raid rollbacks, and _so much more_.
+
+<Callout icon="/icons/duckyplus.png" color="#d706eb">
+  Ducky provides a 10 automation slots with 5 actions each for free users. Upgrade to Ducky Plus+ to receive 50 automation slots with 15 actions each.
+</Callout>
+
+## Creating an Automation
+
+### Getting Started
+
+To create an automation, run the **`/automations create`** command. This will open up the **Automations Builder**, allowing you to customize your new automation.
+
+### Adding a Name
+
+To add an identifiable name to your automation, select the **Edit Name** option within the **Edit this Automation** dropdown menu.
+
+### Disabling Automations
+
+In the event that you would like to disable this automation without deleting it, select **Disable** within the **Edit this Automation** dropdown menu.
+
+### Results Channel
+
+Adding a **Results Channel** allows Ducky to send a message to that channel whenever an automation is sent, detailing whether an automation ran successfully or not, and which actions were run successfully or not.i
+
+### Customize
+
+The **Customize** menu allows futher customization of an automation, including required roles, custom arguments, and custom slash commands.
+
+**Required Role**\
+When enabled, all users using the automation must have the specified role. Users who attempt this command without the required role will not be able to run the automation.
+
+**Custom Arguments**\
+Custom Arguments allow you to ask for up to 5 arguments. Arguments are additional pieces of information that a user provides when executing a command. Making an argument required means that users using the automation must fill it out; making an argument not required means that users using the automation no not need fill it out.
+
+**Custom Slash Commands**\
+Custom Slash Commands allow you to create a designated slash command that users can run (instead of `/automations run`). The slash command cannot contain spaces, consider opting for underscores.
+
+<Note>
+  The customize menu is only available when your automation trigger is set to **Manual**.
+</Note>
+
+## Logic
+
+The logic is what happens within your automation. This includes the trigger, conditions, and actions. We'll break down what each of them does and how to fully use it properly.
+
+**Triggers**\
+Triggers are what activate your automation. Once the trigger is met, it'll run your actions, or check for conditions if that's what you have setup.
+
+<Warning>
+  Some triggers, including ones that use your configured ERLC server, require linking your ERLC API to Ducky, or using Ducky's [Roblox Verification Module](/modules/RobloxVerification) to verify your member's Roblox accounts.
+</Warning>
+
+**Conditions**\
+Conditions tell your automations when and when not to trigger. These conditions include: Role Conditions, Playercount, Team, Session Status, and when the automation was last triggered
+
+**Actions**\
+Actions are steps that happen after your trigger and conditions are met. These include Sending Commands to ERLC, Session Management, and More.
+
+<Warning>
+  Sending ERLC Commands requires linking your ERLC API to Ducky.
+</Warning>
+
+<Tooltip tip="">If you have any further questions, please refer to </Tooltip>[Ducky's Support Discord](https://duckybot.xyz/support)<Tooltip tip="">.</Tooltip>

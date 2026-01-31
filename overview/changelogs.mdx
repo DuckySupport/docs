@@ -1,0 +1,128 @@
+---
+title: "Changelogs"
+description: "Check out what's new in our recent updates."
+tag: "NEW"
+---
+
+As of v1.6.0 Stable, we're moving our detailed changelogs from Discord to our documentation page for better formatting and a much larger character limit.
+
+<Update label="v1.6.0 Stable" description="January 31, 2026">
+    **The first update of 2026 is here!** We've been working on v1.6.0 Stable for a while now, and after weeks of testing, development, and even more testing, it's finally ready.
+
+    Here's what's new in **v1.6.0 Stable**:
+    ### Automations
+    - We've added **3 new actions** to **Automations**:
+        - **Lock Channel:** Lock a specified channel.
+        - **Unlock Channel:** Unlock a specified channel.
+        - **Re-check Conditions:** Re-check the automation's conditions, and do not continue executing the automation if they are no longer met.
+        <Warning>
+            The **Re-check Conditions** action requires a **Delay** action prior to it.
+        </Warning>
+
+    ### ERLC Playtime Rewards
+    - Our new **ERLC Playtime** bridge between **Usersettings** and the **ERLC Integration** module is here, bringing you the ability to reward and track your most active players.
+    - You can now configure playtime rewards via the **ERLC Integration** page. For more information, check out the [documentation](/modules/erlcintegration.mdx).
+    - Members are able to opt-out of playtime tracking via **`/usersettings`** -> **Edit settings...** -> **Toggle Track Playtime**.
+    <Warning>
+        The member must also have their Roblox account linked to Ducky in order to track playtime.
+    </Warning>
+
+    ### Improved Builders
+    - We've started using **Modals v2** for our builders. This update marks the start of this transition, so keep in mind that not all builders are completely transferred to Modals v2.
+    - Modals v2 offers many clean and useful components such as option, role, and channel dropdowns, text inputs, checkboxes (soon...), and more.
+    - We're also using better labels for the different options. For example, instead of asking the user for **Required Role**, it asks, **What role should be required to use this shift type?**
+    - The transition can already be found in places such as the **Economy**, **Shift Management**, and **ERLC Integration** pages of **`/setup`**.
+
+    ### Coinflip and Reminders
+    - The new **`/coinflip`** command lets you flip a coin and determine heads or tails.
+    - The new **`/reminders list|set|cancel`** command lets you manage your own reminders. You'll automatically be reminded via DMs when it's time to be reminded.
+
+    ### Ticket Close Reason & Transcript Fixes
+    - We've resolved issues regarding 0-byte or empty transcripts. This issue was caused by deleting the ticket too fast, which meant that it was being deleted while the transcript was being generated.
+    - You can now include a **close reason** which will be sent along with the transcript to the opener.
+    - Additionally, the category name limit has been bumped from 25 -> 50.
+
+    ### Discord Staff Immunity
+    - You can now toggle **Staff Immunity** on the **Discord Moderation** page of **`/setup`**.
+    - When enabled, this prevents your staff members from moderating eachother. This is disabled by default.
+
+    ### Joingate & Direct Welcome Message
+    - Welcome/AutoRoles is now Welcome/Autoroles. Huge change, we know.
+    - You can now configure a **Direct Welcome Message**, which is automatically sent via the member's DMs when they join.
+    - You can also configure a **Joingate** for your server, which automatically kicks users who have an account younger than the **Joingate Threshold**.
+
+    ### Exportable Cross-Type Support
+    - You can now import exportables of different types than what you need.
+    - For example, if you have an **Embed** exportable but you want to import it into the **Message Editor**, you can do just that, and it will automatically transform the data structure appropriately.
+
+    <Warning>
+        Exportables of the **Panel** type can still only be imported into the **Ticket Panel Builder**.
+    </Warning>
+
+    ### Role Command Toggles
+    - The **`d!role`** command no longer needs you to specify a subcommand such as `add` or `remove`.
+    - If no subcommand is provided, it will now **toggle** the role on the member.
+    - For example, if the **@troptopreal** already has the **Quacker** role and **`d!role troptopreal Quacker`** is used, the **Quacker** role will be **removed** from **@troptopreal**.
+
+    ### Membercount Goal Projection
+    - The **`/membercount`** command now has an optional **`goal`** argument.
+    - This will show an approximation of how long/when the server will hit that amount of members.
+    <Warning>
+        This is **not** guaranteed to be 100% accurate, but is rather a rough estimate.
+    </Warning>
+
+    ### Whitelisted Antiping Channels
+    - You can now configure specific channels where antiping will not be triggered.
+
+    ### Editable Verification Panels
+    - You can now edit your **Roblox Verification Panel** instead of having to recreate a new one every time.
+
+    ### Careers Page
+    - We've added a [**Careers**](https://duckybot.xyz/careers) page to our website, which displays requirements and the application for the position.
+
+    ### Documentation Progress
+    - We're making progress on writing our [**Documentation**](/overview/welcome.mdx) as our team of **Docwriters** continues to grow.
+    - All existing pages will be kept up-to-date, and are up-to-date right now.
+
+    ### Quality of Life Changes
+    - Renamed **Welcome/AutoRoles** -> **Welcome/Autoroles**
+    - Renamed **Discord Server Status** -> **Discord Server Statistics**
+    - Added markdown string to **`/emoji view`**
+    - Added username instead of nickname to lock/unlock channel logs
+    - Added unmute reason to the DM notification sent to the member
+    - Added proper sorting to the **`/feedback view`** command
+    - Added bypass for sanitization of **`/say`** for members with the **Manage Server** permission
+    - Rewrote our variable replacing utility to use better pattern matching and prevent unwanted replacement
+    - Deprecated skull (custom "💀") emoji and use the swords (custom "⚔️") instead
+    - Deprecated usage of `sub` and replaced it with `usub` to chop strings by characters instead of bytes (prevents "Invalid JSON" errors)
+    - Autoresponders now mention on reply
+    - Automations are now executed asynchronously to prevent the **Delay** action from affecting the server's ERLC server status messages, channels, logs, etc.
+
+    ### Bug Fixes
+    - Resolved issues with 0-byte/empty ticket transcripts
+    - Resolved issues with web ticket transcripts failing to load due to expired cookies
+    - Resolved issues with completely inaccurate timestamps on web transcript messages
+    - Resolved issues with ticket unclaim embeds not sending
+    - Resolved issues with the ticket **Hide** claim mode not functioning whatsoever
+    - Resolved illogical statements in feature limits
+    - Resolved issues with exportable codes appearing as normal single-digit integers
+    - Resolved issues with large numbers breaking our number formatter utility
+    - Resolved issues with refunding **Ducky Plus+** slots from removed guilds
+    - Resolved issues with **`/setup`** page selector teleporting to the incorrect page
+    - Resolved issues with using **`{*.avatar}`** variables in the **Message Editor** resulting in HTTP Error 50035
+    - Resolved issues with **`/ticket manage`** not letting you change the ticket's subject
+    - Resolved issues with removing audit log channels from an audit log type
+    - Resolved issues with **`/suggestion list`** erroring
+    - Resolved issues with **`/softban`** erroring
+    - Resolved issues with **`/leaderboard`** erroring
+    - Resolved issues with creating a shop item
+    - Resolved issues with missing subcommands of **`/punishments ...`** in **`/help`**
+    - Resolved issues with editing/removing Autoreact Channels if more than one autoreaction was added to the same channel
+    - Resolved issues with department nicknames being synced unidirectionally
+
+    Phew, that took a long time to write. If you need support, would like to make a suggestion, or report a bug, hop into [**Ducky's Pond**](https://duckybot.xyz/support).
+    
+    We plan to continue our monthly updates throughout 2026, and we apologize for the lack of an update in December due to the holidays.
+    
+    We truly hope you enjoy this update, and as always, *thank you* for choosing **Ducky** to power your server.
+</Update>

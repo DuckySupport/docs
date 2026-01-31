@@ -6,27 +6,25 @@ tag: "UNPOLISHED"
 
 This page provides the essential configuration options for Ducky's **Discord Pings module** , which gives you full control over how and when you receive pings in your server. The module helps prevent unnecessary pings, avoids ghost pings, and ensures that you’re only notified when it truly matters. To enable and configure this module, use the **`/setup`** command and navigate to the **Discord Pings** page.
 
-<Steps>
-  <Step title="Module Enabled" titleSize="h2">
-    Toggeling this option will enable/disable the **Discord Pings** module.
-  </Step>
-  <Step title="Protected Roles" titleSize="h2">
-    If a user pings a **Protected Role** the user who pinged will be notified with an embed notifying them that they are not permitted to mention members that has the **Protected Role**.
+<Tip>
+  All embeds which Ducky may send in this module are customizable, allowing you to better suit your server.
+</Tip>
 
-    <Info>
-      The embed is customizable to better suit your server.
-    </Info>
-  </Step>
-  <Step title="Whitelisted Roles" titleSize="h2">
-    Members with the **Whitelisted Roles** can mention members that a **Protected Role** without being affected by the **Discord Pings** module.
-  </Step>
-  <Step title="Hierarchy Enabled" titleSize="h2">
-    Toggeling this option will essentially make all roles above the configured **Protected Role** also act as protected roles.
-  </Step>
-  <Step title="Anti Ping Embed" titleSize="h2">
-    The Anti Ping Embed will automatically be sent by ducky when a user pings a user with a protected role. This embed is customizable to best fit your needs.
-  </Step>
-  <Step title="Anti Ghost Ping Embed" titleSize="h2">
-    The Anti Ghost Ping Embed will show up when a user pings another user and they delete their message, this action is known as "ghost pinging". Ducky will automatically send this embed when a user ghost pings another user, this embed is customizable to best fit your needs.
-  </Step>
-</Steps>
+  ## Module Enabled
+    This will enable/disable the **Discord Pings** module.
+  
+  ## Protected Roles
+    If a user pings a **Protected Role** the user who pinged will be notified with an embed notifying them that they are not permitted to mention members that has the **Protected Role**.
+  
+  ## Whitelisted Roles
+    Members with the **Whitelisted Roles** can mention members who have a **Protected Role** without being affected by the **Discord Pings** module.
+  
+  ## Hierarchy Enabled
+    This makes all roles above the configured **Protected Role** also act as a protected role.
+  
+  ## Anti Ping Embed
+    This will automatically be sent by Ducky when a user pings a user with a protected role. This embed is customizable to best fit your needs.
+  
+  ## Anti Ghost Ping Embed
+    This will be sent by Ducky when a user deletes a message which mentions a user or role. This action is known as "ghost pinging". This embed is customizable to best fit your needs.
+  

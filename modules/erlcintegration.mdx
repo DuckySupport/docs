@@ -1,42 +1,65 @@
 ---
 title: "ERLC Integration"
 description: "Learn about Ducky's ERLC Integration module and how to configure it."
-tag: "NEW"
 ---
 
 This page provides the essential configuration options for Ducky's **ERLC Integration** module, which enables seamless remote management and monitoring of your ERLC private server. To enable and configure this module, use the **`/setup`** command and navigate to the **ERLC Integration** page.
 
-<Steps>
-  <Step title="In-Game Role" titleSize="h2">
-    The **In-Game Role** is a role that players within the linked ERLC private server will be granted. This role is added from the member when they join the in-game server, and removed when they leave the in-game server.
-    <Warning>
-      The member must have their **Roblox** account linked with Ducky in order for this role to be added/removed from them.
-    </Warning>
-  </Step>
-  <Step title="ERLC Server" titleSize="h2">
-    The **ERLC Server** is the linked ERLC private server. Learn how to Link your ERLC Private Server [here](/tutorials/linkerlc).
-  </Step>
-  <Step title="Advanced ERLC Command Permissions" titleSize="h2">
-    The **Advanced ERLC Command Permissions** toggle determines whether or not your staff team have access to **`/erlc command`**. 
-    
-    When **enabled**, members of the configured **ERLC Staff** roles have access to **`/erlc command`** but can only execute commands they would be able to execute in-game (i.e. an in-game moderator cannot use **`/erlc command`** to ban/unban).
-    
-    When **disabled**, only members of the configured **ERLC Manager** roles can access **`/erlc command`** with the Co-Owner permission level.
-  </Step>
-  <Step title="ERLC Command Logs Channel" titleSize="h2">
-    The **ERLC Command Logs Channel** is the channel that contains the ERLC Command Logs webhook. For more information, click [here](/tutorials/ingamecmds).
-  </Step>
-  <Step title="ERLC Kick/Ban Logs Channel" titleSize="h2">
-    The **ERLC Kick/Ban Logs Channel** is the channel that contains the ERLC Kick/Ban Logs webhook. For more information, click [here](/tutorials/ingamecmds).
-  </Step>
-  <Step title="Auto Log Kicks/BOLOs" titleSize="h2">
-    The **Auto Log Kicks/BOLOs** toggle determines whether or not Ducky automatically reads logs from the configured **ERLC Kick/Ban Logs Channel** in order to automatically log punishments and/or complete active BOLOs.
-  </Step>
-  <Step title="Ban Syncing Mode" titleSize="h2">
-    The **Ban Syncing Mode** is the mode that Ducky uses to synchronize bans between the ERLC private server and the Discord server. The available options can be found below:
-    - **Discord to ERLC:** Members banned within the Discord server will automatically be banned from the ERLC private server.
-    - **ERLC to Discord:** Players banned within the ERLC private server will automatically be banned from the Discord server.
-    - **Both:** Members banned within the Discord server will automatically be banned from the ERLC private server, and players banned within the ERLC private server will automatically be banned from the Discord server.
-    - **None:** Ban synchronization will not occur.
-  </Step>
-</Steps>
+## In-Game Role
+
+The **In-Game Role** is a role that players within the linked ERLC private server will be granted. This role is added from the member when they join the in-game server, and removed when they leave the in-game server.
+
+<Warning>
+  The member must have their **Roblox** account linked with Ducky in order for this role to be added/removed from them.
+</Warning>
+
+## ERLC Server
+
+The **ERLC Server** is the linked ERLC private server. You can link your ERLC private server by following the steps outlined [here](/tutorials/linkerlc).
+
+## Advanced Remote Execution Permissions
+
+The **Advanced Remote Execution Permissions** toggle determines whether or not your staff team have access to **`/erlc command`**.
+
+When **enabled**, members of the configured **ERLC Staff** roles have access to **`/erlc command`**, however they are only able to execute commands they would be able to execute in-game (i.e. an in-game moderator cannot use **`/erlc command`** to ban/unban).
+
+When **disabled**, only members of the configured **ERLC Manager** roles can access **`/erlc command`** with the Co-Owner permission level.
+
+## ERLC Command Logs Channel
+
+The **ERLC Command Logs Channel** is the channel that contains the ERLC Command Logs webhook. This is essential for in-game commands, which can be configured by following the steps outlined [here](/tutorials/ingamecmds).
+
+## ERLC Kick/Ban Logs Channel
+
+The **ERLC Kick/Ban Logs Channel** is the channel that contains the ERLC Kick/Ban Logs webhook.
+
+## Auto Log Kicks/BOLOs
+
+The **Auto Log Kicks/BOLOs** toggle determines whether or not Ducky automatically reads logs from the configured **ERLC Kick/Ban Logs Channel** in order to automatically log punishments and/or complete active BOLOs.
+
+## Ban Syncing Mode
+
+The **Ban Syncing Mode** is the mode that Ducky uses to synchronize bans between the ERLC private server and the Discord server. The available options can be found below:
+
+- **Discord to ERLC:** Members banned within the Discord server will automatically be banned from the ERLC private server.
+- **ERLC to Discord:** Players banned within the ERLC private server will automatically be banned from the Discord server.
+- **Both:** Members banned within the Discord server will automatically be banned from the ERLC private server, and players banned within the ERLC private server will automatically be banned from the Discord server.
+- **None:** Ban synchronization will not occur.
+
+## Playtime Rewards
+
+The **Playtime Rewards** are roles that are automatically granted to members based on their total playtime within the linked ERLC private server.
+
+<Warning>
+  The member must have **Track Playtime** enabled in their **`/usersettings`** in order for playtime to be tracked. This setting is enabled by default.
+  
+  The member must have their **Roblox** account linked with Ducky in order for reward roles to be granted.
+</Warning>
+
+## Playtime Reward Announcements Channel
+
+The **Playtime Reward Announcements Channel** is the channel that is used to announce when a member has been granted a playtime reward role.
+
+<Note>
+  The message that is sent to this channel can be customized by pressing **Edit configuration...** -> **Edit Reward Announcement Message**.
+</Note>
