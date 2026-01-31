@@ -6,7 +6,7 @@ tag: "UNPOLISHED"
 
 This page provides the essential configuration options for Ducky's **Server Economy** module, which allows your members to participate in a fun, engaging in-server economy. The module creates a centralized system for collecting and managing **:quack: Quacks**, ensuring all transactions and balances are properly tracked. To enable and configure this module, use the **`/setup`** command and navigate to the **Server Economy** page.
 
-## ER:LC-Integrated Bounties
+### ER:LC-Integrated Bounties
 
 **ER:LC-Integrated bounties** allows your server members to set bounties on in-game players, and rewarding the player who kills them with Economy currency. Multiple players can add a bounty on a player via the `/bounty add` command. Active bounties can be viewed via the **`/bounty list <player>`**. Server managers can remove + refund a bounty placed on a player.
 
@@ -14,7 +14,7 @@ This page provides the essential configuration options for Ducky's **Server Econ
   The bounty claimer must be linked via Ducky to receive the reward. Your server must have the Economy module enabled, and your [ER:LC private server API Key](/tutorials/linkerlc) must be linked.
 </Note>
 
-## Commands
+### Commands
 
 Ducky has a vast ammount of economy ommands, these include:
 
@@ -50,95 +50,95 @@ Ducky has a vast ammount of economy ommands, these include:
 
 `/blackjack` (`d!bj`, `d!bjack`): _Gamble with your quacks in a game of Blackjack._
 
-## Currency
+### Currency
 
 **Currency** is the emoji and/or text which appears before the amount of Ducky money the user holds. For instance, changing your currency to: "🐣" will show all amounts of money as "🐣 100".
 
-## Initial Amount
+### Initial Amount
 
 The **initial amount** is the amount of money a user starts with. By default, this is set to 0, but setting it to 100 will grant all new users 100 currency.
 
-## Amounts
+### Amounts
 
 **Amounts** is the range or static number of currency a user can get for various actions. You can currently edit **work**, **crime**, **beg**, **daily**.
 
-## Custom Cooldowns
+### Custom Cooldowns
 
 **Custom Cooldowns** are used to set a Cooldown on the commands so spamming won't occur.
 
-## Collection Roles
+### Collection Roles
 
-### Role
+#### Role
 
 The **role** is the role which can collect the specified amount.
 
-### Amount
+#### Amount
 
 The **amount** is the amount which can be collected each time.
 
-### Target
+#### Target
 
 The **target** is where the currency collected will go. **Wallet** will send the currency to the user's wallet (undeposited). **Bank** will send the currency to the user's bank (deposited).
 
-### Cooldown
+#### Cooldown
 
 The **cooldown** is the amount of time in between when a user can collect their currency.
 
-## Economy Log Channel
+### Economy Log Channel
 
 The **economy log channel** is the channel which all logs of economy purchases and item uses are sent to.
 
-## Blacklisted Roles
+### Blacklisted Roles
 
 **Blacklisted roles** are roles which cannot partake in the server economy whatsoever.
 
-## Custom Replies
+### Custom Replies
 
 The **Custom Replies** feature allows you to seamlessly create custom replies for the Work, Beg, Rob and Crime commands. You can create any reply, just rember to insert these variables: `{ammount}` and `{target}`. `{target}` can only be used for rob command, `{ammount}`must be used in all custom replies.
 
-## Shop
+### Shop
 
 The **shop** feature allows you to create custom shop items for your users and gives the ability to purchase these items for currency in exchange for roles.
 
-### Name
+#### Name
 
 The **name** of a shop item is what will show in the shop, inventory, and anywhere else you see shop items. The name should be something easily identifiable.
 
-### Description
+#### Description
 
 The **description** of a shop item is what users see in the shop and inventory. The description should describe what the item does and what perks it gives.
 
-### Price
+#### Price
 
 The **price** of a shop item is the amount of currency it costs to purchase that item.
 
-### Role
+#### Role
 
 The **role** of a shop item is the Discord role given to the user when the item is used. This role can be functional or purely cosmetic. The role is only given to the user once they use the item.
 
-### Use on Purchase
+#### Use on Purchase
 
 **Use on purchase** determines when the user recieves the item's role. When toggled on, the user will immediately receive the role of the shop item when purchasing it. When toggled off, the user must go into their inventory and use the item.
 
-### Message
+#### Message
 
 The **message** is the message which is sent when a user purchases an item. The message is text-only.
 
-### ID
+#### ID
 
 The \*\*ID \*\*is a unique identifer for the shop ID across all Ducky servers. There is no other shop item in any Ducky server that has the same ID.
 
-## Multipliers
+### Multipliers
 
-### Role
+#### Role
 
 The **role** is the role which is affected by the multiplier. This includes role granted by other shop items.
 
-### Multiplier
+#### Multiplier
 
 The **multiplier** is the amount which all currency of the user affected is multiplied by.
 
-## Reset Economy
+### Reset Economy
 
 **Reset economy** will wipe all economy congiuration, including shop items, multipliers, cooldowns, responses, and every other configuration mentioned on this page.
 
