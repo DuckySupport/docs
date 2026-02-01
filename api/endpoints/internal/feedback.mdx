@@ -1,0 +1,65 @@
+---
+title: "Fetch feedback"
+description: "Fetch five random bot feedback entries. Only feedback entries of 4 or 5 stars are considered."
+api: "GET /feedback"
+---
+
+<ResponseExample>
+
+```json 200
+{
+  "code": 200,
+  "message": "Feedback fetched successfully.",
+  "data": [
+    {
+      "feedback": "Ducky is an Amazing all-in-one multipurpose bot, designed to enhance your server. I have been using Ducky for around 3 months, and I would never switch back, the development team has done an amazing job on the server. We have managed to get my server affiliated by the amazing Ducky. Ducky offers a vast amount of services to ensure your server is in top notch state. I am so happy to get the opportunity to use this bot. Big Up Ducky! - From United Kingdom: Brixton Roleplay",
+      "rating": 5,
+      "timestamp": 1764425716,
+      "submitter": {
+        "avatar": "https://cdn.discordapp.com/avatars/846014201008619550/c1bd7719f2736e6191efa56efffd616e.png",
+        "username": "sami.6rk",
+        "id": "846014201008619550",
+        "name": "𝓼𝓪𝓶𝓲"
+      },
+    }
+    // ...
+  ]
+}
+```
+
+</ResponseExample>
+
+### Response Data
+
+<ResponseField name="data" type="object[]">
+  In this endpoint, the response data is an array of objects.
+
+  <Expandable title="properties">
+    <ResponseField name="feedback" type="string">
+      The feedback message provided.
+    </ResponseField>
+    <ResponseField name="rating" type="number">
+      The rating in stars, which is always a number between 4 & 5 as only those are considered in the selection.
+    </ResponseField>
+    <ResponseField name="timestamp" type="number">
+      An epoch timestamp (in seconds) representing when the feedback was submitted.
+    </ResponseField>
+    <ResponseField name="submitter" type="object">
+      The user who submitted this feedback.
+      <Expandable title="properties">
+        <ResponseField name="username" type="string">
+          The submitter's username.
+        </ResponseField>
+        <ResponseField name="name" type="string">
+          The submitter's display name.
+        </ResponseField>
+        <ResponseField name="id" type="string">
+          The submitter's ID.
+        </ResponseField>
+        <ResponseField name="avatar" type="string">
+          The submitter's avatar URL.
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+  </Expandable>
+</ResponseField>

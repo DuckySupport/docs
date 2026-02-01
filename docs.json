@@ -80,7 +80,8 @@
                         "pages": [
                             "api/endpoints/internal/base",
                             "api/endpoints/internal/statistics",
-                            "api/endpoints/internal/team"
+                            "api/endpoints/internal/team",
+                            "api/endpoints/internal/feedback"
                         ]
                     },
                     {

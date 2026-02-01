@@ -47,6 +47,18 @@ api: "GET /users/{id}"
 
 </ResponseExample>
 
+### Headers
+
+<ParamField path="Token" type="string" post={["optional"]}>
+  A Ducky authentication session token. This is only required if you are using `@me` as the ID.
+</ParamField>
+
+### Parameter Fields
+
+<ParamField path="id" type="string" required>
+  The Roblox or Discord ID of the user whose information you would like to fetch. This can be `@me` if a valid `Token` is provided via the headers.
+</ParamField>
+
 ### Response Data (Discord User)
 
 <ResponseField name="username" type="string">
