@@ -76,12 +76,18 @@
                         ]
                     },
                     {
-                        "group": "Endpoints",
+                        "group": "Internal Endpoints",
                         "pages": [
-                            "api/endpoints/base",
-                            "api/endpoints/statistics",
-                            "api/endpoints/team",
-                            "api/endpoints/links"
+                            "api/endpoints/internal/base",
+                            "api/endpoints/internal/statistics",
+                            "api/endpoints/internal/team"
+                        ]
+                    },
+                    {
+                        "group": "Data Endpoints",
+                        "pages": [
+                            "api/endpoints/data/links",
+                            "api/endpoints/data/users"
                         ]
                     }
                 ]
