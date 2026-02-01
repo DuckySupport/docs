@@ -90,7 +90,8 @@
                             "api/endpoints/data/GET/links",
                             "api/endpoints/data/POST/links",
                             "api/endpoints/data/DELETE/links",
-                            "api/endpoints/data/GET/users"
+                            "api/endpoints/data/GET/users",
+                            "api/endpoints/data/GET/guilds"
                         ]
                     },
                     {
