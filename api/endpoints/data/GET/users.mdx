@@ -49,8 +49,8 @@ api: "GET /users/{id}"
 
 ### Headers
 
-<ParamField path="Token" type="string" post={["optional"]}>
-  A Ducky authentication session token. This is only required if you are using `@me` as the ID.
+<ParamField header="Token" type="string" post={["optional"]}>
+  The Ducky session token of the user. This is only required if you are using `@me` as the ID.
 </ParamField>
 
 ### Parameter Fields

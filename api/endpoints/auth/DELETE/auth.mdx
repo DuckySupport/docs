@@ -1,0 +1,22 @@
+---
+title: "Delete auth session"
+description: "Delete all session information and invalidate the session token."
+api: "DELETE /auth"
+---
+
+<ResponseExample>
+
+```json 200
+{
+    "code": 200,
+    "message": "Successfully deleted auth information for token 'c8d8fe6a-90c3-41f9-a464-e1ebf37b8b67'."
+}
+```
+
+</ResponseExample>
+
+### Headers
+
+<ParamField header="Token" type="string" required>
+    The Ducky session token of the user.
+</ParamField>

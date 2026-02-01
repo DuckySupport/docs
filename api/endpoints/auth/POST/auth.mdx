@@ -1,0 +1,55 @@
+---
+title: "Create auth session"
+description: "Create a new auth session linked to a Discord user."
+api: "POST /auth"
+---
+
+<ResponseExample>
+
+```json 200
+{
+    "code": 200,
+    "message": "Session has been successfully authorized.",
+    "data": {
+        "token": "c8d8fe6a-90c3-41f9-a464-e1ebf37b8b67",
+        "user": {
+            "username": "troptopreal",
+            "name": "Troptop",
+            "id": "598958193032560642",
+            "avatar": "https://cdn.discordapp.com/avatars/598958193032560642/b4a9105d349cc3e9c3d5c0d3b24adbb8.png"
+        }
+    }
+}
+```
+
+</ResponseExample>
+
+### Headers
+
+<ParamField header="Discord-Code" type="string" required>
+    The Discord OAuth2 access code of the user.
+</ParamField>
+
+### Response Data
+
+<ResponseField name="token" type="string">
+  The newly-generated Ducky session token.
+</ResponseField>
+
+<ResponseField name="user" type="object">
+  The Discord user associated with this link.
+ <Expandable title="properties">
+    <ResponseField name="username" type="string">
+      The user's username.
+    </ResponseField>
+    <ResponseField name="name" type="string">
+      The user's display name.
+    </ResponseField>
+    <ResponseField name="id" type="string">
+      The user's ID.
+    </ResponseField>
+    <ResponseField name="avatar" type="string">
+      The user's avatar URL.
+    </ResponseField>
+  </Expandable>
+</ResponseField>

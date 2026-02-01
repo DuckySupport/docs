@@ -78,17 +78,26 @@
                     {
                         "group": "Internal Endpoints",
                         "pages": [
-                            "api/endpoints/internal/base",
-                            "api/endpoints/internal/statistics",
-                            "api/endpoints/internal/team",
-                            "api/endpoints/internal/feedback"
+                            "api/endpoints/internal/GET/base",
+                            "api/endpoints/internal/GET/statistics",
+                            "api/endpoints/internal/GET/team",
+                            "api/endpoints/internal/GET/feedback"
                         ]
                     },
                     {
                         "group": "Data Endpoints",
                         "pages": [
-                            "api/endpoints/data/links",
-                            "api/endpoints/data/users"
+                            "api/endpoints/data/GET/links",
+                            "api/endpoints/data/POST/links",
+                            "api/endpoints/data/DELETE/links",
+                            "api/endpoints/data/GET/users"
+                        ]
+                    },
+                    {
+                        "group": "Authentication Endpoints",
+                        "pages": [
+                            "api/endpoints/auth/POST/auth",
+                            "api/endpoints/auth/DELETE/auth"
                         ]
                     }
                 ]
