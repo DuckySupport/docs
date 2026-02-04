@@ -1,0 +1,35 @@
+---
+title: "Delete user link"
+description: "Delete a link between a Discord and Roblox user."
+api: "DELETE /links"
+---
+
+<ResponseExample>
+
+```json 200 (with Token)
+{
+  "code": 200,
+  "message": "Discord user '@troptopreal' has been successfully unlinked."
+}
+```
+
+```json 200 (with Roblox-Code)
+{
+  "code": 200,
+  "message": "Roblox user has been successfully unlinked."
+}
+```
+
+</ResponseExample>
+
+### Headers
+
+You **must** provide at least one of the two headers below.
+
+<ParamField header="Token" type="string" post={["optional"]}>
+    The Ducky session token of the user.
+</ParamField>
+
+<ParamField header="Roblox-Code" type="string" post={["optional"]}>
+    The Roblox OAuth2 access code of the user.
+</ParamField>

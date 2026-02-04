@@ -1,0 +1,120 @@
+---
+title: "Fetch user guilds"
+description: "Fetch all guilds a user is in that has Ducky."
+api: "GET /guilds"
+---
+
+<ResponseExample>
+
+```json 200
+{
+    "code": 200,
+    "message": "Guilds for '598958193032560642' fetched successfully.",
+    "data": [
+        {
+            "name": "💛 Ducky's Pond",
+            "id": "1228508072289370172",
+            "icon": "https://cdn.discordapp.com/icons/1228508072289370172/78c23e643bd80241aa013b88cd0225cb.png",
+            "members": 1790,
+            "owner": "598958193032560642",
+            "role": "Owner",
+            "ducky": true,
+            "plus": {
+                "plus": {
+                    "userid": "1257389588910182411",
+                    "guilds": [
+                        "1228508072289370172"
+                    ],
+                    "slots": 0
+                },
+                "active": true
+            },
+            "permissions": {
+                "ERLC_STAFF": true,
+                "DUCKY_PLUS_GUILD": true,
+                "QUALITY_ASSURANCE": true,
+                "ERLC_ADMIN": true,
+                "DOCWRITER": true,
+                "FOUNDER": true,
+                "ERLC_MANAGER": true,
+                "MANAGE_SERVER": true,
+                "EXECUTIVE": true,
+                "BOT_DEVELOPER": true,
+                "WEB_DEVELOPER": true,
+                "SETUP": true,
+                "SESSION_STARTER": true,
+                "MOD": true,
+                "SUPPORT": true,
+                "MANAGEMENT": true,
+                "ADMIN": true,
+                "DUCKY_STAFF": true,
+                "ERLC_LINKED": true,
+                "DUCKY_PLUS_MEMBER": true
+            }
+        }
+        // ...
+    ]
+}
+```
+
+</ResponseExample>
+
+### Headers
+
+<ParamField header="Token" type="string" required>
+  The Ducky session token of the user.
+</ParamField>
+
+### Response Data
+
+<ResponseField name="data" type="object[]">
+  In this endpoint, the response data is an array of objects.
+
+  <Expandable title="properties">
+    <ResponseField name="name" type="string">
+      The guild's name.
+    </ResponseField>
+    <ResponseField name="id" type="string">
+      The guild's ID.
+    </ResponseField>
+    <ResponseField name="icon" type="string">
+      The guild's icon URL.
+    </ResponseField>
+    <ResponseField name="members" type="number">
+      The guild's membercount.
+    </ResponseField>
+    <ResponseField name="owner" type="string">
+      The guild owner's ID.
+    </ResponseField>
+    <ResponseField name="role" type="string">
+      The member's role within the guild.
+      
+      Can either be `Owner`, `Manager`, `Administrator`, or `Moderator`.
+    </ResponseField>
+    <ResponseField name="ducky" type="boolean" deprecated>
+      Whether or not Ducky is in the guild. As of v1.6.0 Stable, this is always `true` and therefore will soon be deprecated.
+    </ResponseField>
+    <ResponseField name="plus" type="object">
+      The guild's Ducky Plus+ status.
+      <Expandable title="properties">
+        <ResponseField name="active" type="boolean">
+          Whether or not Ducky Plus+ is active within this guild.
+        </ResponseField>
+        <ResponseField name="plus" type="object">
+          The Ducky Plus+ purchaser information.
+          <Expandable title="properties">
+            <ResponseField name="userid" type="string">
+              The purchaser's user ID.
+            </ResponseField>
+            <ResponseField name="slots" type="number">
+              The amount of available slots this purchaser has.
+            </ResponseField>
+            <ResponseField name="guilds" type="string[]">
+              The guild IDs this purchaser applied Ducky Plus+ to.
+            </ResponseField>
+          </Expandable>
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+  </Expandable>
+</ResponseField>

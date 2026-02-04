@@ -1,0 +1,108 @@
+---
+title: "Fetch user information"
+description: "Fetch information regarding a Discord or Roblox user."
+api: "GET /users/{id}"
+---
+
+<ResponseExample>
+
+```json 200 (Discord User)
+{
+  "code": 200,
+  "message": "A Discord user was found with that ID.",
+  "data": {
+    "username": "troptopreal",
+    "name": "Troptop",
+    "id": "598958193032560642",
+    "avatar": "https://cdn.discordapp.com/avatars/598958193032560642/b4a9105d349cc3e9c3d5c0d3b24adbb8.png"
+  }
+}
+```
+
+```json 200 (Roblox User)
+{
+  "code": 200,
+  "message": "A Roblox user was found with that ID.",
+  "data": {
+    "name": "troptopreal",
+    "displayName": "Troptop",
+    "id": 1038671897,
+    "avatar": "https://t4.rbxcdn.com/30DAY-AvatarHeadshot-7E3036777BDD02D485E0A0CCC240BDCC-Png",
+    "description": "colombiano ☕💖",
+    "profile": "https://roblox.com/users/1038671897/profile",
+    "hyperlink": "[troptopreal](<https://roblox.com/users/1038671897/profile>)",
+    "verified": false,
+    "banned": false,
+    "created": 1555162890.283
+  }
+}
+```
+
+```json 404
+{
+  "code": 404,
+  "message": "A Discord or Roblox user was not found with the ID of '99999999999'."
+}
+```
+
+</ResponseExample>
+
+### Headers
+
+<ParamField header="Token" type="string" post={["optional"]}>
+  The Ducky session token of the user. This is only required if you are using `@me` as the ID.
+</ParamField>
+
+### Parameter Fields
+
+<ParamField path="id" type="string" required>
+  The Roblox or Discord ID of the user whose information you would like to fetch. This can be `@me` if a valid `Token` is provided via the headers.
+</ParamField>
+
+### Response Data (Discord User)
+
+<ResponseField name="username" type="string">
+  The user's username.
+</ResponseField>
+<ResponseField name="name" type="string">
+  The user's display name.
+</ResponseField>
+<ResponseField name="id" type="string">
+  The user's ID.
+</ResponseField>
+<ResponseField name="avatar" type="string">
+  The user's avatar URL.
+</ResponseField>
+
+### Response Data (Roblox User)
+
+<ResponseField name="name" type="string">
+  The player's username.
+</ResponseField>
+<ResponseField name="displayName" type="string">
+  The player's display name.
+</ResponseField>
+<ResponseField name="id" type="number">
+  The player's ID.
+</ResponseField>
+<ResponseField name="avatar" type="string">
+  The player's avatar URL.
+</ResponseField>
+<ResponseField name="description" type="string">
+  The player's description/bio.
+</ResponseField>
+<ResponseField name="profile" type="string">
+  A link to the player's profile.
+</ResponseField>
+<ResponseField name="hyperlink" type="string">
+  A hyperlink to the player's profile, where the label is the player's username.
+</ResponseField>
+<ResponseField name="verified" type="boolean">
+  Whether or not the player is verified on Roblox.
+</ResponseField>
+<ResponseField name="banned" type="boolean">
+  Whether or not the player is banned from Roblox.
+</ResponseField>
+<ResponseField name="created" type="number">
+  An epoch timestamp (in seconds) representing when the player's account was created.
+</ResponseField>
