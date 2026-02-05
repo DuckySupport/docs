@@ -59,8 +59,7 @@
                         "pages": [
                             "misc/timestamps",
                             "misc/devmode",
-                            "misc/embededitor",
-                            "misc/api"
+                            "misc/embededitor"
                         ]
                     }
                 ]
