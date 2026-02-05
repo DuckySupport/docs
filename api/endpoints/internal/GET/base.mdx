@@ -11,34 +11,43 @@ api: "GET /"
   "code": 200,
   "message": "The Ducky API is online.",
   "data": {
-    "version": "v1.6.0 Stable",
+    "version": {
+      "name": "v1.6.0 Stable",
+      "branch": "master",
+      "commit": {
+        "sha": "de867566b229eafcc2fd5afa56ace951c8fa28a5",
+        "message": "api: improved version response",
+        "author": "Troptop",
+        "timestamp": 1770255688
+      }
+    },
     "resources": {
-      "memory": 1570.56
+      "memory": 1612.26
     },
     "health": {
       "api": {
         "latency": {
-          "response": "Latency was not calculated because header 'Sent-Epoch' was not provided.",
-          "process": 0.13089179992676
+          "response": null,
+          "process": 84.956884384155
         }
       },
       "bot": {
         "shards": {
           "0": {
-            "heartbeatAcknowledged": 1769870069,
-            "heartbeatSent": 1769870069,
-            "latency": 110.219125
+            "heartbeatSent": 1770256245,
+            "heartbeatAcknowledged": 1770256245,
+            "latency": 105.699607
           },
           "1": {
-            "heartbeatAcknowledged": 1769870076,
-            "heartbeatSent": 1769870076,
-            "latency": 109.362183
+            "heartbeatSent": 1770256279,
+            "heartbeatAcknowledged": 1770256279,
+            "latency": 124.80735
           },
           // ...
         },
         "uptime": {
-          "readable": "3 minutes, 57 seconds",
-          "epoch": 1769869862
+          "readable": "1 hour, 58 minutes, 45 seconds",
+          "epoch": 1770249158
         }
       }
     }
@@ -51,34 +60,43 @@ api: "GET /"
   "code": 200,
   "message": "The Ducky API is online.",
   "data": {
-    "version": "v1.6.0 Stable",
+    "version": {
+      "name": "v1.6.0 Stable",
+      "branch": "master",
+      "commit": {
+        "sha": "de867566b229eafcc2fd5afa56ace951c8fa28a5",
+        "message": "api: improved version response",
+        "author": "Troptop",
+        "timestamp": 1770255688
+      }
+    },
     "resources": {
-      "memory": 1570.56
+      "memory": 1612.26
     },
     "health": {
       "api": {
         "latency": {
           "response": 62.794923782349,
-          "process": 0.13089179992676
+          "process": 84.956884384155
         }
       },
       "bot": {
         "shards": {
           "0": {
-            "heartbeatAcknowledged": 1769870069,
-            "heartbeatSent": 1769870069,
-            "latency": 110.219125
+            "heartbeatSent": 1770256245,
+            "heartbeatAcknowledged": 1770256245,
+            "latency": 105.699607
           },
           "1": {
-            "heartbeatAcknowledged": 1769870076,
-            "heartbeatSent": 1769870076,
-            "latency": 109.362183
+            "heartbeatSent": 1770256279,
+            "heartbeatAcknowledged": 1770256279,
+            "latency": 124.80735
           },
           // ...
         },
         "uptime": {
-          "readable": "3 minutes, 57 seconds",
-          "epoch": 1769869862
+          "readable": "1 hour, 58 minutes, 45 seconds",
+          "epoch": 1770249158
         }
       }
     }
@@ -90,8 +108,34 @@ api: "GET /"
 
 ### Response Data
 
-<ResponseField name="version" type="string">
+<ResponseField name="version" type="object">
   The current running version of Ducky.
+
+  <Expandable title="properties">
+    <ResponseField name="name" type="string">
+      The official version name.
+    </ResponseField>
+    <ResponseField name="branch" type="string">
+      The current running branch.
+    </ResponseField>
+    <ResponseField name="commit" type="object">
+      The most recent commit.
+      <Expandable title="properties">
+        <ResponseField name="sha" type="string">
+          The commit hash.
+        </ResponseField>
+        <ResponseField name="message" type="string">
+          The commit message.
+        </ResponseField>
+        <ResponseField name="author" type="string">
+          The commit author's name.
+        </ResponseField>
+        <ResponseField name="timestamp" type="number">
+          An epoch timestamp (in seconds) representing when the commit was pushed.
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+  </Expandable>
 </ResponseField>
 
 <ResponseField name="resources" type="object">
@@ -129,10 +173,10 @@ api: "GET /"
           A map of shard health information where the key is the shard ID.
           <Expandable title="example shard">
             <ResponseField name="heartbeatSent" type="number">
-              The epoch timestamp (in seconds) of when the last heartbeat was sent to Discord.
+              An epoch timestamp (in seconds) representing when the last heartbeat was sent to Discord.
             </ResponseField>
             <ResponseField name="heartbeatAcknowledged" type="number">
-              The epoch timestamp (in seconds) of when the most recent heartbeat was acknowledged by Discord.
+              An epoch timestamp (in seconds) representing when the most recent heartbeat was acknowledged by Discord.
             </ResponseField>
             <ResponseField name="latency" type="number">
               The latency of the shard in milliseconds.
@@ -146,7 +190,7 @@ api: "GET /"
               A human-readable string representing the uptime of the bot.
             </ResponseField>
             <ResponseField name="epoch" type="number">
-              The epoch timestamp (in seconds) of when the bot was started.
+              An epoch timestamp (in seconds) representing when the bot was started.
             </ResponseField>
           </Expandable>
         </ResponseField>
